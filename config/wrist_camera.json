@@ -1,0 +1,12 @@
+{
+  "path": "/World/Piper/link6/WristCamera",
+  "mount_translation_m": [0.05, 0.0, 0.03],
+  "mount_rotation_xyz_deg": [180, 0, 0],
+  "resolution": [320, 240],
+  "focal_length_mm": 12.0,
+  "horizontal_aperture_mm": 24.0,
+  "vertical_aperture_mm": 18.0,
+  "table_z_m": 0.0,
+  "brick_top_z_m": 0.0096,
+  "status": "provisional RGB mount and intrinsics; replace with measured hand-eye calibration"
+}

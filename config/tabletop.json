@@ -1,0 +1,12 @@
+{
+  "home": [0.28, 0.0, 0.08],
+  "scan_poses": [[0.28, 0.0, 0.08], [0.23, -0.18, 0.08], [0.23, 0.18, 0.08], [0.30, -0.20, 0.075], [0.30, 0.20, 0.075], [0.34, -0.07, 0.075], [0.34, 0.07, 0.075]],
+  "default_goal": [0.32, 0.08, 0.0048],
+  "table_bounds_xy": [[-0.3, -0.4], [0.7, 0.4]],
+  "candidate_bounds_xy": [[0.12, -0.28], [0.39, 0.28]],
+  "minimum_base_distance_m": 0.18,
+  "lift_height_m": 0.08,
+  "max_cartesian_step_m": 0.0025,
+  "max_joint_step_rad": 0.025,
+  "note": "Full physical table exceeds this fixed-downward-grasp workspace. IK admission required; fixed red brick yaw only."
+}

@@ -1,0 +1,56 @@
+{
+  "S1": {
+    "position_m": [
+      0.012,
+      0.004,
+      0.0048
+    ],
+    "yaw_deg": 0,
+    "frame": "assembly_fixture"
+  },
+  "S2": {
+    "position_m": [
+      0.044,
+      0.004,
+      0.0048
+    ],
+    "yaw_deg": 0,
+    "frame": "assembly_fixture"
+  },
+  "S3": {
+    "position_m": [
+      0.076,
+      0.004,
+      0.0048
+    ],
+    "yaw_deg": 0,
+    "frame": "assembly_fixture"
+  },
+  "S4": {
+    "position_m": [
+      0.028,
+      0.004,
+      0.0144
+    ],
+    "yaw_deg": 0,
+    "frame": "assembly_fixture"
+  },
+  "S5": {
+    "position_m": [
+      0.06,
+      0.004,
+      0.0144
+    ],
+    "yaw_deg": 0,
+    "frame": "assembly_fixture"
+  },
+  "S6": {
+    "position_m": [
+      0.044,
+      0.004,
+      0.023999999999999997
+    ],
+    "yaw_deg": 0,
+    "frame": "assembly_fixture"
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "id": "step_wall6_v1",
+  "title": "六块积木 · 三层交错小墙",
+  "geometry": {
+    "stud_pitch_m": 0.008,
+    "brick_height_m": 0.0096,
+    "body_size_m": [
+      0.0318,
+      0.0158,
+      0.0096
+    ]
+  },
+  "frame": {
+    "name": "assembly_fixture",
+    "origin": "底板第一个目标凸点中心的水平坐标；Z=底板连接基准面，不含凸点高度",
+    "registration_required": true,
+    "source_layout_in_recipe": false
+  },
+  "fixture": {
+    "type": "clamped_studded_baseplate",
+    "minimum_studs_xy": [
+      12,
+      2
+    ],
+    "recommended_studs_xy": [
+      16,
+      16
+    ],
+    "must_be_registered_and_clamped": true
+  },
+  "bom": [
+    {
+      "catalog_id": "3001",
+      "studs_xy": [
+        4,
+        2
+      ],
+      "color": "red",
+      "quantity": 1
+    },
+    {
+      "catalog_id": "3001",
+      "studs_xy": [
+        4,
+        2
+      ],
+      "color": "blue",
+      "quantity": 1
+    },
+    {
+      "catalog_id": "3001",
+      "studs_xy": [
+        4,
+        2
+      ],
+      "color": "green",
+      "quantity": 1
+    },
+    {
+      "catalog_id": "3001",
+      "studs_xy": [
+        4,
+        2
+      ],
+      "color": "yellow",
+      "quantity": 1
+    },
+    {
+      "catalog_id": "3001",
+      "studs_xy": [
+        4,
+        2
+      ],
+      "color": "orange",
+      "quantity": 1
+    },
+    {
+      "catalog_id": "3001",
+      "studs_xy": [
+        4,
+        2
+      ],
+      "color": "purple",
+      "quantity": 1
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "part": {
+        "catalog_id": "3001",
+        "studs_xy": [
+          4,
+          2
+        ],
+        "color": "red"
+      },
+      "anchor_stud": [
+        0,
+        0,
+        0
+      ],
+      "yaw_deg": 0,
+      "connections": [
+        {
+          "support_step": "fixture",
+          "stud_count": 8
+        }
+      ],
+      "human_instruction": "找到一块红色 2×4 基础砖，长边沿图示方向，对齐后压紧。",
+      "acceptance": {
+        "position_tolerance_m": 0.001,
+        "yaw_tolerance_deg": 2,
+        "connection_required": true
+      }
+    },
+    {
+      "id": "S2",
+      "part": {
+        "catalog_id": "3001",
+        "studs_xy": [
+          4,
+          2
+        ],
+        "color": "blue"
+      },
+      "anchor_stud": [
+        4,
+        0,
+        0
+      ],
+      "yaw_deg": 0,
+      "connections": [
+        {
+          "support_step": "fixture",
+          "stud_count": 8
+        }
+      ],
+      "human_instruction": "找到一块蓝色 2×4 基础砖，长边沿图示方向，对齐后压紧。",
+      "acceptance": {
+        "position_tolerance_m": 0.001,
+        "yaw_tolerance_deg": 2,
+        "connection_required": true
+      }
+    },
+    {
+      "id": "S3",
+      "part": {
+        "catalog_id": "3001",
+        "studs_xy": [
+          4,
+          2
+        ],
+        "color": "green"
+      },
+      "anchor_stud": [
+        8,
+        0,
+        0
+      ],
+      "yaw_deg": 0,
+      "connections": [
+        {
+          "support_step": "fixture",
+          "stud_count": 8
+        }
+      ],
+      "human_instruction": "找到一块绿色 2×4 基础砖，长边沿图示方向，对齐后压紧。",
+      "acceptance": {
+        "position_tolerance_m": 0.001,
+        "yaw_tolerance_deg": 2,
+        "connection_required": true
+      }
+    },
+    {
+      "id": "S4",
+      "part": {
+        "catalog_id": "3001",
+        "studs_xy": [
+          4,
+          2
+        ],
+        "color": "yellow"
+      },
+      "anchor_stud": [
+        2,
+        0,
+        1
+      ],
+      "yaw_deg": 0,
+      "connections": [
+        {
+          "support_step": "S1",
+          "stud_count": 4
+        },
+        {
+          "support_step": "S2",
+          "stud_count": 4
+        }
+      ],
+      "human_instruction": "找到一块黄色 2×4 基础砖，长边沿图示方向，对齐后压紧。",
+      "acceptance": {
+        "position_tolerance_m": 0.001,
+        "yaw_tolerance_deg": 2,
+        "connection_required": true
+      }
+    },
+    {
+      "id": "S5",
+      "part": {
+        "catalog_id": "3001",
+        "studs_xy": [
+          4,
+          2
+        ],
+        "color": "orange"
+      },
+      "anchor_stud": [
+        6,
+        0,
+        1
+      ],
+      "yaw_deg": 0,
+      "connections": [
+        {
+          "support_step": "S2",
+          "stud_count": 4
+        },
+        {
+          "support_step": "S3",
+          "stud_count": 4
+        }
+      ],
+      "human_instruction": "找到一块橙色 2×4 基础砖，长边沿图示方向，对齐后压紧。",
+      "acceptance": {
+        "position_tolerance_m": 0.001,
+        "yaw_tolerance_deg": 2,
+        "connection_required": true
+      }
+    },
+    {
+      "id": "S6",
+      "part": {
+        "catalog_id": "3001",
+        "studs_xy": [
+          4,
+          2
+        ],
+        "color": "purple"
+      },
+      "anchor_stud": [
+        4,
+        0,
+        2
+      ],
+      "yaw_deg": 0,
+      "connections": [
+        {
+          "support_step": "S4",
+          "stud_count": 4
+        },
+        {
+          "support_step": "S5",
+          "stud_count": 4
+        }
+      ],
+      "human_instruction": "找到一块紫色 2×4 基础砖，长边沿图示方向，对齐后压紧。",
+      "acceptance": {
+        "position_tolerance_m": 0.001,
+        "yaw_tolerance_deg": 2,
+        "connection_required": true
+      }
+    }
+  ],
+  "execution": {
+    "do_not_advance_without_connection_evidence": true,
+    "assembly_frame_registration_is_not_supplied_by_recipe": true
+  },
+  "limits": [
+    "此说明书不是原厂 LEGO 说明书",
+    "纸面尺寸不代表经实物校准的插入力／公差",
+    "现有实心底部模型不能验证真实卡接"
+  ]
+}
