@@ -1,0 +1,1070 @@
+{
+  "group": "simulation-assets",
+  "format": "concatenated tar.zst parts",
+  "raw_bytes": 141990840,
+  "parts": [
+    {
+      "name": "simulation-assets.tar.zst.part001",
+      "bytes": 32113442,
+      "sha256": "133ce99d35053c1106e563fb8088d02752d063ba8eff6c70e6e1eab4c3544dd4"
+    }
+  ],
+  "files": [
+    {
+      "path": "project/assets/piper/README.md",
+      "bytes": 712,
+      "sha256": "95680571b7a070936d01619870b4b492a8433aa60ceb6dfd5fe4e83e9aea66df",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/USD/piper_v1.usd",
+      "bytes": 11988,
+      "sha256": "a7d36d89d485cee08105363b9be82128b37008636eb25fe86a9d1eb25e05ed2a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/USD/piper_v2.usd",
+      "bytes": 5368,
+      "sha256": "2c2062dbcf650239c9c9645dc9071b28f5669c890fa4992a64333becbf5d5450",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/CMakeLists.txt",
+      "bytes": 1156,
+      "sha256": "cd97f8dc8916fb2a0817893cb7af48745b272ede3965be14d68bf7a312acfadd",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/package.xml",
+      "bytes": 901,
+      "sha256": "307ddcda650974988726809436f3aeb63d19db55174ac5976d4869ddbd994177",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/launch/piper_no_gripper/display_no_gripper_urdf.launch.py",
+      "bytes": 2500,
+      "sha256": "dd94a90803ca23ee2a204dee8c7b9ae1ef00eca2909842916615d26fbfd9237a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/launch/piper_no_gripper/display_no_gripper_xacro.launch.py",
+      "bytes": 2501,
+      "sha256": "8ad60f3e8310c836c222c283a78a1cd3828f1641a55601f2e3cdda79d09597d4",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/launch/piper_with_gripper/display_urdf.launch.py",
+      "bytes": 2484,
+      "sha256": "92782cc36c6d142ddfd4cf66587619889dd9395cc42c0f61a486b9a52819da04",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/launch/piper_with_gripper/display_xacro.launch.py",
+      "bytes": 2505,
+      "sha256": "feb4baa2177437940bd4366bf98e20c80f921312eb38469dcb436658c5abc940",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/base_link.STL",
+      "bytes": 607384,
+      "sha256": "fd4a3d6d0266205fe3f725f048645be66592c23564db22e08b0807d5569b2c64",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/gripper_base.STL",
+      "bytes": 649484,
+      "sha256": "2895bfa6f1eef2d0ad2cb9dfdedd5f6c760ec07388bcde2b4d1e412e1189c9cb",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/link1.STL",
+      "bytes": 447784,
+      "sha256": "9ee6e1d67c0241f42a0dbaf5c676d19230375ed078ee1943bb8c4c37ab303d14",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/link2.STL",
+      "bytes": 3658384,
+      "sha256": "0d37675b699b643f2e15348de99aed535fac10dc5f09a79b8e4b0acfaf4e0378",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/link3.STL",
+      "bytes": 1845784,
+      "sha256": "e8ae51f17c0c7f6d67b753922e2cc269f5e8372a65734f859231639a64fe8fad",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/link4.STL",
+      "bytes": 877984,
+      "sha256": "efa33022976218f246f736a6133494b5d0e5486e8b50b52900c42f285ae85558",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/link5.STL",
+      "bytes": 833684,
+      "sha256": "a1c69d1c7f6f8c60e2c82331c0f444725200ed4053d3e5ec23aa82cb5db5b29f",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/link6.STL",
+      "bytes": 58884,
+      "sha256": "88374973bc3bd9e7389b5853cd6e555af9731c30b658b1ee6f85be34a126cb92",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/link7.STL",
+      "bytes": 104384,
+      "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/link8.STL",
+      "bytes": 104384,
+      "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/base_link.dae",
+      "bytes": 934237,
+      "sha256": "3c9a5f47db03dfbaa75fc2a98135bd5c7d0e3661c2a601b7372bd04e3cfdb689",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/camera.dae",
+      "bytes": 7448010,
+      "sha256": "1b8f617228ef57daaf16af6854e16a748b83d0354db908ddf9b83ef6d4f11b63",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/camera_v2.dae",
+      "bytes": 5276066,
+      "sha256": "4e279c1d30b6424f883dc8da9f6b8f833848ebc085bfb3b92475af40bb36fe8a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/camera_v3.dae",
+      "bytes": 5280711,
+      "sha256": "c5b74840458937912aea866ca1f50d3eed6417aa390ad7066739415ba5bdcdd4",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/gripper_base_100_v2.dae",
+      "bytes": 3759853,
+      "sha256": "cb4e20bf4c7ae757b5ef8f73518229a6d7c5247c8da987410ffe418f58bc9bed",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link1.dae",
+      "bytes": 1756520,
+      "sha256": "2bb0e08b05a4de1a1c3f073c59dde29335ba3cec9a020e0a09735108c0420b28",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link2.dae",
+      "bytes": 6053490,
+      "sha256": "64e70cd8927b3f4d23f056f978e3f1004ca8d6f6a01843ef6a5e08075be2c6f3",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link3.dae",
+      "bytes": 4869700,
+      "sha256": "c3f3f592868362852da55bdfc6fdbbfeef653bb8e226721dbdd448161f298d04",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link4.dae",
+      "bytes": 1189463,
+      "sha256": "d74c2f686f8e42e0b71044afa29f2726cddfb346f4e2d92f8566489be5882a14",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link5.dae",
+      "bytes": 1981489,
+      "sha256": "cb463d5e034adb780fea4a0b7d716d1b3b1de1535c728d747a3370bc347f95e2",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link6.dae",
+      "bytes": 1872101,
+      "sha256": "397e24f536d1f0827ab79adce41af87c016d5869098601284eefe8748510cda6",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link6_.dae",
+      "bytes": 1169868,
+      "sha256": "a83f8f6b9d5e5605ec18e4110a0ec1878252be7b2a5e027dc9d31bbf25370a00",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link7.dae",
+      "bytes": 162800,
+      "sha256": "7534447abb248829c447a8e19d84c6fb3903ab70ebc32dfd164abcc4099fc74a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/link8.dae",
+      "bytes": 167576,
+      "sha256": "662d36ce7edf3e1cbb887302f4499a76aff75ccf1996730fa63f2a30f749adda",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/meshes/dae/realsense_mid_stand.dae",
+      "bytes": 713245,
+      "sha256": "1b9253505836723353528b41c7008c4d8f539a774959da3ad9669c26ae62e45a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/mujoco_model/piper_description.xml",
+      "bytes": 6423,
+      "sha256": "3c2e4bf29dd7fc80acfbb056ad711548bdd57f5c26f2e0fcb43f179b8e02f726",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/mujoco_model/piper_no_gripper_description.xml",
+      "bytes": 4630,
+      "sha256": "0a7d86958c3e998ab92a9ed491b488e4c9a25575509a147a466f0dacdc70998c",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/rviz/piper_ctrl.rviz",
+      "bytes": 6577,
+      "sha256": "96e09cecd1683277bc861566988989361c12eb45c341f3c055a4e90e5dc2ad0e",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/rviz/piper_no_gripper.rviz",
+      "bytes": 6243,
+      "sha256": "9c6d1964cbf5e4fc03bc714a0bd1916de46f00825bc76366cfc5f8344fc19a81",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description.csv",
+      "bytes": 5290,
+      "sha256": "2135a9ef82b9caa70accee5947f16661e53e63c116db24f54db9781e23245c39",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description.urdf",
+      "bytes": 12628,
+      "sha256": "f634778af25a04d27eedf391323c125d69b5b22104a77a9c235d5d95f6be5709",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description.xacro",
+      "bytes": 15106,
+      "sha256": "7823fc8ce465624f133b923913884c30cc5f08c897995148d3d52b4e96af5801",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_gazebo.xacro",
+      "bytes": 17274,
+      "sha256": "bf6946aeb95ad897d8fd63c299ca17c8cf8b86763c47dca784c02d141a823bcd",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_old.urdf",
+      "bytes": 12521,
+      "sha256": "a070225e5863f09413c354a9f0f91b6fa72da14068af3e2898b1093b130c1337",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_camera.urdf",
+      "bytes": 12712,
+      "sha256": "fdc7d17b62be6e3315a93460cdb47baccd0aef1ae975b0e1a29437d79dce9d09",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_realsense_camera.urdf",
+      "bytes": 13142,
+      "sha256": "19a0975378044ea38f7adeb9a287bb9789089a66c0665f8751cd299a92649dff",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_realsense_camera_v2.urdf",
+      "bytes": 12070,
+      "sha256": "d21046ed1614b8077ce00b5309beae4fa4fbc7d3b654c3f500c815deec90d287",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_no_gripper_description.csv",
+      "bytes": 4252,
+      "sha256": "409ee5c1faf54eccfbd49649add4439975b5cf503cce6bcff72691e96577bbc6",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_no_gripper_description.urdf",
+      "bytes": 8922,
+      "sha256": "40e96ce6fe5f88dcabd54fb5b92b63af852ae3068acf1e5b078dbcbf002880dc",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_no_gripper_description.xacro",
+      "bytes": 10142,
+      "sha256": "fc4e9b89e3b86fa25d6491e0035d09dd8a114af4ea278919ce92a3e29d4ba930",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_no_gripper_description_gazebo.xacro",
+      "bytes": 12476,
+      "sha256": "37babe3df844a0053759b3bbac7b0831fb99cc194799a77f37832f385688a692",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_no_gripper_description_old.urdf",
+      "bytes": 8815,
+      "sha256": "3b43bf73de0bf82da32883d7982f97224ea44fc1b264b6d67e079665836fda4a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_camera/piper_description_v100_camera.usd",
+      "bytes": 1481,
+      "sha256": "cc1b1df6e0f9da56a9fd567655d086abcb2339d57c04e24e0a976d38460644b9",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_camera/configuration/piper_description_v100_camera_base.usd",
+      "bytes": 31274409,
+      "sha256": "d83990d4b476ea8e4ebc9fb6aa40862d6b8483ee8596537e67200a2d0cdfa02e",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_camera/configuration/piper_description_v100_camera_physics.usd",
+      "bytes": 6239,
+      "sha256": "d98e180e13c2289749d117b4da3b5aa48a7b36d5cc2f45fc4a27e0a0270ea4f1",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_camera/configuration/piper_description_v100_camera_robot.usd",
+      "bytes": 1792,
+      "sha256": "672549cb6b209d8c9765ed498bd7c9427aa2723dbcc23d67fa13909df1d4adec",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_camera/configuration/piper_description_v100_camera_sensor.usd",
+      "bytes": 652,
+      "sha256": "c6a7ac55240fdaf28cbf4257937ee3a310b5e4757b5b7437e7feb37655ac5141",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_realsense_camera_v2/piper_description_v100_realsense_camera_v2.usd",
+      "bytes": 1493,
+      "sha256": "f9fcf945f4f7b1639d46d12423c1abe4b916903d0bc046fb572faee266215381",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_realsense_camera_v2/configuration/piper_description_v100_realsense_camera_v2_base.usd",
+      "bytes": 41020584,
+      "sha256": "7561a29c320017aab66ca8a067af48722e6644e47598a2315bde8eb8e9738ec4",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_realsense_camera_v2/configuration/piper_description_v100_realsense_camera_v2_physics.usd",
+      "bytes": 6209,
+      "sha256": "1d669ae9a31210130eef6fe67f98f8406f9907d9a1e0762e9b1444792d214ed5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_realsense_camera_v2/configuration/piper_description_v100_realsense_camera_v2_robot.usd",
+      "bytes": 1789,
+      "sha256": "844f0a6ce1664a3cbf6d1a9c76856070c526b2de94248017c0bb4ec4c5496476",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/assets/piper/piper_description/urdf/piper_description_v100_realsense_camera_v2/configuration/piper_description_v100_realsense_camera_v2_sensor.usd",
+      "bytes": 652,
+      "sha256": "c6a7ac55240fdaf28cbf4257937ee3a310b5e4757b5b7437e7feb37655ac5141",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/generated/model_inventory.json",
+      "bytes": 1952,
+      "sha256": "ca4a8f44f1c5a5d7ca305a74f537c4e56c4994d8e42a25af6d6717bf01825339",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/generated/piper_basic.urdf",
+      "bytes": 10894,
+      "sha256": "3f00fa3b32ddb9f68f8688d3e03644a8adf81608bb24815171a5e02cea625311",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/generated/piper_basic.usd",
+      "bytes": 1460,
+      "sha256": "3884e011aea414e20e7b77750fecc9231d3e7c26e448ff58aa755ade6f1ae1df",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/generated/configuration/piper_basic_base.usd",
+      "bytes": 13239670,
+      "sha256": "d8eb506b7b28eede8b061c560c1855773d13ddbf7177d08f9c2dfcd5a6d2c620",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/generated/configuration/piper_basic_physics.usd",
+      "bytes": 5486,
+      "sha256": "0e06032e4e35e2e59c1a9bf38853a5b2ebbb24f654a16608bab9535f51a81fd9",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/generated/configuration/piper_basic_robot.usd",
+      "bytes": 1796,
+      "sha256": "7d8c1d7c147a206986fc4b0774829ab8aaab5bd49e9daab1160daf6c02f91a4a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/generated/configuration/piper_basic_sensor.usd",
+      "bytes": 645,
+      "sha256": "c747ff27a6695ee3dd35fe61fab7490a17f12ecaadedaecc640bed54f906cf80",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/.gitignore",
+      "bytes": 386,
+      "sha256": "f5d7681043cd6ccaeb0e759de83d7191fc5749ac42778eb75103b7188885974a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/README.md",
+      "bytes": 11428,
+      "sha256": "99e2bd2165eb905b34c5972c62c194a9091b2d459554bbcd59154b0c9cd3997f",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/SHA256SUMS.txt",
+      "bytes": 10322,
+      "sha256": "ecaf1e6fd0c15600314aac51c3bd1bb0a011db0a5c6c444ad5189e648d46b5b3",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/app.bundle.js",
+      "bytes": 1476436,
+      "sha256": "db3223068bb4113c5674d9817061663bf462826884dba01ba7e01f1f2148ecad",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/build-offline.py",
+      "bytes": 3895,
+      "sha256": "08f6cf415a182e2a3ab819233faee176610041f6fa4504082aa9d2ee1ceb55a1",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/example-model.json",
+      "bytes": 5805,
+      "sha256": "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/index.html",
+      "bytes": 21727,
+      "sha256": "ee064d6ea9aa51bd58ead19f533ecbd527d494ac30a9f5c70866b4d9f5000f40",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/manual.css",
+      "bytes": 23169,
+      "sha256": "5bba13068b0180ae40d930eb20aad98af90f86dcdc1f239be3ba20f07faee18b",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/styles.css",
+      "bytes": 35760,
+      "sha256": "9a3e8230ba4e29bd131903e23e24e8b3244959d02fbdc75c06984643c06fcb83",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/workflow.css",
+      "bytes": 10307,
+      "sha256": "fda665c1e077e3d1324851081b8c8576ca9b9be42532f3f78e2209690bb2a73a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/\u4f7f\u7528\u8bf4\u660e.txt",
+      "bytes": 3879,
+      "sha256": "601fcc8442b9475a6a5aff2e26411630be9d2a97ed356d6e401920a09248dc53",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/\u542f\u52a8\u642d\u5efa\u5de5\u4f5c\u53f0.command",
+      "bytes": 3043,
+      "sha256": "5a8d0dc213ec09b4c757486af199bacdf01a09d122ee4852ebdb0e5c94dd01c5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/.gitignore",
+      "bytes": 58,
+      "sha256": "2caaa13cbdea5d29aa15976d517c981452bc67abb26bdfb156dc6d425bd4936f",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/README.md",
+      "bytes": 18274,
+      "sha256": "f957ad30132e55a50062a4d33025898d668e6a6c36d2c5b0eb1e0802a3ceffd5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/VALIDATION.md",
+      "bytes": 3129,
+      "sha256": "02738481ab215a209bfb2adf73f6ecc534488508b1c11716993e3c2b9c67df2c",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/baseplate.py",
+      "bytes": 2707,
+      "sha256": "6f9f0ccfdd71361f1ed620e38a5ba14c9690884544d488c7b70ed29de8b31518",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/catalog.json",
+      "bytes": 79663,
+      "sha256": "b9c0dca53edccd9c1ef204c3afcee1f5b24d06049236bb1685c12b2a3ab6b948",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/creator_layout.py",
+      "bytes": 12979,
+      "sha256": "a199fd48f97f380e98e2bec3ea4bb9578c8746aa6df8c20c9456e5ea6520c4ef",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/creator_pdf.py",
+      "bytes": 12103,
+      "sha256": "cd9ca70081dbb5fe645cf6bb0c1d893e66aa54189ba386afbc071bc72316826d",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/input_adapter.py",
+      "bytes": 22784,
+      "sha256": "f76cc3785a4fe10cbc1ebfa970328dfd4fe91973c210f1b7aa3cebc323f2a3fd",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/launch.py",
+      "bytes": 7205,
+      "sha256": "e8fee5b4f035ba328c42d23ba6ed1abdc6aae1085297e642a51c3f3ca88a7c3e",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/lego_components.py",
+      "bytes": 7853,
+      "sha256": "961cbcde75aed766d5a1d8d2869df2ac8f1f0e2f8a500d7dd19852890cb78a59",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/lego_diagram.py",
+      "bytes": 2786,
+      "sha256": "e9d0abc45a11be45fb2f41073264788f2bcff343f8c22e95fe09bd501db0db39",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/lego_steps.py",
+      "bytes": 8719,
+      "sha256": "33ca7a3ce4e84a0b42a34a97047de3876171a098f3c9b399edd5b4d8e5ba4a91",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/live_view.py",
+      "bytes": 10860,
+      "sha256": "4ba21c0acd8fd6ffba68b955808bf42a6106a478b8bb5abe7988ae6ca54419d3",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/manual_renderer.py",
+      "bytes": 48006,
+      "sha256": "c476452e273598b6e08730043d13834b703b934def9e479d5064c7df5fa04df5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/piper_config.py",
+      "bytes": 304,
+      "sha256": "1b129631b9cf66afc6713c5416e64cff8b4eb9cf4ce33d255ac4f52f684964aa",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/policy_scene.py",
+      "bytes": 9583,
+      "sha256": "351aa97a7ee27f4e4a9e73cb12abec7b70354094488e5cb95433cfe7d28b8bfe",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/prepare.py",
+      "bytes": 9665,
+      "sha256": "2c89f2244da190517e82211c77e5a3fb2c2d624b0307fc22f9c4a9296e5b4e88",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/preview.py",
+      "bytes": 2654,
+      "sha256": "b50b7fa9d2ee99e891ec2ddf3f71682efeeed57e88bed5fd806a8a5baa0df8db",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/run_scene.py",
+      "bytes": 26666,
+      "sha256": "676c5ea6dd9697a0ede4763c89806e17c1f57f17c1bc34a3381fc1adfceba633",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/scene_plan.py",
+      "bytes": 35793,
+      "sha256": "09f7ebd69691af9c50a877f424d3c9f804fe86526a29d116af978b4e72c09756",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/snapshot_environment.py",
+      "bytes": 24986,
+      "sha256": "c5dbb9fce94978aa632200bdc153c79ad30d8190ce6632e2ca184484e4f3953a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_creator_layout.py",
+      "bytes": 9088,
+      "sha256": "dcc53ee25dede0e89949ebc6c01b1d43eed313429a39ebdc03ff7d487a3e06ee",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_creator_pdf.py",
+      "bytes": 8225,
+      "sha256": "3a13ebf01a279891a6480530ee0d69a0ddd6f091bd9eeade23cbdea5a39c72a5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_input_adapter.py",
+      "bytes": 11328,
+      "sha256": "fcbe7079693087587f8169204a8c9bd6193707723a9416a018bc714941a890c0",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_lego_components.py",
+      "bytes": 11899,
+      "sha256": "cb8efed0d0ae1566c38091247b757854f99e56556bb389f8dd97fc625ecf3c25",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_lego_diagram.py",
+      "bytes": 3576,
+      "sha256": "c68a9f2bd367d3c820ae95c75cb48feecc4e8978cc4fcf5b1ad766b98e498b0d",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_lego_steps.py",
+      "bytes": 19584,
+      "sha256": "76b41fa196b05127132cc7595426fea3674d6d600e4305798c51c86739f387d5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_live_view.py",
+      "bytes": 3570,
+      "sha256": "24ade37c764fa57f1e11c09d4a3a36758133c1b6ef61cff9fa44ac8dad80b420",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_manual_renderer.py",
+      "bytes": 17748,
+      "sha256": "fa0d950ec9d554342186f1ce7a060c58e7fbab073efd143c3eca7447a8d92119",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_policy_scene.py",
+      "bytes": 7024,
+      "sha256": "c485078ca217a520730fb50352e83e9548151cca51e1ba052e61609b436baf5b",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_prepare_launch.py",
+      "bytes": 17495,
+      "sha256": "e3d544bbf226f4e2ed3753d91312c94c3c9e2c4edab04996a738561a3543d5bd",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_preview.py",
+      "bytes": 1878,
+      "sha256": "47fbda55db62611645f464ecf34846926f64564b385f4ceef875cd752bab84c5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_preview_cameras.py",
+      "bytes": 8515,
+      "sha256": "0310c7ea9b94be18fd36894fd05a1f68ccd4e60e6b3719ad2405c139196c7a14",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_scene_plan.py",
+      "bytes": 21640,
+      "sha256": "a38c558f43960bc87a4dfee14cecd033e614f6ebcf21acf26c7417f0e2d3b31b",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_snapshot_environment.py",
+      "bytes": 18949,
+      "sha256": "f6427dea12b1b87de71a7f649555f6c24ae1818bd12ce7cd8f1399de47eab0a5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_usd_scene.py",
+      "bytes": 23419,
+      "sha256": "d59f0fda26060aff41c1da4d4fa601d95cc2a358451ae6f5121e43128eb40ff5",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/test_workbench_runtime.py",
+      "bytes": 2014,
+      "sha256": "ce211ea0d20d73fb0b805ddc9ae3205236c09cf1b53ed09c9766d83d61921e9d",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/usd_scene.py",
+      "bytes": 52272,
+      "sha256": "c3323baf60de2d3d678b2708cb2b9b2eb25481e8c4c9dffab8337b09409659f3",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/with_usd.py",
+      "bytes": 2472,
+      "sha256": "20c9da6345f10ef16204863b03130d3b63d71cdae967ab2d69c1ec37c871d8b2",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/workbench_runtime.py",
+      "bytes": 6965,
+      "sha256": "754b9d22572bc648657a9ad4257b69055bb17e8a856f2255a7767f8243486fbb",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/fixtures/lego-component-cases.json",
+      "bytes": 78988,
+      "sha256": "4fa1a5380740c1a1b63536d955edcb206374aa96bb6b0feb606799573ecb73ec",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/fixtures/lego-step-cases.json",
+      "bytes": 29042,
+      "sha256": "d57239464e11bd4c2ae8f2500f178c8cca9795bb9eb7abf81f2220b1d403c389",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/fixtures/mini-gantry-ground-truth.json",
+      "bytes": 109796,
+      "sha256": "5083f9a370e47637517e781fce499682fb1d5ab4c20a3481ee4bc284c50b0016",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/fixtures/provenance.json",
+      "bytes": 240,
+      "sha256": "2ec2bd45686b82f9373b41d4379f8eb490a1f567485e1dbd57b17615d7949311",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/studio_bridge/bridge.py",
+      "bytes": 40530,
+      "sha256": "2f1abdcc2c9a68f8db610bb0fc05e66b1759c17a61ae2204c9b1da4d4721f867",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/studio_bridge/provenance.json",
+      "bytes": 301,
+      "sha256": "bb7b8d1275e063c24a85cb2d1df343435a5fea16a362ad9dd36f52fae40d7521",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/isaaclab-bridge/studio_bridge/unpack_io.py",
+      "bytes": 9804,
+      "sha256": "ac47a028ed698d56d172a2c9da06385864217b584b9b7788393d55a61365f9cc",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/licenses/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/package.json",
+      "bytes": 163,
+      "sha256": "8604b6cc4524a9a608e13511c9decf94cae7d44c3766218b4a8310d98d51030e",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/app.js",
+      "bytes": 28005,
+      "sha256": "120fd0985a312e991ab1b416f1ae24636ea17dd18ee6235f5868f5ffcc792cfb",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/index.html",
+      "bytes": 21847,
+      "sha256": "4789e3fba7b10a6bee4a3c55e818c02f374ccbc4802a70d4c664767a78fd7715",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/lego-components.js",
+      "bytes": 6146,
+      "sha256": "41acbc9a314ce3c08e254ca3db7813e9fc476c14e1ec393f9f757f84caf3498b",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/lego-steps.js",
+      "bytes": 7524,
+      "sha256": "dc20efc6019f5bac2802652887adb20591157d69234368bcdfd359b79428bcb1",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/manual.css",
+      "bytes": 23169,
+      "sha256": "5bba13068b0180ae40d930eb20aad98af90f86dcdc1f239be3ba20f07faee18b",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/manual.js",
+      "bytes": 49300,
+      "sha256": "f1fb57b91fb3e614717ede3b8cb214281e68c2af0a34896cd591adbdd10923e0",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/model.js",
+      "bytes": 9304,
+      "sha256": "392646dd359f82c3c1a2efb8554b211a4233af181748fd5cd8cdd7903bbbe7c3",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/project-data.js",
+      "bytes": 796,
+      "sha256": "3bbc5a979a583aaa2b0015c6e74643203027a3cbb11f7af254094a5b2d50c158",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/structure.js",
+      "bytes": 1287,
+      "sha256": "ae4ca781300c95d241bfc46cd97a2e51cf8955f8dbf18786f598f9319fafece1",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/styles.css",
+      "bytes": 35760,
+      "sha256": "9a3e8230ba4e29bd131903e23e24e8b3244959d02fbdc75c06984643c06fcb83",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/workflow.css",
+      "bytes": 10307,
+      "sha256": "fda665c1e077e3d1324851081b8c8576ca9b9be42532f3f78e2209690bb2a73a",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/workflow.js",
+      "bytes": 26332,
+      "sha256": "40d6b386d0df6bdf59d65963ab774aefe620132370c78f3fff503e9967c943cd",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/vendor/OrbitControls.js",
+      "bytes": 32134,
+      "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/dist/vendor/three.module.js",
+      "bytes": 1314681,
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/tests/lego-components.test.mjs",
+      "bytes": 2239,
+      "sha256": "6cd7058a82635f02503a930a43ed1c900c6d5fecccfbfecf95940f344131d8de",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/tests/lego-steps.test.mjs",
+      "bytes": 3475,
+      "sha256": "56c3337bebf57791f19989533ba5d684620185cdfaf40768e35b9a8a347e20ca",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/tests/manual.test.mjs",
+      "bytes": 15997,
+      "sha256": "dd560dfbec59c8ca3fe98e7a888aa99e6d1971b13f91a022038fc22c33b92db4",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/tests/model.test.mjs",
+      "bytes": 5348,
+      "sha256": "9710a47b0bf48318616766b6fb114ca64681c271f4c14eb1c00dc4f29df94b6f",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/tests/preview-framing.test.mjs",
+      "bytes": 3989,
+      "sha256": "cdc4ecf740ecd021b3460a4f99a1a14b9c4241b95321b3e9b72f955c06e1f9df",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/tests/project-data.test.mjs",
+      "bytes": 2410,
+      "sha256": "28eac15dc2c49b48b60af12523cc88019ca04a9513f75f6d4a3cee55cc3c5429",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/tests/structure.test.mjs",
+      "bytes": 3394,
+      "sha256": "ab0701b0a972012b057c8cb7bd776f16902fd7554481cb583da74a6267e096ff",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/source/tests/workflow.test.mjs",
+      "bytes": 19857,
+      "sha256": "1c4933e0f0df592f6dc8dbd9d0d00848ee530be8912fe50c0abe18183639f21f",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/README.md",
+      "bytes": 14280,
+      "sha256": "b59c510e2775e24055f3c120d710228aa163192b7dec0102e178a4338a439120",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/bridge.py",
+      "bytes": 40530,
+      "sha256": "2f1abdcc2c9a68f8db610bb0fc05e66b1759c17a61ae2204c9b1da4d4721f867",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/check_geometry.py",
+      "bytes": 17581,
+      "sha256": "e0c42287b02e38b6661f6dc22707599b0f2ff9856668183d474949ef0b01e50d",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/compare.py",
+      "bytes": 8137,
+      "sha256": "26588df4e38623f60e8b099e49140fbee1d4f7070030713b3c0b40362ca08331",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/test_bridge.py",
+      "bytes": 19883,
+      "sha256": "87574dd7f8b2a3980e7e6517f78ad9e46939ee2ba6a0fb2f6d908ec55fed298d",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/test_compare.py",
+      "bytes": 4263,
+      "sha256": "75ad55db5936808c7099ef9e5065a0a9c5eeeea7c3f3b80a9ded787eeb872ebf",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/test_geometry.py",
+      "bytes": 11894,
+      "sha256": "dc634bf22f9526d68f1f49ef02ff8a16df46bc65bd0a005b6280a545b0b4e8ba",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/test_unpack_io.py",
+      "bytes": 6703,
+      "sha256": "432dbbc46831d6d9993e437bb9c58b626f1188313eca9450d95f56011b777ccd",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/unpack_io.py",
+      "bytes": 9804,
+      "sha256": "ac47a028ed698d56d172a2c9da06385864217b584b9b7788393d55a61365f9cc",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/docs/validation-2026-11-03.md",
+      "bytes": 6142,
+      "sha256": "48ca11c9680607fd04b343e174a712f399c8899b51693640eda1dd39b6d3d806",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/docs/workflow.md",
+      "bytes": 17195,
+      "sha256": "862933068d8b5ab6d7b5b18e4f5fe9c8dd3a60639f46fa97514761e594d0491d",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/examples/.gitattributes",
+      "bytes": 147,
+      "sha256": "8b24f83faa49aa5838e3187b3c5721150e921076b28f329eb41ede354da9cba9",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/examples/catalog.json",
+      "bytes": 39469,
+      "sha256": "1f245679a7fe343806ab12c1a3afc92ea34085c5cc400f0b0c54926e77faf24b",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/examples/expected.json",
+      "bytes": 12417,
+      "sha256": "6b31c8df3015b69cc8588ad8dca6adea3177946c004eccfc1b57ec4077a68539",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/examples/mini-gantry.mpd",
+      "bytes": 1516,
+      "sha256": "67bd2b1d19afa19065029835a642a624faa625d91c0fa73561d7072a5c43d27f",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/studio-bridge/examples/studio-saved-model.ldr",
+      "bytes": 1786,
+      "sha256": "f1ea759386f5fb932eda448ff11897c5fdef621eed8dd96acdb269b2cc30ed8f",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/workbench/README.md",
+      "bytes": 12044,
+      "sha256": "895292fd9788752346b0a37e753d064ddf8f1253573b23a44d568a56c79371ab",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/workbench/VALIDATION.md",
+      "bytes": 3302,
+      "sha256": "c6f33d64b0f1da4dd7a30ee6bb576818deb5651c970cb346cbcedbd398546c7e",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/workbench/config.example.json",
+      "bytes": 273,
+      "sha256": "3262fba389d616c0f8be600a72cbc01137354c9af85ffec4710cfbf03f906623",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/workbench/requirements.txt",
+      "bytes": 36,
+      "sha256": "32d9dc3666cdd8cf67ac7a7749c2f33245f5eb910f89436213e6e86f086efaf1",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/workbench/server.py",
+      "bytes": 40968,
+      "sha256": "56dff4e82bc1e25d805122511e4c612c0f5300b376952ec7597c9fa2d1d860ec",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/workbench/test_server.py",
+      "bytes": 16950,
+      "sha256": "e7a10cb3ad19fbe52546796e4e8c84a8a5cad6d38b235a54525651928327d326",
+      "source_grew_during_snapshot": false
+    },
+    {
+      "path": "project/tools/BRICKLAB/workbench/docs/studio-instruction-design.md",
+      "bytes": 10788,
+      "sha256": "1a9886a06888e26b58fca442169a479688d6cbc10cf26594002f5eab03ca172e",
+      "source_grew_during_snapshot": false
+    }
+  ]
+}

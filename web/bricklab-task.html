@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{TITLE}} · 训练任务</title>
+<style>body{max-width:1150px;margin:32px auto;padding:0 24px;font:16px system-ui;color:#23354a;background:#f4f7fa}a{color:#215a9b}button{background:#215a9b;color:white;border:0;border-radius:8px;padding:12px 20px;cursor:pointer}iframe{width:100%;height:68vh;border:1px solid #d6e0ea;background:white;border-radius:12px}nav{display:flex;gap:20px;align-items:center;margin:20px 0}pre{padding:18px;background:#e8eef5;white-space:pre-wrap;word-break:break-all}#frame{max-width:640px;width:100%;border-radius:10px}p{line-height:1.7}</style></head>
+<body><a href="/">← 返回 BRICKLAB 编辑器</a><h1>{{TITLE}}</h1>
+<p>说明书已接入纯视觉训练任务。机械臂通过同一个腕部摄像头观察场景；说明书作为任务要求提供。训练场景统一零件材质，取消颜色身份提示。</p>
+<nav><a href="/workspace/{{JOB_ID}}">进入机械臂搭建</a><a href="/files/{{JOB_ID}}/task/policy/manual.pdf" download>下载 PDF</a><a href="/files/{{JOB_ID}}/task/policy-inputs.zip" download>下载说明书图像</a><button id="inspect">检查相机与散件</button></nav>
+<p id="status" role="status">尚未运行场景检查。没有自动开始训练，也没有宣称机械臂已学会搭建。</p>
+<img id="frame" alt="本次任务的实际腕部相机图像" hidden>
+<iframe src="/files/{{JOB_ID}}/task/policy/manual.pdf" title="本次任务的 BRICKLAB 说明书"></iframe>
+<details><summary>采集训练示范</summary><p>在平台目录的 PowerShell 中运行以下命令。同一布局的重复示范使用相同 Group；需要多个独立布局。策略读取所有说明书页面，不使用已知步骤编号。</p><pre>{{COLLECT_COMMAND}}</pre></details>
+<script>
+const id='{{JOB_ID}}',button=document.querySelector('#inspect'),status=document.querySelector('#status');let timer;
+button.onclick=async()=>{button.disabled=true;status.textContent='正在启动 Isaac 并采集腕部图像，请等待…';try{const r=await fetch('/training/'+id+'/inspect',{method:'POST'}),data=await r.json();if(!r.ok)throw Error(data.error);let attempts=0;timer=setInterval(async()=>{try{const r=await fetch('/training/'+id+'/status',{cache:'no-store'}),data=await r.json();if(data.failed)throw Error('本次相机检查未完成，请查看任务运行日志。');if(data.complete){clearInterval(timer);button.disabled=false;status.textContent='相机检查完成：'+data.report.environment_part_count+' 件散件，采集 '+data.report.captured_frames+' 帧。此结果不代表抓取或装配成功。';const image=document.querySelector('#frame');image.src='/training/'+id+'/frame.png?t='+Date.now();image.hidden=false;}else if(++attempts>120){clearInterval(timer);button.disabled=false;status.textContent='检查尚未完成，请查看任务运行日志。';}}catch(e){clearInterval(timer);button.disabled=false;status.textContent=e.message;}},1000);}catch(e){button.disabled=false;status.textContent=e.message;}};
+</script></body></html>

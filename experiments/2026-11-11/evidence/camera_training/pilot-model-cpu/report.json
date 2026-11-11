@@ -1,0 +1,47 @@
+{
+  "contract": "camera_visual_motor_pretrain_v1",
+  "device": "cpu",
+  "gpu": null,
+  "training_transitions": 160,
+  "validation_transitions": 160,
+  "training_groups": [
+    "d4960dd558e9cf75990c6276ee159900592f5a37c7e65ae7d1a87d412d0049e3:91001"
+  ],
+  "validation_groups": [
+    "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445:92001"
+  ],
+  "dataset_sha256": {
+    "D:\\PiperCameraTraining\\pilot\\train\\wall-91001\\transitions.npz": "cb23647ab99ab44d65a834f17ae78870a3ca6765c1f3a98ff2a09d3f71173f0e",
+    "D:\\PiperCameraTraining\\pilot\\validation\\house-92001\\transitions.npz": "964daea6b7d96d58e590eab3552977880c3bb85a90ad48eb796f92a5b41feec0"
+  },
+  "initial_metrics": {
+    "reconstruction_mse": 0.09949342459440232,
+    "next_image_mse": 0.09946559816598892,
+    "inverse_action_mse": 0.1663761019706726,
+    "persistence_image_mse": 0.000688946939771995,
+    "zero_action_mse": 0.16653725802898406,
+    "mean_action_mse": 0.1668080747127533,
+    "shuffled_action_next_image_mse": 0.0994656041264534,
+    "selection_score": 0.36533512473106383
+  },
+  "best_metrics": {
+    "reconstruction_mse": 0.019835790246725084,
+    "next_image_mse": 0.02040347773581743,
+    "inverse_action_mse": 0.1668927937746048,
+    "persistence_image_mse": 0.000688946939771995,
+    "zero_action_mse": 0.16653725802898406,
+    "mean_action_mse": 0.1668080747127533,
+    "shuffled_action_next_image_mse": 0.02040360849350691,
+    "selection_score": 0.20713206175714732
+  },
+  "epochs_completed": 30,
+  "seed": 42,
+  "physical_success_evaluated": false,
+  "deployable_policy": false,
+  "manual_objective": "image reconstruction only; not instruction/action alignment",
+  "limitations": [
+    "motor babbling is not successful assembly demonstration",
+    "validation reused for model selection; not an independent final test",
+    "predictive metrics do not establish grasping or assembly ability"
+  ]
+}

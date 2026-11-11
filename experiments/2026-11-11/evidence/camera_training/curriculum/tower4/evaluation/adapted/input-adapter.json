@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "kind": "bricklab_input_adaptation",
+  "ok": true,
+  "format": "web_json",
+  "title": "tower4",
+  "input_file": "source.json",
+  "input_sha256": "44d599041fd68676407653891a464b9c98df08179f93e2291e84d08e71e9cec9",
+  "input_size_bytes": 434,
+  "prepare_input": "D:\\PiperCameraTraining\\curriculum\\tower4\\evaluation\\adapted\\model.mpd",
+  "prepare_input_sha256": "495a0347bf2d87d1277f4b4d1e7b37b9586a5e0bb7805e400ea5027378a70068",
+  "manifest_path": "D:\\PiperCameraTraining\\curriculum\\tower4\\evaluation\\adapted\\input-adapter.json",
+  "catalog_sha256": "b9c0dca53edccd9c1ef204c3afcee1f5b24d06049236bb1685c12b2a3ab6b948",
+  "instance_mapping": [
+    {
+      "source_id": "b0",
+      "instance_id": "root/0001",
+      "part_file": "3001.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 8,
+        "z": 9,
+        "y": 0,
+        "rotation": 90
+      },
+      "generated_step": 1
+    },
+    {
+      "source_id": "b1",
+      "instance_id": "root/0002",
+      "part_file": "3001.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 8,
+        "z": 9,
+        "y": 3,
+        "rotation": 90
+      },
+      "generated_step": 2
+    },
+    {
+      "source_id": "b2",
+      "instance_id": "root/0003",
+      "part_file": "3001.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 8,
+        "z": 9,
+        "y": 6,
+        "rotation": 90
+      },
+      "generated_step": 3
+    },
+    {
+      "source_id": "b3",
+      "instance_id": "root/0004",
+      "part_file": "3001.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 8,
+        "z": 9,
+        "y": 9,
+        "rotation": 90
+      },
+      "generated_step": 4
+    }
+  ],
+  "step_provenance": "generated_web_height_sort_not_authored_not_robot_validated",
+  "physical_board_added": false,
+  "coordinates": {
+    "stud_pitch_mm": 8,
+    "plate_height_mm": 3.2,
+    "ldu_to_mm": 0.4,
+    "web_bottom_to_part_top": "part top height = (web.y + part.h) * 3.2 mm",
+    "web_xy_to_ldraw_xz": "centered on the 20 x 20 board; origin at board surface",
+    "web_display_scale": "app.js UNIT=.32 is stylized; metric export uses real LEGO nominal dimensions"
+  },
+  "robot_execution_validated": false,
+  "assembly_sequence_ground_truth": false
+}

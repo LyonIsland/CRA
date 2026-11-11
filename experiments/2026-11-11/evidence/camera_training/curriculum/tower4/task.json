@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "kind": "piper_camera_manual_task",
+  "title": "tower4",
+  "source_sha256": "44d599041fd68676407653891a464b9c98df08179f93e2291e84d08e71e9cec9",
+  "manual_mode": "steps",
+  "policy_inputs": {
+    "manual": "policy/manual.pdf",
+    "page_images": [
+      "policy/pages/page-001.png",
+      "policy/pages/page-002.png",
+      "policy/pages/page-003.png",
+      "policy/pages/page-004.png",
+      "policy/pages/page-005.png",
+      "policy/pages/page-006.png"
+    ],
+    "sha256": {
+      "policy/manual.pdf": "c3a8839c176bc7c6a92b50a112fd23bccbf7dda5caf3f60d8cdf177c4c965def",
+      "policy/pages/page-001.png": "05295db2a0582fc1a8f240746256b28925b00c2e4cb64a4d6ab93b210cc8085f",
+      "policy/pages/page-002.png": "1d6644e25067eb503fb24fc827e47561f96d50fad355b3abf5853ab3d88ade5b",
+      "policy/pages/page-003.png": "690ed74d034ce6a97ecc50faf5ed75d296d65ca60a14dd95017a70d67ee7c3c2",
+      "policy/pages/page-004.png": "85176043a0aa8006c6726f959cb3ba1aca100b7cbf23dff4cf8f528787137172",
+      "policy/pages/page-005.png": "4db2969c599ac7a8b41c814750e043c4b16b68b691050de732dea565a6ed895d",
+      "policy/pages/page-006.png": "ff59d7cd4603fee5e1170f71bf11e9283c7c628e679d952e36b4a13193fba45e"
+    }
+  },
+  "environment": {
+    "spec": "environment/inventory.json",
+    "sha256": "27de9570616551d733c801eeebc2bf5e6114bac5680ea3a88231c3982ff20df7"
+  },
+  "evaluation_only": {
+    "page_map": "evaluation/manual-page-map.json",
+    "model": "evaluation/extracted/ground-truth.json"
+  },
+  "part_count": 4,
+  "robot_execution_validated": false,
+  "limitations": [
+    "all loose parts share material; color-specific assembly is not evaluated",
+    "nominal hollow geometry; no verified clutch/interference or real-world calibration",
+    "manual page encoding is not a trained instruction-reading capability"
+  ]
+}

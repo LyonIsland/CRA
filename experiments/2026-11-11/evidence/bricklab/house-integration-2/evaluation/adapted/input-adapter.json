@@ -1,0 +1,2595 @@
+{
+  "schema_version": "1.0",
+  "kind": "bricklab_input_adaptation",
+  "ok": true,
+  "format": "web_json",
+  "title": "我的第一座小屋",
+  "input_file": "source.json",
+  "input_sha256": "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445",
+  "input_size_bytes": 5805,
+  "prepare_input": "E:\\PiperIsaac\\outputs\\bricklab\\house-integration-2\\evaluation\\adapted\\model.mpd",
+  "prepare_input_sha256": "870480b6adb915edfe5294ec1f2c1c85d9aa16809e7e237cec47605bcc272d8f",
+  "manifest_path": "E:\\PiperIsaac\\outputs\\bricklab\\house-integration-2\\evaluation\\adapted\\input-adapter.json",
+  "catalog_sha256": "b9c0dca53edccd9c1ef204c3afcee1f5b24d06049236bb1685c12b2a3ab6b948",
+  "instance_mapping": [
+    {
+      "source_id": "demo-01",
+      "instance_id": "root/0001",
+      "part_file": "3031.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "plate-4x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 6,
+        "z": 6,
+        "y": 0,
+        "rotation": 0
+      },
+      "generated_step": 1
+    },
+    {
+      "source_id": "demo-03",
+      "instance_id": "root/0002",
+      "part_file": "3031.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "plate-4x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 10,
+        "z": 6,
+        "y": 0,
+        "rotation": 0
+      },
+      "generated_step": 1
+    },
+    {
+      "source_id": "demo-02",
+      "instance_id": "root/0003",
+      "part_file": "3031.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "plate-4x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 6,
+        "z": 10,
+        "y": 0,
+        "rotation": 0
+      },
+      "generated_step": 1
+    },
+    {
+      "source_id": "demo-04",
+      "instance_id": "root/0004",
+      "part_file": "3031.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "plate-4x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 10,
+        "z": 10,
+        "y": 0,
+        "rotation": 0
+      },
+      "generated_step": 1
+    },
+    {
+      "source_id": "demo-37",
+      "instance_id": "root/0005/0001",
+      "part_file": "3062b.dat",
+      "color_code": "0x2df5c45",
+      "web_type": "round-1x1",
+      "web_color": "coral",
+      "web_pose": {
+        "x": 13,
+        "z": 6,
+        "y": 1,
+        "rotation": 0
+      },
+      "generated_step": 2,
+      "assembly_id": "root/0005",
+      "component_id": "component-001",
+      "component_instance_id": "component-instance-001",
+      "component_local_index": 0,
+      "generated_local_step": 1
+    },
+    {
+      "source_id": "demo-38",
+      "instance_id": "root/0005/0002",
+      "part_file": "3062b.dat",
+      "color_code": "0x26b9560",
+      "web_type": "round-1x1",
+      "web_color": "green",
+      "web_pose": {
+        "x": 13,
+        "z": 6,
+        "y": 4,
+        "rotation": 0
+      },
+      "generated_step": 2,
+      "assembly_id": "root/0005",
+      "component_id": "component-001",
+      "component_instance_id": "component-instance-001",
+      "component_local_index": 1,
+      "generated_local_step": 2
+    },
+    {
+      "source_id": "demo-05",
+      "instance_id": "root/0006/0001",
+      "part_file": "3002.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x3",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 6,
+        "z": 7,
+        "y": 1,
+        "rotation": 0
+      },
+      "generated_step": 3,
+      "assembly_id": "root/0006",
+      "component_id": "component-002",
+      "component_instance_id": "component-instance-002",
+      "component_local_index": 0,
+      "generated_local_step": 1
+    },
+    {
+      "source_id": "demo-12",
+      "instance_id": "root/0006/0002",
+      "part_file": "3002.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x3",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 6,
+        "z": 7,
+        "y": 4,
+        "rotation": 0
+      },
+      "generated_step": 3,
+      "assembly_id": "root/0006",
+      "component_id": "component-002",
+      "component_instance_id": "component-instance-002",
+      "component_local_index": 1,
+      "generated_local_step": 2
+    },
+    {
+      "source_id": "demo-07",
+      "instance_id": "root/0007/0001",
+      "part_file": "3002.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x3",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 12,
+        "z": 7,
+        "y": 1,
+        "rotation": 0
+      },
+      "generated_step": 3,
+      "assembly_id": "root/0007",
+      "component_id": "component-002",
+      "component_instance_id": "component-instance-005",
+      "component_local_index": 0,
+      "generated_local_step": 1
+    },
+    {
+      "source_id": "demo-14",
+      "instance_id": "root/0007/0002",
+      "part_file": "3002.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x3",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 12,
+        "z": 7,
+        "y": 4,
+        "rotation": 0
+      },
+      "generated_step": 3,
+      "assembly_id": "root/0007",
+      "component_id": "component-002",
+      "component_instance_id": "component-instance-005",
+      "component_local_index": 1,
+      "generated_local_step": 2
+    },
+    {
+      "source_id": "demo-10",
+      "instance_id": "root/0008/0001",
+      "part_file": "3004.dat",
+      "color_code": "0x2df5c45",
+      "web_type": "brick-1x2",
+      "web_color": "coral",
+      "web_pose": {
+        "x": 8,
+        "z": 7,
+        "y": 1,
+        "rotation": 90
+      },
+      "generated_step": 4,
+      "assembly_id": "root/0008",
+      "component_id": "component-003",
+      "component_instance_id": "component-instance-003",
+      "component_local_index": 0,
+      "generated_local_step": 1
+    },
+    {
+      "source_id": "demo-17",
+      "instance_id": "root/0008/0002",
+      "part_file": "3004.dat",
+      "color_code": "0x2528ac5",
+      "web_type": "brick-1x2",
+      "web_color": "blue",
+      "web_pose": {
+        "x": 8,
+        "z": 7,
+        "y": 4,
+        "rotation": 90
+      },
+      "generated_step": 4,
+      "assembly_id": "root/0008",
+      "component_id": "component-003",
+      "component_instance_id": "component-instance-003",
+      "component_local_index": 1,
+      "generated_local_step": 2
+    },
+    {
+      "source_id": "demo-11",
+      "instance_id": "root/0009/0001",
+      "part_file": "3004.dat",
+      "color_code": "0x2429b94",
+      "web_type": "brick-1x2",
+      "web_color": "teal",
+      "web_pose": {
+        "x": 10,
+        "z": 7,
+        "y": 1,
+        "rotation": 90
+      },
+      "generated_step": 5,
+      "assembly_id": "root/0009",
+      "component_id": "component-004",
+      "component_instance_id": "component-instance-004",
+      "component_local_index": 0,
+      "generated_local_step": 1
+    },
+    {
+      "source_id": "demo-18",
+      "instance_id": "root/0009/0002",
+      "part_file": "3004.dat",
+      "color_code": "0x2429b94",
+      "web_type": "brick-1x2",
+      "web_color": "teal",
+      "web_pose": {
+        "x": 10,
+        "z": 7,
+        "y": 4,
+        "rotation": 90
+      },
+      "generated_step": 5,
+      "assembly_id": "root/0009",
+      "component_id": "component-004",
+      "component_instance_id": "component-instance-004",
+      "component_local_index": 1,
+      "generated_local_step": 2
+    },
+    {
+      "source_id": "demo-06",
+      "instance_id": "root/0010/0001",
+      "part_file": "3002.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x3",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 6,
+        "z": 10,
+        "y": 1,
+        "rotation": 0
+      },
+      "generated_step": 6,
+      "assembly_id": "root/0010",
+      "component_id": "component-005",
+      "component_instance_id": "component-instance-006",
+      "component_local_index": 0,
+      "generated_local_step": 1
+    },
+    {
+      "source_id": "demo-13",
+      "instance_id": "root/0010/0002",
+      "part_file": "3002.dat",
+      "color_code": "0x2528ac5",
+      "web_type": "brick-2x3",
+      "web_color": "blue",
+      "web_pose": {
+        "x": 6,
+        "z": 10,
+        "y": 4,
+        "rotation": 0
+      },
+      "generated_step": 6,
+      "assembly_id": "root/0010",
+      "component_id": "component-005",
+      "component_instance_id": "component-instance-006",
+      "component_local_index": 1,
+      "generated_local_step": 2
+    },
+    {
+      "source_id": "demo-08",
+      "instance_id": "root/0011/0001",
+      "part_file": "3002.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x3",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 12,
+        "z": 10,
+        "y": 1,
+        "rotation": 0
+      },
+      "generated_step": 6,
+      "assembly_id": "root/0011",
+      "component_id": "component-005",
+      "component_instance_id": "component-instance-007",
+      "component_local_index": 0,
+      "generated_local_step": 1
+    },
+    {
+      "source_id": "demo-15",
+      "instance_id": "root/0011/0002",
+      "part_file": "3002.dat",
+      "color_code": "0x2528ac5",
+      "web_type": "brick-2x3",
+      "web_color": "blue",
+      "web_pose": {
+        "x": 12,
+        "z": 10,
+        "y": 4,
+        "rotation": 0
+      },
+      "generated_step": 6,
+      "assembly_id": "root/0011",
+      "component_id": "component-005",
+      "component_instance_id": "component-instance-007",
+      "component_local_index": 1,
+      "generated_local_step": 2
+    },
+    {
+      "source_id": "demo-09",
+      "instance_id": "root/0012/0001",
+      "part_file": "3010.dat",
+      "color_code": "0x2df5c45",
+      "web_type": "brick-1x4",
+      "web_color": "coral",
+      "web_pose": {
+        "x": 8,
+        "z": 12,
+        "y": 1,
+        "rotation": 90
+      },
+      "generated_step": 7,
+      "assembly_id": "root/0012",
+      "component_id": "component-006",
+      "component_instance_id": "component-instance-008",
+      "component_local_index": 0,
+      "generated_local_step": 1
+    },
+    {
+      "source_id": "demo-16",
+      "instance_id": "root/0012/0002",
+      "part_file": "3010.dat",
+      "color_code": "0x2df5c45",
+      "web_type": "brick-1x4",
+      "web_color": "coral",
+      "web_pose": {
+        "x": 8,
+        "z": 12,
+        "y": 4,
+        "rotation": 90
+      },
+      "generated_step": 7,
+      "assembly_id": "root/0012",
+      "component_id": "component-006",
+      "component_instance_id": "component-instance-008",
+      "component_local_index": 1,
+      "generated_local_step": 2
+    },
+    {
+      "source_id": "demo-19",
+      "instance_id": "root/0013",
+      "part_file": "3031.dat",
+      "color_code": "0x23b4350",
+      "web_type": "plate-4x4",
+      "web_color": "dark",
+      "web_pose": {
+        "x": 6,
+        "z": 6,
+        "y": 7,
+        "rotation": 0
+      },
+      "generated_step": 8
+    },
+    {
+      "source_id": "demo-21",
+      "instance_id": "root/0014",
+      "part_file": "3031.dat",
+      "color_code": "0x23b4350",
+      "web_type": "plate-4x4",
+      "web_color": "dark",
+      "web_pose": {
+        "x": 10,
+        "z": 6,
+        "y": 7,
+        "rotation": 0
+      },
+      "generated_step": 8
+    },
+    {
+      "source_id": "demo-20",
+      "instance_id": "root/0015",
+      "part_file": "3031.dat",
+      "color_code": "0x23b4350",
+      "web_type": "plate-4x4",
+      "web_color": "dark",
+      "web_pose": {
+        "x": 6,
+        "z": 10,
+        "y": 7,
+        "rotation": 0
+      },
+      "generated_step": 8
+    },
+    {
+      "source_id": "demo-22",
+      "instance_id": "root/0016",
+      "part_file": "3031.dat",
+      "color_code": "0x23b4350",
+      "web_type": "plate-4x4",
+      "web_color": "dark",
+      "web_pose": {
+        "x": 10,
+        "z": 10,
+        "y": 7,
+        "rotation": 0
+      },
+      "generated_step": 8
+    },
+    {
+      "source_id": "demo-23",
+      "instance_id": "root/0017",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 6,
+        "z": 6,
+        "y": 8,
+        "rotation": 0
+      },
+      "generated_step": 9
+    },
+    {
+      "source_id": "demo-24",
+      "instance_id": "root/0018",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 8,
+        "z": 6,
+        "y": 8,
+        "rotation": 0
+      },
+      "generated_step": 9
+    },
+    {
+      "source_id": "demo-25",
+      "instance_id": "root/0019",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 10,
+        "z": 6,
+        "y": 8,
+        "rotation": 0
+      },
+      "generated_step": 9
+    },
+    {
+      "source_id": "demo-26",
+      "instance_id": "root/0020",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 12,
+        "z": 6,
+        "y": 8,
+        "rotation": 0
+      },
+      "generated_step": 9
+    },
+    {
+      "source_id": "demo-27",
+      "instance_id": "root/0021",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 6,
+        "z": 10,
+        "y": 8,
+        "rotation": 0
+      },
+      "generated_step": 9
+    },
+    {
+      "source_id": "demo-28",
+      "instance_id": "root/0022",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 8,
+        "z": 10,
+        "y": 8,
+        "rotation": 0
+      },
+      "generated_step": 9
+    },
+    {
+      "source_id": "demo-29",
+      "instance_id": "root/0023",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 10,
+        "z": 10,
+        "y": 8,
+        "rotation": 0
+      },
+      "generated_step": 9
+    },
+    {
+      "source_id": "demo-30",
+      "instance_id": "root/0024",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 12,
+        "z": 10,
+        "y": 8,
+        "rotation": 0
+      },
+      "generated_step": 9
+    },
+    {
+      "source_id": "demo-31",
+      "instance_id": "root/0025",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 6,
+        "z": 8,
+        "y": 11,
+        "rotation": 0
+      },
+      "generated_step": 10
+    },
+    {
+      "source_id": "demo-32",
+      "instance_id": "root/0026",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 8,
+        "z": 8,
+        "y": 11,
+        "rotation": 0
+      },
+      "generated_step": 10
+    },
+    {
+      "source_id": "demo-33",
+      "instance_id": "root/0027",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 10,
+        "z": 8,
+        "y": 11,
+        "rotation": 0
+      },
+      "generated_step": 10
+    },
+    {
+      "source_id": "demo-34",
+      "instance_id": "root/0028",
+      "part_file": "3001.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-2x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 12,
+        "z": 8,
+        "y": 11,
+        "rotation": 0
+      },
+      "generated_step": 10
+    },
+    {
+      "source_id": "demo-35",
+      "instance_id": "root/0029",
+      "part_file": "3010.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-1x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 6,
+        "z": 9,
+        "y": 14,
+        "rotation": 90
+      },
+      "generated_step": 11
+    },
+    {
+      "source_id": "demo-36",
+      "instance_id": "root/0030",
+      "part_file": "3010.dat",
+      "color_code": "0x2f4c542",
+      "web_type": "brick-1x4",
+      "web_color": "yellow",
+      "web_pose": {
+        "x": 10,
+        "z": 9,
+        "y": 14,
+        "rotation": 90
+      },
+      "generated_step": 11
+    }
+  ],
+  "step_provenance": "generated_web_unique_vertical_components_not_authored_not_robot_validated",
+  "physical_board_added": false,
+  "coordinates": {
+    "stud_pitch_mm": 8,
+    "plate_height_mm": 3.2,
+    "ldu_to_mm": 0.4,
+    "web_bottom_to_part_top": "part top height = (web.y + part.h) * 3.2 mm",
+    "web_xy_to_ldraw_xz": "centered on the 20 x 20 board; origin at board surface",
+    "web_display_scale": "app.js UNIT=.32 is stylized; metric export uses real LEGO nominal dimensions"
+  },
+  "robot_execution_validated": false,
+  "assembly_sequence_ground_truth": false,
+  "instruction_steps": [
+    {
+      "number": 1,
+      "addedUnitIds": [
+        "part:demo-01",
+        "part:demo-03",
+        "part:demo-02",
+        "part:demo-04"
+      ],
+      "addedIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04"
+      ],
+      "layer": 0,
+      "title": "底层积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": null,
+      "componentQuantity": 0
+    },
+    {
+      "number": 2,
+      "addedUnitIds": [
+        "component-instance-001"
+      ],
+      "addedIds": [
+        "demo-37",
+        "demo-38"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38"
+      ],
+      "layer": 1,
+      "title": "高度 1 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": "component-001",
+      "componentQuantity": 1
+    },
+    {
+      "number": 3,
+      "addedUnitIds": [
+        "component-instance-002",
+        "component-instance-005"
+      ],
+      "addedIds": [
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14"
+      ],
+      "layer": 1,
+      "title": "高度 1 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": "component-002",
+      "componentQuantity": 2
+    },
+    {
+      "number": 4,
+      "addedUnitIds": [
+        "component-instance-003"
+      ],
+      "addedIds": [
+        "demo-10",
+        "demo-17"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14",
+        "demo-10",
+        "demo-17"
+      ],
+      "layer": 1,
+      "title": "高度 1 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": "component-003",
+      "componentQuantity": 1
+    },
+    {
+      "number": 5,
+      "addedUnitIds": [
+        "component-instance-004"
+      ],
+      "addedIds": [
+        "demo-11",
+        "demo-18"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14",
+        "demo-10",
+        "demo-17",
+        "demo-11",
+        "demo-18"
+      ],
+      "layer": 1,
+      "title": "高度 1 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": "component-004",
+      "componentQuantity": 1
+    },
+    {
+      "number": 6,
+      "addedUnitIds": [
+        "component-instance-006",
+        "component-instance-007"
+      ],
+      "addedIds": [
+        "demo-06",
+        "demo-13",
+        "demo-08",
+        "demo-15"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14",
+        "demo-10",
+        "demo-17",
+        "demo-11",
+        "demo-18",
+        "demo-06",
+        "demo-13",
+        "demo-08",
+        "demo-15"
+      ],
+      "layer": 1,
+      "title": "高度 1 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": "component-005",
+      "componentQuantity": 2
+    },
+    {
+      "number": 7,
+      "addedUnitIds": [
+        "component-instance-008"
+      ],
+      "addedIds": [
+        "demo-09",
+        "demo-16"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14",
+        "demo-10",
+        "demo-17",
+        "demo-11",
+        "demo-18",
+        "demo-06",
+        "demo-13",
+        "demo-08",
+        "demo-15",
+        "demo-09",
+        "demo-16"
+      ],
+      "layer": 1,
+      "title": "高度 1 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": "component-006",
+      "componentQuantity": 1
+    },
+    {
+      "number": 8,
+      "addedUnitIds": [
+        "part:demo-19",
+        "part:demo-21",
+        "part:demo-20",
+        "part:demo-22"
+      ],
+      "addedIds": [
+        "demo-19",
+        "demo-21",
+        "demo-20",
+        "demo-22"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14",
+        "demo-10",
+        "demo-17",
+        "demo-11",
+        "demo-18",
+        "demo-06",
+        "demo-13",
+        "demo-08",
+        "demo-15",
+        "demo-09",
+        "demo-16",
+        "demo-19",
+        "demo-21",
+        "demo-20",
+        "demo-22"
+      ],
+      "layer": 7,
+      "title": "高度 7 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": null,
+      "componentQuantity": 0
+    },
+    {
+      "number": 9,
+      "addedUnitIds": [
+        "part:demo-23",
+        "part:demo-24",
+        "part:demo-25",
+        "part:demo-26",
+        "part:demo-27",
+        "part:demo-28",
+        "part:demo-29",
+        "part:demo-30"
+      ],
+      "addedIds": [
+        "demo-23",
+        "demo-24",
+        "demo-25",
+        "demo-26",
+        "demo-27",
+        "demo-28",
+        "demo-29",
+        "demo-30"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14",
+        "demo-10",
+        "demo-17",
+        "demo-11",
+        "demo-18",
+        "demo-06",
+        "demo-13",
+        "demo-08",
+        "demo-15",
+        "demo-09",
+        "demo-16",
+        "demo-19",
+        "demo-21",
+        "demo-20",
+        "demo-22",
+        "demo-23",
+        "demo-24",
+        "demo-25",
+        "demo-26",
+        "demo-27",
+        "demo-28",
+        "demo-29",
+        "demo-30"
+      ],
+      "layer": 8,
+      "title": "高度 8 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": null,
+      "componentQuantity": 0
+    },
+    {
+      "number": 10,
+      "addedUnitIds": [
+        "part:demo-31",
+        "part:demo-32",
+        "part:demo-33",
+        "part:demo-34"
+      ],
+      "addedIds": [
+        "demo-31",
+        "demo-32",
+        "demo-33",
+        "demo-34"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14",
+        "demo-10",
+        "demo-17",
+        "demo-11",
+        "demo-18",
+        "demo-06",
+        "demo-13",
+        "demo-08",
+        "demo-15",
+        "demo-09",
+        "demo-16",
+        "demo-19",
+        "demo-21",
+        "demo-20",
+        "demo-22",
+        "demo-23",
+        "demo-24",
+        "demo-25",
+        "demo-26",
+        "demo-27",
+        "demo-28",
+        "demo-29",
+        "demo-30",
+        "demo-31",
+        "demo-32",
+        "demo-33",
+        "demo-34"
+      ],
+      "layer": 11,
+      "title": "高度 11 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": null,
+      "componentQuantity": 0
+    },
+    {
+      "number": 11,
+      "addedUnitIds": [
+        "part:demo-35",
+        "part:demo-36"
+      ],
+      "addedIds": [
+        "demo-35",
+        "demo-36"
+      ],
+      "visibleIds": [
+        "demo-01",
+        "demo-03",
+        "demo-02",
+        "demo-04",
+        "demo-37",
+        "demo-38",
+        "demo-05",
+        "demo-12",
+        "demo-07",
+        "demo-14",
+        "demo-10",
+        "demo-17",
+        "demo-11",
+        "demo-18",
+        "demo-06",
+        "demo-13",
+        "demo-08",
+        "demo-15",
+        "demo-09",
+        "demo-16",
+        "demo-19",
+        "demo-21",
+        "demo-20",
+        "demo-22",
+        "demo-23",
+        "demo-24",
+        "demo-25",
+        "demo-26",
+        "demo-27",
+        "demo-28",
+        "demo-29",
+        "demo-30",
+        "demo-31",
+        "demo-32",
+        "demo-33",
+        "demo-34",
+        "demo-35",
+        "demo-36"
+      ],
+      "layer": 14,
+      "title": "高度 14 的积木",
+      "reason": "同高度、支撑已就绪的相邻区域",
+      "componentId": null,
+      "componentQuantity": 0
+    }
+  ],
+  "instruction_step_source": "auto",
+  "instance_id_semantics": "LDraw reference ordinal in this adaptation; source_id preserves the saved web brick identity",
+  "editorial_graph": {
+    "schema_version": "1.0",
+    "kind": "bricklab_editorial_graph",
+    "provenance": "generated_web_unique_vertical_components_not_authored_not_robot_validated",
+    "sourcePartIds": [
+      "demo-01",
+      "demo-03",
+      "demo-02",
+      "demo-04",
+      "demo-37",
+      "demo-05",
+      "demo-10",
+      "demo-11",
+      "demo-07",
+      "demo-06",
+      "demo-08",
+      "demo-09",
+      "demo-38",
+      "demo-12",
+      "demo-17",
+      "demo-18",
+      "demo-14",
+      "demo-13",
+      "demo-15",
+      "demo-16",
+      "demo-19",
+      "demo-21",
+      "demo-20",
+      "demo-22",
+      "demo-23",
+      "demo-24",
+      "demo-25",
+      "demo-26",
+      "demo-27",
+      "demo-28",
+      "demo-29",
+      "demo-30",
+      "demo-31",
+      "demo-32",
+      "demo-33",
+      "demo-34",
+      "demo-35",
+      "demo-36"
+    ],
+    "components": [
+      {
+        "id": "component-001",
+        "label": "组件 1",
+        "quantity": 1,
+        "modelFile": "bricklab-component-001.ldr",
+        "profile": [
+          {
+            "type": "round-1x1",
+            "color": "coral",
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "rotation": 0
+          },
+          {
+            "type": "round-1x1",
+            "color": "green",
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "rotation": 0
+          }
+        ],
+        "instanceIds": [
+          "component-instance-001"
+        ],
+        "localSteps": [
+          {
+            "number": 1,
+            "addedIndices": [
+              0
+            ],
+            "visibleIndices": [
+              0
+            ]
+          },
+          {
+            "number": 2,
+            "addedIndices": [
+              1
+            ],
+            "visibleIndices": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "component-002",
+        "label": "组件 2",
+        "quantity": 2,
+        "modelFile": "bricklab-component-002.ldr",
+        "profile": [
+          {
+            "type": "brick-2x3",
+            "color": "cream",
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "rotation": 0
+          },
+          {
+            "type": "brick-2x3",
+            "color": "cream",
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "rotation": 0
+          }
+        ],
+        "instanceIds": [
+          "component-instance-002",
+          "component-instance-005"
+        ],
+        "localSteps": [
+          {
+            "number": 1,
+            "addedIndices": [
+              0
+            ],
+            "visibleIndices": [
+              0
+            ]
+          },
+          {
+            "number": 2,
+            "addedIndices": [
+              1
+            ],
+            "visibleIndices": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "component-003",
+        "label": "组件 3",
+        "quantity": 1,
+        "modelFile": "bricklab-component-003.ldr",
+        "profile": [
+          {
+            "type": "brick-1x2",
+            "color": "coral",
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "rotation": 90
+          },
+          {
+            "type": "brick-1x2",
+            "color": "blue",
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "rotation": 90
+          }
+        ],
+        "instanceIds": [
+          "component-instance-003"
+        ],
+        "localSteps": [
+          {
+            "number": 1,
+            "addedIndices": [
+              0
+            ],
+            "visibleIndices": [
+              0
+            ]
+          },
+          {
+            "number": 2,
+            "addedIndices": [
+              1
+            ],
+            "visibleIndices": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "component-004",
+        "label": "组件 4",
+        "quantity": 1,
+        "modelFile": "bricklab-component-004.ldr",
+        "profile": [
+          {
+            "type": "brick-1x2",
+            "color": "teal",
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "rotation": 90
+          },
+          {
+            "type": "brick-1x2",
+            "color": "teal",
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "rotation": 90
+          }
+        ],
+        "instanceIds": [
+          "component-instance-004"
+        ],
+        "localSteps": [
+          {
+            "number": 1,
+            "addedIndices": [
+              0
+            ],
+            "visibleIndices": [
+              0
+            ]
+          },
+          {
+            "number": 2,
+            "addedIndices": [
+              1
+            ],
+            "visibleIndices": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "component-005",
+        "label": "组件 5",
+        "quantity": 2,
+        "modelFile": "bricklab-component-005.ldr",
+        "profile": [
+          {
+            "type": "brick-2x3",
+            "color": "cream",
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "rotation": 0
+          },
+          {
+            "type": "brick-2x3",
+            "color": "blue",
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "rotation": 0
+          }
+        ],
+        "instanceIds": [
+          "component-instance-006",
+          "component-instance-007"
+        ],
+        "localSteps": [
+          {
+            "number": 1,
+            "addedIndices": [
+              0
+            ],
+            "visibleIndices": [
+              0
+            ]
+          },
+          {
+            "number": 2,
+            "addedIndices": [
+              1
+            ],
+            "visibleIndices": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "component-006",
+        "label": "组件 6",
+        "quantity": 1,
+        "modelFile": "bricklab-component-006.ldr",
+        "profile": [
+          {
+            "type": "brick-1x4",
+            "color": "coral",
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "rotation": 90
+          },
+          {
+            "type": "brick-1x4",
+            "color": "coral",
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "rotation": 90
+          }
+        ],
+        "instanceIds": [
+          "component-instance-008"
+        ],
+        "localSteps": [
+          {
+            "number": 1,
+            "addedIndices": [
+              0
+            ],
+            "visibleIndices": [
+              0
+            ]
+          },
+          {
+            "number": 2,
+            "addedIndices": [
+              1
+            ],
+            "visibleIndices": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "componentInstances": [
+      {
+        "id": "component-instance-001",
+        "componentId": "component-001",
+        "partIds": [
+          "demo-37",
+          "demo-38"
+        ],
+        "origin": {
+          "x": 13,
+          "z": 6,
+          "y": 1
+        },
+        "footprint": {
+          "x": 13,
+          "z": 6,
+          "w": 1,
+          "d": 1
+        },
+        "height": 6,
+        "supportPartIds": [
+          "demo-03"
+        ],
+        "targetPartIds": [
+          "demo-21"
+        ]
+      },
+      {
+        "id": "component-instance-002",
+        "componentId": "component-002",
+        "partIds": [
+          "demo-05",
+          "demo-12"
+        ],
+        "origin": {
+          "x": 6,
+          "z": 7,
+          "y": 1
+        },
+        "footprint": {
+          "x": 6,
+          "z": 7,
+          "w": 2,
+          "d": 3
+        },
+        "height": 6,
+        "supportPartIds": [
+          "demo-01"
+        ],
+        "targetPartIds": [
+          "demo-19"
+        ]
+      },
+      {
+        "id": "component-instance-003",
+        "componentId": "component-003",
+        "partIds": [
+          "demo-10",
+          "demo-17"
+        ],
+        "origin": {
+          "x": 8,
+          "z": 7,
+          "y": 1
+        },
+        "footprint": {
+          "x": 8,
+          "z": 7,
+          "w": 2,
+          "d": 1
+        },
+        "height": 6,
+        "supportPartIds": [
+          "demo-01"
+        ],
+        "targetPartIds": [
+          "demo-19"
+        ]
+      },
+      {
+        "id": "component-instance-004",
+        "componentId": "component-004",
+        "partIds": [
+          "demo-11",
+          "demo-18"
+        ],
+        "origin": {
+          "x": 10,
+          "z": 7,
+          "y": 1
+        },
+        "footprint": {
+          "x": 10,
+          "z": 7,
+          "w": 2,
+          "d": 1
+        },
+        "height": 6,
+        "supportPartIds": [
+          "demo-03"
+        ],
+        "targetPartIds": [
+          "demo-21"
+        ]
+      },
+      {
+        "id": "component-instance-005",
+        "componentId": "component-002",
+        "partIds": [
+          "demo-07",
+          "demo-14"
+        ],
+        "origin": {
+          "x": 12,
+          "z": 7,
+          "y": 1
+        },
+        "footprint": {
+          "x": 12,
+          "z": 7,
+          "w": 2,
+          "d": 3
+        },
+        "height": 6,
+        "supportPartIds": [
+          "demo-03"
+        ],
+        "targetPartIds": [
+          "demo-21"
+        ]
+      },
+      {
+        "id": "component-instance-006",
+        "componentId": "component-005",
+        "partIds": [
+          "demo-06",
+          "demo-13"
+        ],
+        "origin": {
+          "x": 6,
+          "z": 10,
+          "y": 1
+        },
+        "footprint": {
+          "x": 6,
+          "z": 10,
+          "w": 2,
+          "d": 3
+        },
+        "height": 6,
+        "supportPartIds": [
+          "demo-02"
+        ],
+        "targetPartIds": [
+          "demo-20"
+        ]
+      },
+      {
+        "id": "component-instance-007",
+        "componentId": "component-005",
+        "partIds": [
+          "demo-08",
+          "demo-15"
+        ],
+        "origin": {
+          "x": 12,
+          "z": 10,
+          "y": 1
+        },
+        "footprint": {
+          "x": 12,
+          "z": 10,
+          "w": 2,
+          "d": 3
+        },
+        "height": 6,
+        "supportPartIds": [
+          "demo-04"
+        ],
+        "targetPartIds": [
+          "demo-22"
+        ]
+      },
+      {
+        "id": "component-instance-008",
+        "componentId": "component-006",
+        "partIds": [
+          "demo-09",
+          "demo-16"
+        ],
+        "origin": {
+          "x": 8,
+          "z": 12,
+          "y": 1
+        },
+        "footprint": {
+          "x": 8,
+          "z": 12,
+          "w": 4,
+          "d": 1
+        },
+        "height": 6,
+        "supportPartIds": [
+          "demo-02",
+          "demo-04"
+        ],
+        "targetPartIds": [
+          "demo-20",
+          "demo-22"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "id": "part:demo-01",
+        "kind": "part",
+        "partIds": [
+          "demo-01"
+        ],
+        "x": 6,
+        "z": 6,
+        "y": 0,
+        "w": 4,
+        "d": 4,
+        "h": 1,
+        "type": "plate-4x4",
+        "color": "cream",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-03",
+        "kind": "part",
+        "partIds": [
+          "demo-03"
+        ],
+        "x": 10,
+        "z": 6,
+        "y": 0,
+        "w": 4,
+        "d": 4,
+        "h": 1,
+        "type": "plate-4x4",
+        "color": "cream",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-02",
+        "kind": "part",
+        "partIds": [
+          "demo-02"
+        ],
+        "x": 6,
+        "z": 10,
+        "y": 0,
+        "w": 4,
+        "d": 4,
+        "h": 1,
+        "type": "plate-4x4",
+        "color": "cream",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-04",
+        "kind": "part",
+        "partIds": [
+          "demo-04"
+        ],
+        "x": 10,
+        "z": 10,
+        "y": 0,
+        "w": 4,
+        "d": 4,
+        "h": 1,
+        "type": "plate-4x4",
+        "color": "cream",
+        "rotation": 0
+      },
+      {
+        "id": "component-instance-001",
+        "kind": "component",
+        "partIds": [
+          "demo-37",
+          "demo-38"
+        ],
+        "x": 13,
+        "z": 6,
+        "y": 1,
+        "w": 1,
+        "d": 1,
+        "h": 6,
+        "type": "component-001",
+        "color": "component",
+        "rotation": 0
+      },
+      {
+        "id": "component-instance-002",
+        "kind": "component",
+        "partIds": [
+          "demo-05",
+          "demo-12"
+        ],
+        "x": 6,
+        "z": 7,
+        "y": 1,
+        "w": 2,
+        "d": 3,
+        "h": 6,
+        "type": "component-002",
+        "color": "component",
+        "rotation": 0
+      },
+      {
+        "id": "component-instance-003",
+        "kind": "component",
+        "partIds": [
+          "demo-10",
+          "demo-17"
+        ],
+        "x": 8,
+        "z": 7,
+        "y": 1,
+        "w": 2,
+        "d": 1,
+        "h": 6,
+        "type": "component-003",
+        "color": "component",
+        "rotation": 0
+      },
+      {
+        "id": "component-instance-004",
+        "kind": "component",
+        "partIds": [
+          "demo-11",
+          "demo-18"
+        ],
+        "x": 10,
+        "z": 7,
+        "y": 1,
+        "w": 2,
+        "d": 1,
+        "h": 6,
+        "type": "component-004",
+        "color": "component",
+        "rotation": 0
+      },
+      {
+        "id": "component-instance-005",
+        "kind": "component",
+        "partIds": [
+          "demo-07",
+          "demo-14"
+        ],
+        "x": 12,
+        "z": 7,
+        "y": 1,
+        "w": 2,
+        "d": 3,
+        "h": 6,
+        "type": "component-002",
+        "color": "component",
+        "rotation": 0
+      },
+      {
+        "id": "component-instance-006",
+        "kind": "component",
+        "partIds": [
+          "demo-06",
+          "demo-13"
+        ],
+        "x": 6,
+        "z": 10,
+        "y": 1,
+        "w": 2,
+        "d": 3,
+        "h": 6,
+        "type": "component-005",
+        "color": "component",
+        "rotation": 0
+      },
+      {
+        "id": "component-instance-007",
+        "kind": "component",
+        "partIds": [
+          "demo-08",
+          "demo-15"
+        ],
+        "x": 12,
+        "z": 10,
+        "y": 1,
+        "w": 2,
+        "d": 3,
+        "h": 6,
+        "type": "component-005",
+        "color": "component",
+        "rotation": 0
+      },
+      {
+        "id": "component-instance-008",
+        "kind": "component",
+        "partIds": [
+          "demo-09",
+          "demo-16"
+        ],
+        "x": 8,
+        "z": 12,
+        "y": 1,
+        "w": 4,
+        "d": 1,
+        "h": 6,
+        "type": "component-006",
+        "color": "component",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-19",
+        "kind": "part",
+        "partIds": [
+          "demo-19"
+        ],
+        "x": 6,
+        "z": 6,
+        "y": 7,
+        "w": 4,
+        "d": 4,
+        "h": 1,
+        "type": "plate-4x4",
+        "color": "dark",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-21",
+        "kind": "part",
+        "partIds": [
+          "demo-21"
+        ],
+        "x": 10,
+        "z": 6,
+        "y": 7,
+        "w": 4,
+        "d": 4,
+        "h": 1,
+        "type": "plate-4x4",
+        "color": "dark",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-20",
+        "kind": "part",
+        "partIds": [
+          "demo-20"
+        ],
+        "x": 6,
+        "z": 10,
+        "y": 7,
+        "w": 4,
+        "d": 4,
+        "h": 1,
+        "type": "plate-4x4",
+        "color": "dark",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-22",
+        "kind": "part",
+        "partIds": [
+          "demo-22"
+        ],
+        "x": 10,
+        "z": 10,
+        "y": 7,
+        "w": 4,
+        "d": 4,
+        "h": 1,
+        "type": "plate-4x4",
+        "color": "dark",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-23",
+        "kind": "part",
+        "partIds": [
+          "demo-23"
+        ],
+        "x": 6,
+        "z": 6,
+        "y": 8,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-24",
+        "kind": "part",
+        "partIds": [
+          "demo-24"
+        ],
+        "x": 8,
+        "z": 6,
+        "y": 8,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-25",
+        "kind": "part",
+        "partIds": [
+          "demo-25"
+        ],
+        "x": 10,
+        "z": 6,
+        "y": 8,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-26",
+        "kind": "part",
+        "partIds": [
+          "demo-26"
+        ],
+        "x": 12,
+        "z": 6,
+        "y": 8,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-27",
+        "kind": "part",
+        "partIds": [
+          "demo-27"
+        ],
+        "x": 6,
+        "z": 10,
+        "y": 8,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-28",
+        "kind": "part",
+        "partIds": [
+          "demo-28"
+        ],
+        "x": 8,
+        "z": 10,
+        "y": 8,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-29",
+        "kind": "part",
+        "partIds": [
+          "demo-29"
+        ],
+        "x": 10,
+        "z": 10,
+        "y": 8,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-30",
+        "kind": "part",
+        "partIds": [
+          "demo-30"
+        ],
+        "x": 12,
+        "z": 10,
+        "y": 8,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-31",
+        "kind": "part",
+        "partIds": [
+          "demo-31"
+        ],
+        "x": 6,
+        "z": 8,
+        "y": 11,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-32",
+        "kind": "part",
+        "partIds": [
+          "demo-32"
+        ],
+        "x": 8,
+        "z": 8,
+        "y": 11,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-33",
+        "kind": "part",
+        "partIds": [
+          "demo-33"
+        ],
+        "x": 10,
+        "z": 8,
+        "y": 11,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-34",
+        "kind": "part",
+        "partIds": [
+          "demo-34"
+        ],
+        "x": 12,
+        "z": 8,
+        "y": 11,
+        "w": 2,
+        "d": 4,
+        "h": 3,
+        "type": "brick-2x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-35",
+        "kind": "part",
+        "partIds": [
+          "demo-35"
+        ],
+        "x": 6,
+        "z": 9,
+        "y": 14,
+        "w": 4,
+        "d": 1,
+        "h": 3,
+        "type": "brick-1x4",
+        "color": "yellow",
+        "rotation": 0
+      },
+      {
+        "id": "part:demo-36",
+        "kind": "part",
+        "partIds": [
+          "demo-36"
+        ],
+        "x": 10,
+        "z": 9,
+        "y": 14,
+        "w": 4,
+        "d": 1,
+        "h": 3,
+        "type": "brick-1x4",
+        "color": "yellow",
+        "rotation": 0
+      }
+    ],
+    "mainSteps": [
+      {
+        "number": 1,
+        "addedUnitIds": [
+          "part:demo-01",
+          "part:demo-03",
+          "part:demo-02",
+          "part:demo-04"
+        ],
+        "addedIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04"
+        ],
+        "layer": 0,
+        "title": "底层积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": null,
+        "componentQuantity": 0
+      },
+      {
+        "number": 2,
+        "addedUnitIds": [
+          "component-instance-001"
+        ],
+        "addedIds": [
+          "demo-37",
+          "demo-38"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38"
+        ],
+        "layer": 1,
+        "title": "高度 1 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": "component-001",
+        "componentQuantity": 1
+      },
+      {
+        "number": 3,
+        "addedUnitIds": [
+          "component-instance-002",
+          "component-instance-005"
+        ],
+        "addedIds": [
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14"
+        ],
+        "layer": 1,
+        "title": "高度 1 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": "component-002",
+        "componentQuantity": 2
+      },
+      {
+        "number": 4,
+        "addedUnitIds": [
+          "component-instance-003"
+        ],
+        "addedIds": [
+          "demo-10",
+          "demo-17"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14",
+          "demo-10",
+          "demo-17"
+        ],
+        "layer": 1,
+        "title": "高度 1 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": "component-003",
+        "componentQuantity": 1
+      },
+      {
+        "number": 5,
+        "addedUnitIds": [
+          "component-instance-004"
+        ],
+        "addedIds": [
+          "demo-11",
+          "demo-18"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14",
+          "demo-10",
+          "demo-17",
+          "demo-11",
+          "demo-18"
+        ],
+        "layer": 1,
+        "title": "高度 1 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": "component-004",
+        "componentQuantity": 1
+      },
+      {
+        "number": 6,
+        "addedUnitIds": [
+          "component-instance-006",
+          "component-instance-007"
+        ],
+        "addedIds": [
+          "demo-06",
+          "demo-13",
+          "demo-08",
+          "demo-15"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14",
+          "demo-10",
+          "demo-17",
+          "demo-11",
+          "demo-18",
+          "demo-06",
+          "demo-13",
+          "demo-08",
+          "demo-15"
+        ],
+        "layer": 1,
+        "title": "高度 1 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": "component-005",
+        "componentQuantity": 2
+      },
+      {
+        "number": 7,
+        "addedUnitIds": [
+          "component-instance-008"
+        ],
+        "addedIds": [
+          "demo-09",
+          "demo-16"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14",
+          "demo-10",
+          "demo-17",
+          "demo-11",
+          "demo-18",
+          "demo-06",
+          "demo-13",
+          "demo-08",
+          "demo-15",
+          "demo-09",
+          "demo-16"
+        ],
+        "layer": 1,
+        "title": "高度 1 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": "component-006",
+        "componentQuantity": 1
+      },
+      {
+        "number": 8,
+        "addedUnitIds": [
+          "part:demo-19",
+          "part:demo-21",
+          "part:demo-20",
+          "part:demo-22"
+        ],
+        "addedIds": [
+          "demo-19",
+          "demo-21",
+          "demo-20",
+          "demo-22"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14",
+          "demo-10",
+          "demo-17",
+          "demo-11",
+          "demo-18",
+          "demo-06",
+          "demo-13",
+          "demo-08",
+          "demo-15",
+          "demo-09",
+          "demo-16",
+          "demo-19",
+          "demo-21",
+          "demo-20",
+          "demo-22"
+        ],
+        "layer": 7,
+        "title": "高度 7 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": null,
+        "componentQuantity": 0
+      },
+      {
+        "number": 9,
+        "addedUnitIds": [
+          "part:demo-23",
+          "part:demo-24",
+          "part:demo-25",
+          "part:demo-26",
+          "part:demo-27",
+          "part:demo-28",
+          "part:demo-29",
+          "part:demo-30"
+        ],
+        "addedIds": [
+          "demo-23",
+          "demo-24",
+          "demo-25",
+          "demo-26",
+          "demo-27",
+          "demo-28",
+          "demo-29",
+          "demo-30"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14",
+          "demo-10",
+          "demo-17",
+          "demo-11",
+          "demo-18",
+          "demo-06",
+          "demo-13",
+          "demo-08",
+          "demo-15",
+          "demo-09",
+          "demo-16",
+          "demo-19",
+          "demo-21",
+          "demo-20",
+          "demo-22",
+          "demo-23",
+          "demo-24",
+          "demo-25",
+          "demo-26",
+          "demo-27",
+          "demo-28",
+          "demo-29",
+          "demo-30"
+        ],
+        "layer": 8,
+        "title": "高度 8 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": null,
+        "componentQuantity": 0
+      },
+      {
+        "number": 10,
+        "addedUnitIds": [
+          "part:demo-31",
+          "part:demo-32",
+          "part:demo-33",
+          "part:demo-34"
+        ],
+        "addedIds": [
+          "demo-31",
+          "demo-32",
+          "demo-33",
+          "demo-34"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14",
+          "demo-10",
+          "demo-17",
+          "demo-11",
+          "demo-18",
+          "demo-06",
+          "demo-13",
+          "demo-08",
+          "demo-15",
+          "demo-09",
+          "demo-16",
+          "demo-19",
+          "demo-21",
+          "demo-20",
+          "demo-22",
+          "demo-23",
+          "demo-24",
+          "demo-25",
+          "demo-26",
+          "demo-27",
+          "demo-28",
+          "demo-29",
+          "demo-30",
+          "demo-31",
+          "demo-32",
+          "demo-33",
+          "demo-34"
+        ],
+        "layer": 11,
+        "title": "高度 11 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": null,
+        "componentQuantity": 0
+      },
+      {
+        "number": 11,
+        "addedUnitIds": [
+          "part:demo-35",
+          "part:demo-36"
+        ],
+        "addedIds": [
+          "demo-35",
+          "demo-36"
+        ],
+        "visibleIds": [
+          "demo-01",
+          "demo-03",
+          "demo-02",
+          "demo-04",
+          "demo-37",
+          "demo-38",
+          "demo-05",
+          "demo-12",
+          "demo-07",
+          "demo-14",
+          "demo-10",
+          "demo-17",
+          "demo-11",
+          "demo-18",
+          "demo-06",
+          "demo-13",
+          "demo-08",
+          "demo-15",
+          "demo-09",
+          "demo-16",
+          "demo-19",
+          "demo-21",
+          "demo-20",
+          "demo-22",
+          "demo-23",
+          "demo-24",
+          "demo-25",
+          "demo-26",
+          "demo-27",
+          "demo-28",
+          "demo-29",
+          "demo-30",
+          "demo-31",
+          "demo-32",
+          "demo-33",
+          "demo-34",
+          "demo-35",
+          "demo-36"
+        ],
+        "layer": 14,
+        "title": "高度 14 的积木",
+        "reason": "同高度、支撑已就绪的相邻区域",
+        "componentId": null,
+        "componentQuantity": 0
+      }
+    ]
+  }
+}

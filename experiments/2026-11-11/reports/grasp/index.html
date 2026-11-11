@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>单相机基础抓取 · 实验报告</title><style>
+body{font:16px/1.7 system-ui,sans-serif;margin:0;background:#edf2f5;color:#192c3c}main{max-width:1150px;margin:auto;padding:36px 24px}
+h1{font-size:32px}h2{font-size:21px}section,.cards>div{background:white;border:1px solid #d9e3e9;border-radius:12px;padding:22px;margin:18px 0}
+.cards{display:flex;gap:18px}.cards>div{flex:1}strong.metric{display:block;font-size:36px;color:#086f72}p{max-width:950px}
+video{width:100%;max-width:800px;background:#101b25}img{max-width:100%}table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:10px;border-bottom:1px solid #d9e3e9}a{color:#086f72}code{overflow-wrap:anywhere}.scroll{overflow:auto}
+</style><main><h1>单相机基础抓取</h1><p>目标：观察 → 对准 → 接近 → 夹取 → 抬升 → 保持。单腕部 RGB 与自身指令历史驱动；这是物理仿真基线，不是实机或完整积木搭建验收。</p>
+
+<div class="cards"><div>已完成独立测试中的成功数<strong class="metric" id="eval-count">3 / 5</strong><span id="eval-rate">成功率 60%；计划 5 个场景</span></div>
+<div>历史开发成功<strong class="metric">70.1 mm</strong>抬升；连续双指接触 3.66 s</div></div>
+<section><h2>独立测试成功回放</h2><video controls preload="metadata" poster="evidence/52001/final.png" src="evidence/52001/wrist-grasp.mp4"></video><p>视频按仿真时间播放；每 10 个控制步保存一帧。下图来自独立评价器，数据没有反馈给控制器。</p><img src="physical-evidence.png" alt="物理抬升和双指接触曲线"></section>
+<section><h2>逐场景结果快照</h2><p>固定策略版本，随机位置、偏航与灰度材质，单块直立 2×4 积木。成功需同一积木抬升至少 30 mm，并连续保持双指接触至少 2 秒。没有焊接、吸附或运行中修改物体位姿。</p>
+<div class="scroll"><table><thead><tr><th>种子</th><th>结果</th><th>最大抬升</th><th>连续保持</th><th>终止原因</th><th>证据</th></tr></thead><tbody><tr><td>52001</td><td>成功</td><td>71.0 mm</td><td>3.42 s</td><td>控制流程完成</td><td><a href="evidence/52001/result.json">记录</a> · <a href="evidence/52001/final.png">末帧</a></td></tr><tr><td>52002</td><td>失败</td><td>0.0 mm</td><td>0.00 s</td><td>未检出可见的完整积木</td><td><a href="evidence/52002/result.json">记录</a> · <a href="evidence/52002/final.png">末帧</a></td></tr><tr><td>52003</td><td>成功</td><td>68.3 mm</td><td>3.34 s</td><td>控制流程完成</td><td><a href="evidence/52003/result.json">记录</a> · <a href="evidence/52003/final.png">末帧</a></td></tr><tr><td>52004</td><td>成功</td><td>88.2 mm</td><td>4.00 s</td><td>控制流程完成</td><td><a href="evidence/52004/result.json">记录</a> · <a href="evidence/52004/final.png">末帧</a></td></tr><tr><td>52005</td><td>失败</td><td>0.0 mm</td><td>0.00 s</td><td>未检出可见的完整积木</td><td><a href="evidence/52005/result.json">记录</a> · <a href="evidence/52005/final.png">末帧</a></td></tr></tbody></table></div>
+<p>批次已完成；开发调参种子不计入上述成功率。样本较少，结果不能外推为任意摆放、遮挡、堆叠或实机成功率。</p><p>策略 SHA-256：<code>53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb</code></p><a href="evidence/frozen-eval-v1/summary.json">批次原始记录</a></section>
+<section><h2>负对照与能力边界</h2><p>同一策略、场景 52001 的持续张爪负对照：流程未完成，不能证明夹爪负对照有效；最大抬升 0.0 mm，连续双指接触 0.00 s。</p><p>补充机械对照：回放成功场景 52001 的相同关节指令，只改变夹爪开合。此回放不是在线视觉策略，不计入上方成功率。</p>
+<table><tr><th>回放条件</th><th>抓取验收</th><th>最大抬升</th><th>连续双指接触</th></tr>
+<tr><td>原始指令</td><td>通过</td><td>71.0 mm</td><td>3.42 s</td></tr>
+<tr><td>夹取后持续张爪</td><td>失败</td><td>0.0 mm</td><td>0.00 s</td></tr></table><p>支持闭爪动作产生真实物理夹持。</p><p>当前使用图像轮廓、光流和主动试探估计图像雅可比，含固定夹爪外观与矩形积木假设。未证明任意物体抓取、自动放置、LEGO 插接或完整说明书搭建；预训练预测误差不作为物理成功率。</p></section>
+<section><h2>参考方法</h2><p><a href="https://ieeexplore.ieee.org/abstract/document/4015997">Chaumette &amp; Hutchinson (2006), Visual Servo Control</a> · <a href="https://www.cs.columbia.edu/robotics/projects/visual_control/bill-peginhole.html">Yoshimi &amp; Allen (1994), Active Uncalibrated Visual Servoing</a> · <a href="https://github.com/lagadic/visp">ViSP</a>。本项目自行实现 OpenCV/NumPy 版本，未声称复现论文全部实验。GG-CNN 标准输入为深度图，因此未直接用于本 RGB-only 基线。</p></section></main>
+</html>

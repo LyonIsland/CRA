@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "boardSize": 20,
+  "bricks": [
+    {
+      "id": "demo-01",
+      "type": "plate-4x4",
+      "color": "cream",
+      "x": 6,
+      "z": 6,
+      "y": 0,
+      "rotation": 0
+    },
+    {
+      "id": "demo-02",
+      "type": "plate-4x4",
+      "color": "cream",
+      "x": 6,
+      "z": 10,
+      "y": 0,
+      "rotation": 0
+    },
+    {
+      "id": "demo-03",
+      "type": "plate-4x4",
+      "color": "cream",
+      "x": 10,
+      "z": 6,
+      "y": 0,
+      "rotation": 0
+    },
+    {
+      "id": "demo-04",
+      "type": "plate-4x4",
+      "color": "cream",
+      "x": 10,
+      "z": 10,
+      "y": 0,
+      "rotation": 0
+    },
+    {
+      "id": "demo-05",
+      "type": "brick-2x3",
+      "color": "cream",
+      "x": 6,
+      "z": 7,
+      "y": 1,
+      "rotation": 0
+    },
+    {
+      "id": "demo-06",
+      "type": "brick-2x3",
+      "color": "cream",
+      "x": 6,
+      "z": 10,
+      "y": 1,
+      "rotation": 0
+    },
+    {
+      "id": "demo-07",
+      "type": "brick-2x3",
+      "color": "cream",
+      "x": 12,
+      "z": 7,
+      "y": 1,
+      "rotation": 0
+    },
+    {
+      "id": "demo-08",
+      "type": "brick-2x3",
+      "color": "cream",
+      "x": 12,
+      "z": 10,
+      "y": 1,
+      "rotation": 0
+    },
+    {
+      "id": "demo-09",
+      "type": "brick-1x4",
+      "color": "coral",
+      "x": 8,
+      "z": 12,
+      "y": 1,
+      "rotation": 90
+    },
+    {
+      "id": "demo-10",
+      "type": "brick-1x2",
+      "color": "coral",
+      "x": 8,
+      "z": 7,
+      "y": 1,
+      "rotation": 90
+    },
+    {
+      "id": "demo-11",
+      "type": "brick-1x2",
+      "color": "teal",
+      "x": 10,
+      "z": 7,
+      "y": 1,
+      "rotation": 90
+    },
+    {
+      "id": "demo-12",
+      "type": "brick-2x3",
+      "color": "cream",
+      "x": 6,
+      "z": 7,
+      "y": 4,
+      "rotation": 0
+    },
+    {
+      "id": "demo-13",
+      "type": "brick-2x3",
+      "color": "blue",
+      "x": 6,
+      "z": 10,
+      "y": 4,
+      "rotation": 0
+    },
+    {
+      "id": "demo-14",
+      "type": "brick-2x3",
+      "color": "cream",
+      "x": 12,
+      "z": 7,
+      "y": 4,
+      "rotation": 0
+    },
+    {
+      "id": "demo-15",
+      "type": "brick-2x3",
+      "color": "blue",
+      "x": 12,
+      "z": 10,
+      "y": 4,
+      "rotation": 0
+    },
+    {
+      "id": "demo-16",
+      "type": "brick-1x4",
+      "color": "coral",
+      "x": 8,
+      "z": 12,
+      "y": 4,
+      "rotation": 90
+    },
+    {
+      "id": "demo-17",
+      "type": "brick-1x2",
+      "color": "blue",
+      "x": 8,
+      "z": 7,
+      "y": 4,
+      "rotation": 90
+    },
+    {
+      "id": "demo-18",
+      "type": "brick-1x2",
+      "color": "teal",
+      "x": 10,
+      "z": 7,
+      "y": 4,
+      "rotation": 90
+    },
+    {
+      "id": "demo-19",
+      "type": "plate-4x4",
+      "color": "dark",
+      "x": 6,
+      "z": 6,
+      "y": 7,
+      "rotation": 0
+    },
+    {
+      "id": "demo-20",
+      "type": "plate-4x4",
+      "color": "dark",
+      "x": 6,
+      "z": 10,
+      "y": 7,
+      "rotation": 0
+    },
+    {
+      "id": "demo-21",
+      "type": "plate-4x4",
+      "color": "dark",
+      "x": 10,
+      "z": 6,
+      "y": 7,
+      "rotation": 0
+    },
+    {
+      "id": "demo-22",
+      "type": "plate-4x4",
+      "color": "dark",
+      "x": 10,
+      "z": 10,
+      "y": 7,
+      "rotation": 0
+    },
+    {
+      "id": "demo-23",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 6,
+      "z": 6,
+      "y": 8,
+      "rotation": 0
+    },
+    {
+      "id": "demo-24",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 8,
+      "z": 6,
+      "y": 8,
+      "rotation": 0
+    },
+    {
+      "id": "demo-25",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 10,
+      "z": 6,
+      "y": 8,
+      "rotation": 0
+    },
+    {
+      "id": "demo-26",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 12,
+      "z": 6,
+      "y": 8,
+      "rotation": 0
+    },
+    {
+      "id": "demo-27",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 6,
+      "z": 10,
+      "y": 8,
+      "rotation": 0
+    },
+    {
+      "id": "demo-28",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 8,
+      "z": 10,
+      "y": 8,
+      "rotation": 0
+    },
+    {
+      "id": "demo-29",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 10,
+      "z": 10,
+      "y": 8,
+      "rotation": 0
+    },
+    {
+      "id": "demo-30",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 12,
+      "z": 10,
+      "y": 8,
+      "rotation": 0
+    },
+    {
+      "id": "demo-31",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 6,
+      "z": 8,
+      "y": 11,
+      "rotation": 0
+    },
+    {
+      "id": "demo-32",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 8,
+      "z": 8,
+      "y": 11,
+      "rotation": 0
+    },
+    {
+      "id": "demo-33",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 10,
+      "z": 8,
+      "y": 11,
+      "rotation": 0
+    },
+    {
+      "id": "demo-34",
+      "type": "brick-2x4",
+      "color": "yellow",
+      "x": 12,
+      "z": 8,
+      "y": 11,
+      "rotation": 0
+    },
+    {
+      "id": "demo-35",
+      "type": "brick-1x4",
+      "color": "yellow",
+      "x": 6,
+      "z": 9,
+      "y": 14,
+      "rotation": 90
+    },
+    {
+      "id": "demo-36",
+      "type": "brick-1x4",
+      "color": "yellow",
+      "x": 10,
+      "z": 9,
+      "y": 14,
+      "rotation": 90
+    },
+    {
+      "id": "demo-37",
+      "type": "round-1x1",
+      "color": "coral",
+      "x": 13,
+      "z": 6,
+      "y": 1,
+      "rotation": 0
+    },
+    {
+      "id": "demo-38",
+      "type": "round-1x1",
+      "color": "green",
+      "x": 13,
+      "z": 6,
+      "y": 4,
+      "rotation": 0
+    }
+  ],
+  "title": "我的第一座小屋"
+}

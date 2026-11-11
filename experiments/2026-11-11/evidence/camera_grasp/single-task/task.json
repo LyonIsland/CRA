@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "kind": "piper_camera_manual_task",
+  "title": "Single brick grasp",
+  "source_sha256": "eb8b37aa0a1a5253d61bb7e988c882f9e7479ae7b3821cd1fa17db18b625f2d1",
+  "manual_mode": "steps",
+  "policy_inputs": {
+    "manual": "policy/manual.pdf",
+    "page_images": [
+      "policy/pages/page-001.png",
+      "policy/pages/page-002.png",
+      "policy/pages/page-003.png"
+    ],
+    "sha256": {
+      "policy/manual.pdf": "58834c7cf66cfb02d5afbaa3ed668ef5fc05df31a2cc92d5031db3acfcb5bd70",
+      "policy/pages/page-001.png": "9f6349ab45fa747c40ca53429bb13da16806e6ceb199b47d75833d14b791148b",
+      "policy/pages/page-002.png": "fa6885a072d48ce00b1260f3fce43a8c47636be9bf31af1542e58e75d8adde3e",
+      "policy/pages/page-003.png": "25a9dce4ff3581b66edbaca45bff829684b148c8ff017950bdeff5dd6d7d317a"
+    }
+  },
+  "environment": {
+    "spec": "environment/inventory.json",
+    "sha256": "8928d38eb8959fb25992c1e02803df95fe4a03dc7037da29186d5e0e428b8779"
+  },
+  "evaluation_only": {
+    "page_map": "evaluation/manual-page-map.json",
+    "model": "evaluation/extracted/ground-truth.json"
+  },
+  "part_count": 1,
+  "robot_execution_validated": false,
+  "limitations": [
+    "all loose parts share material; color-specific assembly is not evaluated",
+    "nominal hollow geometry; no verified clutch/interference or real-world calibration",
+    "manual page encoding is not a trained instruction-reading capability"
+  ]
+}

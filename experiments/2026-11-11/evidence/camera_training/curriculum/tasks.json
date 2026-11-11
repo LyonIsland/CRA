@@ -1,0 +1,11 @@
+{
+  "train": [
+    "E:\\PiperIsaac\\outputs\\bricklab\\camera-wall\\task.json",
+    "D:\\PiperCameraTraining\\curriculum\\tower4\\task.json",
+    "D:\\PiperCameraTraining\\curriculum\\pyramid12\\task.json"
+  ],
+  "validation": [
+    "E:\\PiperIsaac\\outputs\\bricklab\\camera-wall\\task.json",
+    "E:\\PiperIsaac\\outputs\\bricklab\\house-integration-2\\task.json"
+  ]
+}

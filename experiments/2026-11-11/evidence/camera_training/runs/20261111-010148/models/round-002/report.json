@@ -1,0 +1,80 @@
+{
+  "contract": "camera_visual_motor_pretrain_v1",
+  "model_version": "image_warp_v3",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "training_transitions": 5120,
+  "validation_transitions": 2048,
+  "training_groups": [
+    "088282cd56099c03d69e4cefe9e047290bedfe0ba30e32a1aa4232fe39dae75b:110002",
+    "088282cd56099c03d69e4cefe9e047290bedfe0ba30e32a1aa4232fe39dae75b:110005",
+    "088282cd56099c03d69e4cefe9e047290bedfe0ba30e32a1aa4232fe39dae75b:110008",
+    "44d599041fd68676407653891a464b9c98df08179f93e2291e84d08e71e9cec9:110001",
+    "44d599041fd68676407653891a464b9c98df08179f93e2291e84d08e71e9cec9:110004",
+    "44d599041fd68676407653891a464b9c98df08179f93e2291e84d08e71e9cec9:110007",
+    "d4960dd558e9cf75990c6276ee159900592f5a37c7e65ae7d1a87d412d0049e3:110000",
+    "d4960dd558e9cf75990c6276ee159900592f5a37c7e65ae7d1a87d412d0049e3:110003",
+    "d4960dd558e9cf75990c6276ee159900592f5a37c7e65ae7d1a87d412d0049e3:110006",
+    "d4960dd558e9cf75990c6276ee159900592f5a37c7e65ae7d1a87d412d0049e3:110009"
+  ],
+  "validation_groups": [
+    "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445:210001",
+    "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445:210003",
+    "d4960dd558e9cf75990c6276ee159900592f5a37c7e65ae7d1a87d412d0049e3:210000",
+    "d4960dd558e9cf75990c6276ee159900592f5a37c7e65ae7d1a87d412d0049e3:210002"
+  ],
+  "dataset_sha256": {
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110000\\transitions.npz": "d68a97abc7e2f0591f77c0dcc4317f1676cadc461e5554d9debdb3293fec7789",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110001\\transitions.npz": "8863d7f059d905966d1506d5826a65470e3d0ba98dccc58b77ff369bee71f14e",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110002\\transitions.npz": "047ad835a9db8404f9751bf93121e39c87c522e389824eb24aa0f2176146fd64",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110003\\transitions.npz": "0292c90b02da283f6e7ab7a6aaf883bd98482210f62e456e433b56d4ed39d75e",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110004\\transitions.npz": "d6c7b94f3df094beea5d4d7ec8e2ecc33c5d0f8681121efb5a93924cecbbda94",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110005\\transitions.npz": "fcb086f79567a0ca7ae6289406c781be128cd16fbf593cfe991dc3333df7846b",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110006\\transitions.npz": "0020d18e04c9e4115b42c614c168d7073770b4289decdbefcd17fa19e75e3119",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110007\\transitions.npz": "18ac10ce59fcb59b74ffad98514ef3edec272f1b9106eef6dc17fd9140ddc663",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110008\\transitions.npz": "3efe057c9655dda9d5e96dd88a93b01b9598355c3703dbed66eaebf9f7533939",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\train\\episode-110009\\transitions.npz": "0ccb75a729e1a15257e67cc094f883a5d1f2d1aedc038b3dad67c9d60f0cba3b",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\validation\\episode-210000\\transitions.npz": "2ba56e631cb5d0009eadd7d2fb15a1afa9acc92d048a6d684b2c6b0fe4dca475",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\validation\\episode-210001\\transitions.npz": "3a22bf1dc9d55c5e22e508d1cb2f9fd1c64100379cea91a78db38ecebacaae61",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\validation\\episode-210002\\transitions.npz": "8cd2468b50eaf940a789108c110087e20d069cf3cff051ce810b459d96b59bde",
+    "D:\\PiperCameraTraining\\runs\\20261111-010148\\data\\validation\\episode-210003\\transitions.npz": "dd168f46e33906d6ac19b7899dd7598e1706f349dbdabc033bc3e535187e0eb5"
+  },
+  "initial_metrics": {
+    "reconstruction_mse": 0.004071473696967587,
+    "next_image_mse": 0.00014625569076542888,
+    "inverse_action_mse": 0.11607729946263134,
+    "persistence_image_mse": 0.00029350473619160766,
+    "zero_action_mse": 0.14026564336381853,
+    "mean_action_mse": 0.14015149977058172,
+    "shuffled_action_next_image_mse": 0.00036967624100725516,
+    "selection_score": 0.036015912377934
+  },
+  "best_metrics": {
+    "reconstruction_mse": 0.0037020077397755813,
+    "next_image_mse": 0.00014740529650225653,
+    "inverse_action_mse": 0.11370872729457915,
+    "persistence_image_mse": 0.00029350473619160766,
+    "zero_action_mse": 0.14026564336381853,
+    "mean_action_mse": 0.14015149977058172,
+    "shuffled_action_next_image_mse": 0.00037508854848056217,
+    "selection_score": 0.0350772954934655
+  },
+  "epochs_completed": 10,
+  "seed": 42,
+  "physical_success_evaluated": false,
+  "deployable_policy": false,
+  "manual_objective": "image reconstruction only; not instruction/action alignment",
+  "selection_weights": {
+    "reconstruction_mse": 1.0,
+    "next_image_mse": 20.0,
+    "inverse_action_mse": 0.25
+  },
+  "beats_persistence": true,
+  "beats_zero_and_mean_actions": true,
+  "correct_actions_better_than_shuffled": true,
+  "limitations": [
+    "motor babbling is not successful assembly demonstration",
+    "validation reused for model selection; not an independent final test",
+    "predictive metrics do not establish grasping or assembly ability"
+  ]
+}

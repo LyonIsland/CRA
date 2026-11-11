@@ -1,0 +1,1955 @@
+{
+  "schema_version": "1.0",
+  "kind": "studio_ldraw_ground_truth",
+  "purpose": "assembly_state_ground_truth_not_robot_actions",
+  "source": {
+    "input_file": "model.mpd",
+    "format": "LDraw",
+    "documents": [
+      {
+        "file": "model.mpd",
+        "sha256": "495a0347bf2d87d1277f4b4d1e7b37b9586a5e0bb7805e400ea5027378a70068"
+      }
+    ],
+    "specifications": [
+      "https://www.ldraw.org/article/218.html",
+      "https://www.ldraw.org/article/47.html"
+    ],
+    "rotstep_extension_specification": "https://www.lm-software.com/mlcad/Specification_V2.0.pdf"
+  },
+  "coordinates": {
+    "matrix_layout": "row-major nested 4x4 arrays; column vectors",
+    "source": "LDraw right-handed, -Y up; translations in LDU",
+    "assembly": "right-handed, +Z up; translations in mm",
+    "ldu_to_mm": 0.4,
+    "ldraw_to_assembly_basis": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "point_formula": "(X,Y,Z) = (x,z,-y) * 0.4",
+    "pose_formula": "pose_mm = C * world_transform_ldu * inverse(C), C=diag_basis(0.4*B,1)",
+    "part_local_axes": "converted by the same basis B; catalog source coordinates remain LDraw-local",
+    "nominal_scale_not_robot_calibration": true
+  },
+  "root_model_id": "model.mpd::bricklab-web.ldr",
+  "instances": [
+    {
+      "id": "root/0001",
+      "part_file": "3001.dat",
+      "part_id": "3001",
+      "name": "Brick 2 x 4",
+      "color_code": "0x2EEE9DC",
+      "source_color_code": "0x2EEE9DC",
+      "parent_assembly_id": "root",
+      "source": {
+        "model_id": "model.mpd::bricklab-web.ldr",
+        "file": "model.mpd",
+        "line": 5,
+        "reference_index": 1,
+        "local_step": 1
+      },
+      "local_transform_ldu": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_transform_ldu": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.600000000000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_ldraw_ldu": [
+        0.0,
+        -24.0,
+        0.0
+      ],
+      "translation_assembly_mm": [
+        0.0,
+        0.0,
+        9.600000000000001
+      ],
+      "matrix_properties": {
+        "determinant": 1.0,
+        "condition_number_inf": 1.0,
+        "orthonormal": true,
+        "mirrored": false,
+        "proper_rigid": true
+      },
+      "catalog_known": true,
+      "bounds_mm": {
+        "min": [
+          -16.0,
+          -8.0,
+          -0.0
+        ],
+        "max": [
+          16.0,
+          8.0,
+          9.600000000000001
+        ],
+        "kind": "catalog_transformed_axis_aligned_bounds"
+      },
+      "connectors_mm": {
+        "top": [
+          {
+            "id": "top-1-1",
+            "position_mm": [
+              -12.0,
+              -4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-1-2",
+            "position_mm": [
+              -12.0,
+              4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-2-1",
+            "position_mm": [
+              -4.0,
+              -4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-2-2",
+            "position_mm": [
+              -4.0,
+              4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-3-1",
+            "position_mm": [
+              4.0,
+              -4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-3-2",
+            "position_mm": [
+              4.0,
+              4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-4-1",
+            "position_mm": [
+              12.0,
+              -4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-4-2",
+            "position_mm": [
+              12.0,
+              4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "bottom": [
+          {
+            "id": "bottom-1-1",
+            "position_mm": [
+              -12.0,
+              -4.0,
+              -0.0
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-1-2",
+            "position_mm": [
+              -12.0,
+              4.0,
+              -0.0
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-2-1",
+            "position_mm": [
+              -4.0,
+              -4.0,
+              -0.0
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-2-2",
+            "position_mm": [
+              -4.0,
+              4.0,
+              -0.0
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-3-1",
+            "position_mm": [
+              4.0,
+              -4.0,
+              -0.0
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-3-2",
+            "position_mm": [
+              4.0,
+              4.0,
+              -0.0
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-4-1",
+            "position_mm": [
+              12.0,
+              -4.0,
+              -0.0
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-4-2",
+            "position_mm": [
+              12.0,
+              4.0,
+              -0.0
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "root/0002",
+      "part_file": "3001.dat",
+      "part_id": "3001",
+      "name": "Brick 2 x 4",
+      "color_code": "0x2EEE9DC",
+      "source_color_code": "0x2EEE9DC",
+      "parent_assembly_id": "root",
+      "source": {
+        "model_id": "model.mpd::bricklab-web.ldr",
+        "file": "model.mpd",
+        "line": 7,
+        "reference_index": 2,
+        "local_step": 2
+      },
+      "local_transform_ldu": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -48.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_transform_ldu": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -48.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          19.200000000000003
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_ldraw_ldu": [
+        0.0,
+        -48.0,
+        0.0
+      ],
+      "translation_assembly_mm": [
+        0.0,
+        0.0,
+        19.200000000000003
+      ],
+      "matrix_properties": {
+        "determinant": 1.0,
+        "condition_number_inf": 1.0,
+        "orthonormal": true,
+        "mirrored": false,
+        "proper_rigid": true
+      },
+      "catalog_known": true,
+      "bounds_mm": {
+        "min": [
+          -16.0,
+          -8.0,
+          9.600000000000001
+        ],
+        "max": [
+          16.0,
+          8.0,
+          19.200000000000003
+        ],
+        "kind": "catalog_transformed_axis_aligned_bounds"
+      },
+      "connectors_mm": {
+        "top": [
+          {
+            "id": "top-1-1",
+            "position_mm": [
+              -12.0,
+              -4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-1-2",
+            "position_mm": [
+              -12.0,
+              4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-2-1",
+            "position_mm": [
+              -4.0,
+              -4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-2-2",
+            "position_mm": [
+              -4.0,
+              4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-3-1",
+            "position_mm": [
+              4.0,
+              -4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-3-2",
+            "position_mm": [
+              4.0,
+              4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-4-1",
+            "position_mm": [
+              12.0,
+              -4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-4-2",
+            "position_mm": [
+              12.0,
+              4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "bottom": [
+          {
+            "id": "bottom-1-1",
+            "position_mm": [
+              -12.0,
+              -4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-1-2",
+            "position_mm": [
+              -12.0,
+              4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-2-1",
+            "position_mm": [
+              -4.0,
+              -4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-2-2",
+            "position_mm": [
+              -4.0,
+              4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-3-1",
+            "position_mm": [
+              4.0,
+              -4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-3-2",
+            "position_mm": [
+              4.0,
+              4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-4-1",
+            "position_mm": [
+              12.0,
+              -4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-4-2",
+            "position_mm": [
+              12.0,
+              4.0,
+              9.600000000000001
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "root/0003",
+      "part_file": "3001.dat",
+      "part_id": "3001",
+      "name": "Brick 2 x 4",
+      "color_code": "0x2EEE9DC",
+      "source_color_code": "0x2EEE9DC",
+      "parent_assembly_id": "root",
+      "source": {
+        "model_id": "model.mpd::bricklab-web.ldr",
+        "file": "model.mpd",
+        "line": 9,
+        "reference_index": 3,
+        "local_step": 3
+      },
+      "local_transform_ldu": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -72.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_transform_ldu": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -72.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          28.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_ldraw_ldu": [
+        0.0,
+        -72.0,
+        0.0
+      ],
+      "translation_assembly_mm": [
+        0.0,
+        0.0,
+        28.8
+      ],
+      "matrix_properties": {
+        "determinant": 1.0,
+        "condition_number_inf": 1.0,
+        "orthonormal": true,
+        "mirrored": false,
+        "proper_rigid": true
+      },
+      "catalog_known": true,
+      "bounds_mm": {
+        "min": [
+          -16.0,
+          -8.0,
+          19.200000000000003
+        ],
+        "max": [
+          16.0,
+          8.0,
+          28.8
+        ],
+        "kind": "catalog_transformed_axis_aligned_bounds"
+      },
+      "connectors_mm": {
+        "top": [
+          {
+            "id": "top-1-1",
+            "position_mm": [
+              -12.0,
+              -4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-1-2",
+            "position_mm": [
+              -12.0,
+              4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-2-1",
+            "position_mm": [
+              -4.0,
+              -4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-2-2",
+            "position_mm": [
+              -4.0,
+              4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-3-1",
+            "position_mm": [
+              4.0,
+              -4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-3-2",
+            "position_mm": [
+              4.0,
+              4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-4-1",
+            "position_mm": [
+              12.0,
+              -4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-4-2",
+            "position_mm": [
+              12.0,
+              4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "bottom": [
+          {
+            "id": "bottom-1-1",
+            "position_mm": [
+              -12.0,
+              -4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-1-2",
+            "position_mm": [
+              -12.0,
+              4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-2-1",
+            "position_mm": [
+              -4.0,
+              -4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-2-2",
+            "position_mm": [
+              -4.0,
+              4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-3-1",
+            "position_mm": [
+              4.0,
+              -4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-3-2",
+            "position_mm": [
+              4.0,
+              4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-4-1",
+            "position_mm": [
+              12.0,
+              -4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-4-2",
+            "position_mm": [
+              12.0,
+              4.0,
+              19.200000000000003
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "root/0004",
+      "part_file": "3001.dat",
+      "part_id": "3001",
+      "name": "Brick 2 x 4",
+      "color_code": "0x2EEE9DC",
+      "source_color_code": "0x2EEE9DC",
+      "parent_assembly_id": "root",
+      "source": {
+        "model_id": "model.mpd::bricklab-web.ldr",
+        "file": "model.mpd",
+        "line": 11,
+        "reference_index": 4,
+        "local_step": 4
+      },
+      "local_transform_ldu": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -96.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_transform_ldu": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -96.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          38.400000000000006
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_ldraw_ldu": [
+        0.0,
+        -96.0,
+        0.0
+      ],
+      "translation_assembly_mm": [
+        0.0,
+        0.0,
+        38.400000000000006
+      ],
+      "matrix_properties": {
+        "determinant": 1.0,
+        "condition_number_inf": 1.0,
+        "orthonormal": true,
+        "mirrored": false,
+        "proper_rigid": true
+      },
+      "catalog_known": true,
+      "bounds_mm": {
+        "min": [
+          -16.0,
+          -8.0,
+          28.8
+        ],
+        "max": [
+          16.0,
+          8.0,
+          38.400000000000006
+        ],
+        "kind": "catalog_transformed_axis_aligned_bounds"
+      },
+      "connectors_mm": {
+        "top": [
+          {
+            "id": "top-1-1",
+            "position_mm": [
+              -12.0,
+              -4.0,
+              38.400000000000006
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-1-2",
+            "position_mm": [
+              -12.0,
+              4.0,
+              38.400000000000006
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-2-1",
+            "position_mm": [
+              -4.0,
+              -4.0,
+              38.400000000000006
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-2-2",
+            "position_mm": [
+              -4.0,
+              4.0,
+              38.400000000000006
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-3-1",
+            "position_mm": [
+              4.0,
+              -4.0,
+              38.400000000000006
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-3-2",
+            "position_mm": [
+              4.0,
+              4.0,
+              38.400000000000006
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-4-1",
+            "position_mm": [
+              12.0,
+              -4.0,
+              38.400000000000006
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "id": "top-4-2",
+            "position_mm": [
+              12.0,
+              4.0,
+              38.400000000000006
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "bottom": [
+          {
+            "id": "bottom-1-1",
+            "position_mm": [
+              -12.0,
+              -4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-1-2",
+            "position_mm": [
+              -12.0,
+              4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-2-1",
+            "position_mm": [
+              -4.0,
+              -4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-2-2",
+            "position_mm": [
+              -4.0,
+              4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-3-1",
+            "position_mm": [
+              4.0,
+              -4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-3-2",
+            "position_mm": [
+              4.0,
+              4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-4-1",
+            "position_mm": [
+              12.0,
+              -4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "id": "bottom-4-2",
+            "position_mm": [
+              12.0,
+              4.0,
+              28.8
+            ],
+            "normal_assembly": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "model_definitions": [
+    {
+      "id": "model.mpd::bricklab-web.ldr",
+      "name": "bricklab-web.ldr",
+      "source_file": "model.mpd",
+      "references": [
+        {
+          "id": "r0001",
+          "index": 1,
+          "line": 5,
+          "filename": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "local_step": 1,
+          "transform_ldu": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -24.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "kind": "part",
+          "target_model_id": null
+        },
+        {
+          "id": "r0002",
+          "index": 2,
+          "line": 7,
+          "filename": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "local_step": 2,
+          "transform_ldu": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -48.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "kind": "part",
+          "target_model_id": null
+        },
+        {
+          "id": "r0003",
+          "index": 3,
+          "line": 9,
+          "filename": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "local_step": 3,
+          "transform_ldu": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -72.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "kind": "part",
+          "target_model_id": null
+        },
+        {
+          "id": "r0004",
+          "index": 4,
+          "line": 11,
+          "filename": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "local_step": 4,
+          "transform_ldu": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -96.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "kind": "part",
+          "target_model_id": null
+        }
+      ],
+      "local_steps": [
+        {
+          "number": 1,
+          "added_reference_ids": [
+            "r0001"
+          ],
+          "cumulative_reference_ids": [
+            "r0001"
+          ],
+          "source_line_end": 6,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          }
+        },
+        {
+          "number": 2,
+          "added_reference_ids": [
+            "r0002"
+          ],
+          "cumulative_reference_ids": [
+            "r0001",
+            "r0002"
+          ],
+          "source_line_end": 8,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          }
+        },
+        {
+          "number": 3,
+          "added_reference_ids": [
+            "r0003"
+          ],
+          "cumulative_reference_ids": [
+            "r0001",
+            "r0002",
+            "r0003"
+          ],
+          "source_line_end": 10,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          }
+        },
+        {
+          "number": 4,
+          "added_reference_ids": [
+            "r0004"
+          ],
+          "cumulative_reference_ids": [
+            "r0001",
+            "r0002",
+            "r0003",
+            "r0004"
+          ],
+          "source_line_end": 12,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          }
+        }
+      ],
+      "preserved_meta": []
+    }
+  ],
+  "assembly_tree": {
+    "id": "root",
+    "kind": "assembly",
+    "model_id": "model.mpd::bricklab-web.ldr",
+    "color_code": "16",
+    "world_transform_ldu": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_mm": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_steps": [
+      {
+        "number": 1,
+        "added_reference_ids": [
+          "r0001"
+        ],
+        "cumulative_reference_ids": [
+          "r0001"
+        ],
+        "source_line_end": 6,
+        "explicit_step_boundary": true,
+        "boundary_meta": {
+          "command": "STEP",
+          "raw": "0 STEP"
+        },
+        "added_child_ids": [
+          "root/0001"
+        ],
+        "added_instance_ids": [
+          "root/0001"
+        ],
+        "cumulative_instance_ids": [
+          "root/0001"
+        ],
+        "semantics": "parent_step_adds_subassembly_at_its_final_local_state; child_steps_remain_separate"
+      },
+      {
+        "number": 2,
+        "added_reference_ids": [
+          "r0002"
+        ],
+        "cumulative_reference_ids": [
+          "r0001",
+          "r0002"
+        ],
+        "source_line_end": 8,
+        "explicit_step_boundary": true,
+        "boundary_meta": {
+          "command": "STEP",
+          "raw": "0 STEP"
+        },
+        "added_child_ids": [
+          "root/0002"
+        ],
+        "added_instance_ids": [
+          "root/0002"
+        ],
+        "cumulative_instance_ids": [
+          "root/0001",
+          "root/0002"
+        ],
+        "semantics": "parent_step_adds_subassembly_at_its_final_local_state; child_steps_remain_separate"
+      },
+      {
+        "number": 3,
+        "added_reference_ids": [
+          "r0003"
+        ],
+        "cumulative_reference_ids": [
+          "r0001",
+          "r0002",
+          "r0003"
+        ],
+        "source_line_end": 10,
+        "explicit_step_boundary": true,
+        "boundary_meta": {
+          "command": "STEP",
+          "raw": "0 STEP"
+        },
+        "added_child_ids": [
+          "root/0003"
+        ],
+        "added_instance_ids": [
+          "root/0003"
+        ],
+        "cumulative_instance_ids": [
+          "root/0001",
+          "root/0002",
+          "root/0003"
+        ],
+        "semantics": "parent_step_adds_subassembly_at_its_final_local_state; child_steps_remain_separate"
+      },
+      {
+        "number": 4,
+        "added_reference_ids": [
+          "r0004"
+        ],
+        "cumulative_reference_ids": [
+          "r0001",
+          "r0002",
+          "r0003",
+          "r0004"
+        ],
+        "source_line_end": 12,
+        "explicit_step_boundary": true,
+        "boundary_meta": {
+          "command": "STEP",
+          "raw": "0 STEP"
+        },
+        "added_child_ids": [
+          "root/0004"
+        ],
+        "added_instance_ids": [
+          "root/0004"
+        ],
+        "cumulative_instance_ids": [
+          "root/0001",
+          "root/0002",
+          "root/0003",
+          "root/0004"
+        ],
+        "semantics": "parent_step_adds_subassembly_at_its_final_local_state; child_steps_remain_separate"
+      }
+    ],
+    "children": [
+      {
+        "id": "root/0001",
+        "kind": "part",
+        "part_instance_id": "root/0001"
+      },
+      {
+        "id": "root/0002",
+        "kind": "part",
+        "part_instance_id": "root/0002"
+      },
+      {
+        "id": "root/0003",
+        "kind": "part",
+        "part_instance_id": "root/0003"
+      },
+      {
+        "id": "root/0004",
+        "kind": "part",
+        "part_instance_id": "root/0004"
+      }
+    ]
+  },
+  "root_steps": [
+    {
+      "number": 1,
+      "added_reference_ids": [
+        "r0001"
+      ],
+      "cumulative_reference_ids": [
+        "r0001"
+      ],
+      "source_line_end": 6,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0001"
+      ],
+      "added_instance_ids": [
+        "root/0001"
+      ],
+      "cumulative_instance_ids": [
+        "root/0001"
+      ],
+      "semantics": "parent_step_adds_subassembly_at_its_final_local_state; child_steps_remain_separate"
+    },
+    {
+      "number": 2,
+      "added_reference_ids": [
+        "r0002"
+      ],
+      "cumulative_reference_ids": [
+        "r0001",
+        "r0002"
+      ],
+      "source_line_end": 8,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0002"
+      ],
+      "added_instance_ids": [
+        "root/0002"
+      ],
+      "cumulative_instance_ids": [
+        "root/0001",
+        "root/0002"
+      ],
+      "semantics": "parent_step_adds_subassembly_at_its_final_local_state; child_steps_remain_separate"
+    },
+    {
+      "number": 3,
+      "added_reference_ids": [
+        "r0003"
+      ],
+      "cumulative_reference_ids": [
+        "r0001",
+        "r0002",
+        "r0003"
+      ],
+      "source_line_end": 10,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0003"
+      ],
+      "added_instance_ids": [
+        "root/0003"
+      ],
+      "cumulative_instance_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003"
+      ],
+      "semantics": "parent_step_adds_subassembly_at_its_final_local_state; child_steps_remain_separate"
+    },
+    {
+      "number": 4,
+      "added_reference_ids": [
+        "r0004"
+      ],
+      "cumulative_reference_ids": [
+        "r0001",
+        "r0002",
+        "r0003",
+        "r0004"
+      ],
+      "source_line_end": 12,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0004"
+      ],
+      "added_instance_ids": [
+        "root/0004"
+      ],
+      "cumulative_instance_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004"
+      ],
+      "semantics": "parent_step_adds_subassembly_at_its_final_local_state; child_steps_remain_separate"
+    }
+  ],
+  "inventory": [
+    {
+      "part_file": "3001.dat",
+      "part_id": "3001",
+      "color_code": "0x2EEE9DC",
+      "name": "Brick 2 x 4",
+      "catalog_known": true,
+      "count": 4
+    }
+  ],
+  "step_semantics": "Explicit STEP/ROTSTEP boundaries preserve parent-local order. ROTSTEP affects view metadata only. A referenced subassembly enters its parent at final state; no interleaved global child execution order is invented.",
+  "limitations": [
+    "Assembly state and authored STEP boundaries only; not robot actions or an executable global subassembly schedule.",
+    "No physical connection, stability, grasp, collision, reachability, force, or calibration validation is performed.",
+    "Explicit STEP/ROTSTEP boundaries are interpreted. ROTSTEP view metadata is preserved without changing part poses; page layout/cameras/rendering are not reconstructed.",
+    "DAT references are atomic parts, not recursively expanded part-library geometry; unknown DAT parts are retained with warnings.",
+    "Catalog bounds/connectors are supplied metadata, not exact physical geometry or evidence of a valid mating connection.",
+    "1 LDU = 0.4 mm is the LDraw nominal approximation; poses are not calibrated robot targets."
+  ]
+}

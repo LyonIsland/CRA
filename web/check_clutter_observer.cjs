@@ -11,11 +11,14 @@ const fs=require('fs'),path=require('path');
   await view.locator('#view-heap').waitFor({state:'visible',timeout:45000});
   const frame=page.frames().find(f=>new URL(f.url()).searchParams.get('embedded')==='1');
   const first=await frame.evaluate(()=>window.workshopState.seq);
-  await view.locator('#view-heap').click();await page.waitForTimeout(1800);
+  await view.locator('#view-heap').click();
+  // Multiview fitting is synchronous; allow its bounded computation to finish.
+  await frame.waitForFunction(first=>window.workshopState.seq>first,first,{timeout:30000});
   const last=await frame.evaluate(()=>window.workshopState.seq);
   if(last<=first)throw Error('Observer state is not updating');
-  for(const id of ['live-start','live-pause','live-reset'])if(!await page.locator('#'+id).isDisabled())throw Error('Observer control enabled: '+id);
-  if(!await view.locator('#start').isDisabled())throw Error('Embedded observer control enabled');
+  for(const id of ['restart','start','pause','reset'])if(!await view.locator('#'+id).isDisabled())throw Error('Observer control enabled: '+id);
+  await view.locator('[data-tab="human"]').click();
+  for(const button of await view.locator('#agent-pane button').all())if(!await button.isDisabled())throw Error('Observer human control enabled');
   if(socketCount||errors.length)throw Error(JSON.stringify({socketCount,errors}));
   await page.screenshot({path:path.resolve(__dirname,'../outputs/clutter/observer-console.png'),fullPage:true});
   const report={real_HTTP_observer:true,live_sequence_advanced:true,websocket_count:socketCount,

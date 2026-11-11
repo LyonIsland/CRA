@@ -1,0 +1,23 @@
+{
+  "contract": "camera_only_manual_pages_v1",
+  "mode": "inspect",
+  "steps": 0,
+  "captured_frames": 2,
+  "environment_part_count": 38,
+  "manual_page_count": 12,
+  "observations": [
+    "single_wrist_RGB_history",
+    "manual_page_images"
+  ],
+  "encoder_feedback_to_policy": false,
+  "camera_pose_to_policy": false,
+  "scene_state_to_policy": false,
+  "scene_writes_after_setup": 0,
+  "human_pose_assistance": false,
+  "physical_success_evaluated": false,
+  "limits": [
+    "rigid LEGO approximation; no verified snap-fit",
+    "joint limits do not establish collision-free or real-hardware safety",
+    "image-conditioned imitation requires new demonstrations and closed-loop validation"
+  ]
+}

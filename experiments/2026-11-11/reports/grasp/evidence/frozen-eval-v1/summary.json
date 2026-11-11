@@ -1,0 +1,167 @@
+{
+  "planned_seeds": [
+    52001,
+    52002,
+    52003,
+    52004,
+    52005
+  ],
+  "sources": {
+    "camera_grasp_policy.py": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+    "camera_grasp_runtime.py": "99ff7e8ba092f1750974dc1f39bdf3a995bf94919fe057df97dd137dbccaab7e",
+    "camera_runtime.py": "2dc0baa78eee350d14cece9f1ac892ccdc2cef841145d70ca9ea1c2d0df96910",
+    "workbench.py": "4a5c4dfb389efcc35df9ef21c0d86990dd7f11d17904ccfbb8601c8f1f96c0f1"
+  },
+  "negative_open": false,
+  "scope": "single upright brick; randomized XY/yaw/material; simulation only",
+  "task_title": "Single brick grasp",
+  "task_source_sha256": "eb8b37aa0a1a5253d61bb7e988c882f9e7479ae7b3821cd1fa17db18b625f2d1",
+  "runs": [
+    {
+      "success": true,
+      "criterion": "same part lifted >= 30 mm with bilateral physical finger contact continuously >= 2 s",
+      "peak_lift_m": [
+        0.07097294181585312
+      ],
+      "longest_bilateral_hold_seconds": [
+        3.42
+      ],
+      "steps": 1982,
+      "elapsed_seconds": 259.04699999999866,
+      "seed": 52001,
+      "policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+      "negative_open": false,
+      "curriculum": "upright randomized XY/yaw",
+      "control_inputs": [
+        "single wrist RGB",
+        "own command memory"
+      ],
+      "scene_truth_to_controller": false,
+      "encoder_feedback_to_controller": false,
+      "attachments": false,
+      "pose_writes_after_setup": 0,
+      "simulation_only": true,
+      "controller_result": "finished_unverified",
+      "directory": "52001",
+      "process_exit_code": 0
+    },
+    {
+      "success": false,
+      "criterion": "same part lifted >= 30 mm with bilateral physical finger contact continuously >= 2 s",
+      "peak_lift_m": [
+        1.862645149230957e-09
+      ],
+      "longest_bilateral_hold_seconds": [
+        0.0
+      ],
+      "steps": 74,
+      "elapsed_seconds": 7.421999999998661,
+      "seed": 52002,
+      "policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+      "negative_open": false,
+      "curriculum": "upright randomized XY/yaw",
+      "control_inputs": [
+        "single wrist RGB",
+        "own command memory"
+      ],
+      "scene_truth_to_controller": false,
+      "encoder_feedback_to_controller": false,
+      "attachments": false,
+      "pose_writes_after_setup": 0,
+      "simulation_only": true,
+      "controller_result": "failed_visual",
+      "failure_reason": "No isolated visible rectangular brick",
+      "directory": "52002",
+      "process_exit_code": 0
+    },
+    {
+      "success": true,
+      "criterion": "same part lifted >= 30 mm with bilateral physical finger contact continuously >= 2 s",
+      "peak_lift_m": [
+        0.06830917298793793
+      ],
+      "longest_bilateral_hold_seconds": [
+        3.34
+      ],
+      "steps": 1835,
+      "elapsed_seconds": 230.84399999999732,
+      "seed": 52003,
+      "policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+      "negative_open": false,
+      "curriculum": "upright randomized XY/yaw",
+      "control_inputs": [
+        "single wrist RGB",
+        "own command memory"
+      ],
+      "scene_truth_to_controller": false,
+      "encoder_feedback_to_controller": false,
+      "attachments": false,
+      "pose_writes_after_setup": 0,
+      "simulation_only": true,
+      "controller_result": "finished_unverified",
+      "directory": "52003",
+      "process_exit_code": 0
+    },
+    {
+      "success": true,
+      "criterion": "same part lifted >= 30 mm with bilateral physical finger contact continuously >= 2 s",
+      "peak_lift_m": [
+        0.08821466565132141
+      ],
+      "longest_bilateral_hold_seconds": [
+        4.0
+      ],
+      "steps": 1956,
+      "elapsed_seconds": 246.51599999999598,
+      "seed": 52004,
+      "policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+      "negative_open": false,
+      "curriculum": "upright randomized XY/yaw",
+      "control_inputs": [
+        "single wrist RGB",
+        "own command memory"
+      ],
+      "scene_truth_to_controller": false,
+      "encoder_feedback_to_controller": false,
+      "attachments": false,
+      "pose_writes_after_setup": 0,
+      "simulation_only": true,
+      "controller_result": "finished_unverified",
+      "directory": "52004",
+      "process_exit_code": 0
+    },
+    {
+      "success": false,
+      "criterion": "same part lifted >= 30 mm with bilateral physical finger contact continuously >= 2 s",
+      "peak_lift_m": [
+        1.862645149230957e-09
+      ],
+      "longest_bilateral_hold_seconds": [
+        0.0
+      ],
+      "steps": 74,
+      "elapsed_seconds": 6.578000000001339,
+      "seed": 52005,
+      "policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+      "negative_open": false,
+      "curriculum": "upright randomized XY/yaw",
+      "control_inputs": [
+        "single wrist RGB",
+        "own command memory"
+      ],
+      "scene_truth_to_controller": false,
+      "encoder_feedback_to_controller": false,
+      "attachments": false,
+      "pose_writes_after_setup": 0,
+      "simulation_only": true,
+      "controller_result": "failed_visual",
+      "failure_reason": "No isolated visible rectangular brick",
+      "directory": "52005",
+      "process_exit_code": 0
+    }
+  ],
+  "complete": true,
+  "attempted": 5,
+  "successes": 3,
+  "success_rate": 0.6
+}

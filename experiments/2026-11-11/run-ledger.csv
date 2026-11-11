@@ -1,0 +1,33 @@
+﻿run,group,seed,success,phase,steps,peak_lift_mm,bilateral_hold_seconds,stopped,failure_reason,policy_sha256,source_snapshot_available
+dev-1,development,,,missing_result,,0,0,False,,,False
+dev-10,development,41001,False,failed_visual,477,0.0,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,,False
+dev-11,development,41001,True,finished_unverified,2153,69.5037692785263,3.44,False,,,False
+dev-12,development,51001,False,failed_visual,74,9.313225746154785e-07,0.0,False,No isolated visible rectangular brick,78506789554502313964f4bb6e79af23e3fe5bc19bf07519a7f519dc02c25820,True
+dev-13,development,51001,False,failed_visual,74,9.313225746154785e-07,0.0,False,No isolated visible rectangular brick,ed086b3cd8e45e3358bc853d51acc4e3e5720a3ea49c050bc3f370a7312153c7,True
+dev-14,development,51001,False,failed_visual,74,9.313225746154785e-07,0.0,False,No isolated visible rectangular brick,66b48469fb57330490620ef5396b34caea15842f7ae2165002257e78405bec84,True
+dev-15,development,51001,False,failed_visual,163,9.313225746154785e-07,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,d5d7bd617ca35d2725b55f8f58dc82d3935bf4bb33cb52bcade684cf95b7aa46,True
+dev-16,development,51001,False,failed_visual,565,4.656612873077393e-06,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,1d5dd830a1e1541cf971592552dfb8fb74c2d9bd8cf1384d48731233c769c07c,True
+dev-17,development,51001,False,failed_visual,492,4.656612873077393e-06,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,efef0aa5ae8366ca1b4449a31466ae3cd2bc7f078f8eac7c73f6880b86d92bcd,True
+dev-18,development,51001,False,failed_visual,267,9.313225746154785e-07,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,d7ec469b618ebb7c5f75fdaa290bc5aa64fd7ced80687c549bf69bfb6febb1f9,True
+dev-19,development,51001,False,clear_view,249,9.313225746154785e-07,0.0,True,,94e2ab9cbb03773404d5a51946a34c1b028c44fa719c1fe7b2b51ba1626b817f,True
+dev-2,development,41001,False,failed_visual,74,0.0,0.0,False,No isolated visible rectangular brick,,False
+dev-20,development,51001,True,finished_unverified,2189,70.08849084377289,3.66,False,,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+dev-3,development,41001,False,visual_servo,1806,0.0,0.0,True,,,False
+dev-4,development,41001,False,visual_servo,1508,0.0,0.0,True,,,False
+dev-5,development,41001,False,failed_visual,1360,0.0,0.0,False,Target lost during visual rotation probe,,False
+dev-6,development,41001,False,visual_servo,1638,0.0,0.0,True,,,False
+dev-7,development,41001,False,visual_servo,1135,0.0,0.0,True,,,False
+dev-8,development,41001,False,failed_visual,74,0.0,0.0,False,No isolated visible rectangular brick,,False
+dev-9,development,41001,False,failed_visual,352,0.0,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,,False
+frozen-eval-v1/52001,independent,52001,True,finished_unverified,1982,70.97294181585312,3.42,False,,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+frozen-eval-v1/52002,independent,52002,False,failed_visual,74,1.862645149230957e-06,0.0,False,No isolated visible rectangular brick,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+frozen-eval-v1/52003,independent,52003,True,finished_unverified,1835,68.30917298793793,3.34,False,,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+frozen-eval-v1/52004,independent,52004,True,finished_unverified,1956,88.21466565132141,4.0,False,,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+frozen-eval-v1/52005,independent,52005,False,failed_visual,74,1.862645149230957e-06,0.0,False,No isolated visible rectangular brick,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+negative-52001,online_negative,52001,False,failed_visual,953,1.862645149230957e-06,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+paired-control-52001/open,mechanical_control,52001,False,commissioning_plan,1982,1.862645149230957e-06,0.0,False,,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+paired-control-52001/original,mechanical_control,52001,True,commissioning_plan,1982,70.97294181585312,3.42,False,,53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb,True
+probe-1,development,41001,False,commissioning_plan,50,0.0,0.0,False,,,False
+validation-51001,development,51001,False,failed_visual,177,9.313225746154785e-07,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,25f602b269a76967b2bf0a32b27f54bdb0156b215ac5b5101088e71cd68069ac,True
+validation-51001-v2,development,51001,False,failed_visual,42,9.313225746154785e-07,0.0,False,Visual target tracking lost; reacquisition requires a new attempt,ee0447e7baa7c5108e51e96f089bf903de72358d02e401400d022d8466c22a3d,True
+validation-51001-v3,development,51001,False,failed_visual,118,9.313225746154785e-07,0.0,False,No isolated visible rectangular brick,93f6713a5a67190e95e22e92dd7d64d2dadbcdc1c1f4af26189e743ea28965ed,True

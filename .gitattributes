@@ -7,3 +7,10 @@
 *.ps1 text eol=crlf
 *.pdf binary
 *.png binary
+
+# Preserve original bytes/whitespace of evidence and the measured source version.
+experiments/** -text -whitespace
+scripts/camera_grasp_policy.py -text -whitespace
+scripts/camera_grasp_runtime.py -text -whitespace
+scripts/camera_runtime.py -text -whitespace
+scripts/workbench.py -text -whitespace

@@ -14,7 +14,16 @@ def main():
     p.add_argument('--check',action='store_true')
     p.add_argument('--frames',type=int,default=240)
     p.add_argument('--reimport',action='store_true')
-    p.add_argument('--task',choices=['scene','pick-place','xr','vision','tabletop','assembly'],default='scene')
+    p.add_argument('--task',choices=['scene','pick-place','xr','vision','tabletop','assembly','camera-only'],default='scene')
+    p.add_argument('--camera-mode',choices=['collect','evaluate','inspect','live','explore','grasp'],default='evaluate')
+    p.add_argument('--grasp-plan',help='Optional image-only commissioning action plan JSON')
+    p.add_argument('--grasp-flat',action='store_true',help='Explicit initial upright-brick curriculum, environment setup only')
+    p.add_argument('--grasp-negative-open',action='store_true',help='Evaluation ablation: keep gripper open during grasp/lift')
+    p.add_argument('--camera-goal',help='Operator-supplied goal photograph, never a scene-state target')
+    p.add_argument('--camera-task',help='BRICKLAB task.json: manual image input and isolated inventory setup')
+    p.add_argument('--camera-output',help='Directory for this camera-only run report and inspection image')
+    p.add_argument('--camera-episode',help='New .npz path for one teleoperated episode')
+    p.add_argument('--camera-group',help='Layout/task group; repeats must use the same group')
     p.add_argument('--tabletop-mode',choices=['collect','evaluate'],default='evaluate')
     p.add_argument('--tabletop',action='store_true')
     p.add_argument('--tabletop-negative',action='store_true')
@@ -25,6 +34,9 @@ def main():
     p.add_argument('--assembly-random-yaw',action='store_true')
     p.add_argument('--assembly-clutter',action='store_true')
     p.add_argument('--clutter-extractions',type=int,default=6)
+    p.add_argument('--clutter-grasp-retries',type=int,choices=[0,1,2],default=1)
+    p.add_argument('--human-mode',choices=['auto','manual'],default='auto')
+    p.add_argument('--human-response-seconds',type=float,default=2.)
     p.add_argument('--clutter-fixture-test',action='store_true')
     p.add_argument('--clutter-gripper-test',action='store_true')
     p.add_argument('--clutter-collect-face',action='store_true')
@@ -41,6 +53,25 @@ def main():
     p.add_argument('--result-name')
     p.add_argument('--graphics',choices=['vulkan','d3d12'],default='d3d12' if os.name=='nt' else 'vulkan')
     args=p.parse_args()
+    if args.task=='camera-only':
+        if args.assembly_live or args.assembly_clutter or args.tabletop or args.wrist_vision or args.clutter_fixture_test or args.clutter_collect_face or args.clutter_gripper_test:
+            p.error('camera-only cannot be combined with legacy controllers or assistance')
+        if args.camera_goal and args.camera_task:p.error('Choose --camera-goal OR --camera-task')
+        if args.camera_task:
+            from bricklab_task import load_manual,load_scene
+            load_manual(args.camera_task);load_scene(args.camera_task)
+        if args.camera_mode=='live' and not args.camera_task:p.error('Live assembly workspace requires --camera-task')
+        if args.camera_mode in ('explore','grasp') and (not args.camera_task or not args.camera_output):
+            p.error('Exploration requires --camera-task and a fresh --camera-output directory')
+        if args.camera_mode!='inspect' and not args.camera_task and (not args.camera_goal or not Path(args.camera_goal).is_file()):
+            p.error('camera-only requires an existing --camera-goal photograph')
+        if args.camera_mode=='evaluate' and (not args.policy or not Path(args.policy).is_file()):
+            p.error('camera-only requires a newly trained --policy checkpoint')
+        if args.camera_mode=='collect' and (args.headless or not args.camera_episode or not args.camera_group):
+            p.error('camera collection needs a visible terminal, --camera-episode and --camera-group')
+        if args.camera_mode=='collect' and Path(args.camera_episode).exists():
+            p.error('Refusing to overwrite an existing demonstration')
+        if args.frames<1:p.error('--frames must be positive')
     if args.clutter_fixture_test or args.clutter_collect_face or args.clutter_gripper_test:args.assembly_clutter=True
     if args.assembly_clutter:args.assembly_live=True;args.assembly_random_yaw=True
     output=ROOT/'outputs'
@@ -135,7 +166,10 @@ def main():
         rigid=world.scene.add(SingleRigidPrim(prim_path='/World/Brick',name='brick'))
         cube('/World/Goal',[.32,.08,.0005],[.05,.05,.001],[.05,.65,.18],False)
         assembly_parts=None
-        if args.task=='assembly' or args.assembly_live:
+        if args.task=='camera-only' and args.camera_task:
+            from bricklab_scene import add_parts
+            assembly_parts=add_parts(world,stage,cube,rigid,args.camera_task,args.seed)
+        elif args.task in ['assembly','camera-only'] or args.assembly_live:
             from assembly_scene import add_parts
             assembly_parts=add_parts(world,stage,cube,rigid)
         if args.assembly_live:
@@ -162,6 +196,7 @@ def main():
         camera.CreateVerticalApertureAttr(18.)
         from wrist_vision import create_camera,CONFIG
         if args.assembly_clutter:CONFIG['resolution']=[640,480]
+        if args.task=='camera-only' and args.camera_mode=='grasp':CONFIG['resolution']=[640,480]
         create_camera(stage)
         import omni.kit.viewport.utility as viewport_utils
         viewport=viewport_utils.get_active_viewport()
@@ -169,7 +204,7 @@ def main():
 
         if args.task!='scene':
             from pick_place import configure_contacts
-            configure_contacts(stage,roots[0],gentle=args.tabletop or args.assembly_live or args.task in ['tabletop','assembly'],couple_gripper=args.assembly_clutter)
+            configure_contacts(stage,roots[0],gentle=args.tabletop or args.assembly_live or args.task in ['tabletop','assembly'],couple_gripper=args.assembly_clutter or (args.task=='camera-only' and args.camera_mode=='grasp'))
 
         world.reset()
         names=list(robot.dof_names)
@@ -177,12 +212,25 @@ def main():
         expected=[f'joint{i}' for i in range(1,9)]
         if set(names)!=set(expected): raise RuntimeError(f'Unexpected DOFs {names}')
         home=dict(zip(expected,[0,1.2,-1.,0,.5,0,.025,-.025]))
+        if args.task=='camera-only':
+            # Fixed camera observation posture, identical for every scene seed.
+            # No scene-dependent initialization or runtime inverse kinematics.
+            home=dict(zip(expected,[-.405,1.578,-1.214,0,1.22,-.405,.025,-.025]))
+            if args.camera_mode=='grasp':
+                # Fixed, scene-independent posture with wrist probing margin.
+                home=dict(zip(expected,[-.405,1.578,-.994,0,1.,-.405,.025,-.025]))
         initial=np.array([home[n] for n in names],dtype=np.float32)
         robot.set_joint_positions(initial)
         robot.set_joint_velocities(np.zeros(len(names)))
         control=robot.get_articulation_controller()
         scene_name='workbench.usda' if args.task=='scene' else ('tabletop-negative.usda' if args.task=='tabletop' and args.tabletop_negative else ('tabletop-xr.usda' if args.task=='xr' and args.tabletop else 'pick_place.usda'))
+        if args.task=='camera-only':scene_name='camera_only.usda'
         stage.GetRootLayer().Export(str(output/scene_name))
+        if args.task=='camera-only':
+            if viewport is not None:viewport.camera_path=CONFIG['path']
+            from camera_runtime import run
+            run(app,world,robot,assembly_parts,stage,args,initial)
+            return
         if args.clutter_gripper_test:
             from commission_piper_gripper import commission
             commission(app,world,robot,rigid,stage,args)

@@ -1,0 +1,3343 @@
+{
+  "schema_version": "1.1",
+  "kind": "bricklab_manual_page_map",
+  "mode": "lego",
+  "title": "BRICKLAB 小屋",
+  "style": "creator_inspired",
+  "panels_per_page": 2,
+  "page_layout": "one_component_or_up_to_two_plain_steps",
+  "source_label": "BRICKLAB / web_json",
+  "source_sha256": "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445",
+  "color_count": 7,
+  "color_summary": [
+    {
+      "color_hex": "#3B4350",
+      "color_name": "石墨灰",
+      "count": 4
+    },
+    {
+      "color_hex": "#429B94",
+      "color_name": "湖水绿",
+      "count": 2
+    },
+    {
+      "color_hex": "#528AC5",
+      "color_name": "天空蓝",
+      "count": 3
+    },
+    {
+      "color_hex": "#6B9560",
+      "color_name": "叶子绿",
+      "count": 1
+    },
+    {
+      "color_hex": "#DF5C45",
+      "color_name": "珊瑚红",
+      "count": 4
+    },
+    {
+      "color_hex": "#EEE9DC",
+      "color_name": "奶油白",
+      "count": 10
+    },
+    {
+      "color_hex": "#F4C542",
+      "color_name": "日光黄",
+      "count": 14
+    }
+  ],
+  "instance_count": 38,
+  "inventory": [
+    {
+      "part_file": "3001.dat",
+      "color_code": "0x2F4C542",
+      "count": 12,
+      "color_name": "日光黄",
+      "color_hex": "#F4C542"
+    },
+    {
+      "part_file": "3002.dat",
+      "color_code": "0x2528AC5",
+      "count": 2,
+      "color_name": "天空蓝",
+      "color_hex": "#528AC5"
+    },
+    {
+      "part_file": "3002.dat",
+      "color_code": "0x2EEE9DC",
+      "count": 6,
+      "color_name": "奶油白",
+      "color_hex": "#EEE9DC"
+    },
+    {
+      "part_file": "3004.dat",
+      "color_code": "0x2429B94",
+      "count": 2,
+      "color_name": "湖水绿",
+      "color_hex": "#429B94"
+    },
+    {
+      "part_file": "3004.dat",
+      "color_code": "0x2528AC5",
+      "count": 1,
+      "color_name": "天空蓝",
+      "color_hex": "#528AC5"
+    },
+    {
+      "part_file": "3004.dat",
+      "color_code": "0x2DF5C45",
+      "count": 1,
+      "color_name": "珊瑚红",
+      "color_hex": "#DF5C45"
+    },
+    {
+      "part_file": "3010.dat",
+      "color_code": "0x2DF5C45",
+      "count": 2,
+      "color_name": "珊瑚红",
+      "color_hex": "#DF5C45"
+    },
+    {
+      "part_file": "3010.dat",
+      "color_code": "0x2F4C542",
+      "count": 2,
+      "color_name": "日光黄",
+      "color_hex": "#F4C542"
+    },
+    {
+      "part_file": "3031.dat",
+      "color_code": "0x23B4350",
+      "count": 4,
+      "color_name": "石墨灰",
+      "color_hex": "#3B4350"
+    },
+    {
+      "part_file": "3031.dat",
+      "color_code": "0x2EEE9DC",
+      "count": 4,
+      "color_name": "奶油白",
+      "color_hex": "#EEE9DC"
+    },
+    {
+      "part_file": "3062b.dat",
+      "color_code": "0x26B9560",
+      "count": 1,
+      "color_name": "叶子绿",
+      "color_hex": "#6B9560"
+    },
+    {
+      "part_file": "3062b.dat",
+      "color_code": "0x2DF5C45",
+      "count": 1,
+      "color_name": "珊瑚红",
+      "color_hex": "#DF5C45"
+    }
+  ],
+  "warnings": [],
+  "step_semantics": "Explicit STEP/ROTSTEP boundaries preserve parent-local order. ROTSTEP affects view metadata only. A referenced subassembly enters its parent at final state; no interleaved global child execution order is invented.",
+  "pages": [
+    {
+      "kind": "cover",
+      "visible_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004",
+        "root/0005/0001",
+        "root/0005/0002",
+        "root/0006/0001",
+        "root/0006/0002",
+        "root/0007/0001",
+        "root/0007/0002",
+        "root/0008/0001",
+        "root/0008/0002",
+        "root/0009/0001",
+        "root/0009/0002",
+        "root/0010/0001",
+        "root/0010/0002",
+        "root/0011/0001",
+        "root/0011/0002",
+        "root/0012/0001",
+        "root/0012/0002",
+        "root/0013",
+        "root/0014",
+        "root/0015",
+        "root/0016",
+        "root/0017",
+        "root/0018",
+        "root/0019",
+        "root/0020",
+        "root/0021",
+        "root/0022",
+        "root/0023",
+        "root/0024",
+        "root/0025",
+        "root/0026",
+        "root/0027",
+        "root/0028",
+        "root/0029",
+        "root/0030"
+      ],
+      "focus_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004",
+        "root/0005/0001",
+        "root/0005/0002",
+        "root/0006/0001",
+        "root/0006/0002",
+        "root/0007/0001",
+        "root/0007/0002",
+        "root/0008/0001",
+        "root/0008/0002",
+        "root/0009/0001",
+        "root/0009/0002",
+        "root/0010/0001",
+        "root/0010/0002",
+        "root/0011/0001",
+        "root/0011/0002",
+        "root/0012/0001",
+        "root/0012/0002",
+        "root/0013",
+        "root/0014",
+        "root/0015",
+        "root/0016",
+        "root/0017",
+        "root/0018",
+        "root/0019",
+        "root/0020",
+        "root/0021",
+        "root/0022",
+        "root/0023",
+        "root/0024",
+        "root/0025",
+        "root/0026",
+        "root/0027",
+        "root/0028",
+        "root/0029",
+        "root/0030"
+      ],
+      "page_number": 1
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 1,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004"
+          ],
+          "added_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004"
+          ],
+          "focus_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004"
+          ],
+          "rows": [
+            {
+              "part_file": "3031.dat",
+              "color_code": "0x2EEE9DC",
+              "count": 4,
+              "color_name": "奶油白",
+              "color_hex": "#EEE9DC"
+            }
+          ],
+          "group_title": "底层积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-01",
+            "demo-03",
+            "demo-02",
+            "demo-04"
+          ],
+          "display_step": 1,
+          "display_rows": [
+            {
+              "part_file": "3031.dat",
+              "color_code": "0x2EEE9DC",
+              "count": 4,
+              "color_name": "奶油白",
+              "color_hex": "#EEE9DC"
+            }
+          ],
+          "callouts": [
+            {
+              "row": {
+                "part_file": "3031.dat",
+                "color_code": "0x2EEE9DC",
+                "count": 4,
+                "color_name": "奶油白",
+                "color_hex": "#EEE9DC"
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "row": {
+                "part_file": "3031.dat",
+                "color_code": "0x2EEE9DC",
+                "count": 4,
+                "color_name": "奶油白",
+                "color_hex": "#EEE9DC"
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [],
+          "componentId": null,
+          "componentQuantity": 0,
+          "component_id": null,
+          "component_quantity": 0,
+          "component_callouts": [],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 2
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 2,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0005"
+          ],
+          "added_ids": [
+            "root/0005/0001",
+            "root/0005/0002"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002"
+          ],
+          "focus_ids": [
+            "root/0005/0001",
+            "root/0005/0002"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002"
+          ],
+          "rows": [
+            {
+              "part_file": "3062b.dat",
+              "color_code": "0x26B9560",
+              "count": 1,
+              "color_name": "叶子绿",
+              "color_hex": "#6B9560"
+            },
+            {
+              "part_file": "3062b.dat",
+              "color_code": "0x2DF5C45",
+              "count": 1,
+              "color_name": "珊瑚红",
+              "color_hex": "#DF5C45"
+            }
+          ],
+          "group_title": "高度 1 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-37",
+            "demo-38"
+          ],
+          "display_step": 2,
+          "display_rows": [
+            {
+              "part_file": "3062b.dat",
+              "color_code": "0x26B9560",
+              "count": 1,
+              "color_name": "叶子绿",
+              "color_hex": "#6B9560"
+            },
+            {
+              "part_file": "3062b.dat",
+              "color_code": "0x2DF5C45",
+              "count": 1,
+              "color_name": "珊瑚红",
+              "color_hex": "#DF5C45"
+            }
+          ],
+          "callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-001.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-001.ldr",
+                "assembly_ids": [
+                  "root/0005"
+                ],
+                "quantity": 1,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0005",
+                    "part_ids": [
+                      "root/0005/0001",
+                      "root/0005/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0005/0001",
+                  "root/0005/0002"
+                ]
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-001.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-001.ldr",
+                "assembly_ids": [
+                  "root/0005"
+                ],
+                "quantity": 1,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0005",
+                    "part_ids": [
+                      "root/0005/0001",
+                      "root/0005/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0005/0001",
+                  "root/0005/0002"
+                ]
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [
+            {
+              "model_id": "model.mpd::bricklab-component-001.ldr",
+              "color_code": "16",
+              "assembly_label": "bricklab-component-001.ldr",
+              "assembly_ids": [
+                "root/0005"
+              ],
+              "quantity": 1,
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0005",
+                  "part_ids": [
+                    "root/0005/0001",
+                    "root/0005/0002"
+                  ]
+                }
+              ],
+              "part_ids": [
+                "root/0005/0001",
+                "root/0005/0002"
+              ]
+            }
+          ],
+          "componentId": "component-001",
+          "componentQuantity": 1,
+          "component_id": "component-001",
+          "component_quantity": 1,
+          "component_callouts": [
+            {
+              "component_id": "component-001",
+              "quantity": 1,
+              "assembly_id": "root/0005",
+              "part_ids": [
+                "root/0005/0001",
+                "root/0005/0002"
+              ],
+              "local_steps": [
+                {
+                  "number": 1,
+                  "added_ids": [
+                    "root/0005/0001"
+                  ],
+                  "visible_ids": [
+                    "root/0005/0001"
+                  ],
+                  "placement_arrows": []
+                },
+                {
+                  "number": 2,
+                  "added_ids": [
+                    "root/0005/0002"
+                  ],
+                  "visible_ids": [
+                    "root/0005/0001",
+                    "root/0005/0002"
+                  ],
+                  "placement_arrows": [
+                    {
+                      "part_ids": [
+                        "root/0005/0002"
+                      ],
+                      "start": [
+                        28.0,
+                        -28.0,
+                        24.1
+                      ],
+                      "end": [
+                        28.0,
+                        -28.0,
+                        13.4
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0005",
+                  "part_ids": [
+                    "root/0005/0001",
+                    "root/0005/0002"
+                  ],
+                  "component_instance_id": "component-instance-001"
+                }
+              ],
+              "display_semantics": {
+                "recipe": "one_representative_instance",
+                "quantity": "complete_components",
+                "main_step": "installs_all_listed_occurrences"
+              },
+              "installation_leaders": [
+                {
+                  "part_ids": [
+                    "root/0005/0001",
+                    "root/0005/0002"
+                  ],
+                  "target_mm": [
+                    28.0,
+                    -28.0,
+                    22.8
+                  ]
+                }
+              ]
+            }
+          ],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged",
+            "child_recipe": "embedded_representative_times_quantity"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 3
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 3,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0006",
+            "root/0007"
+          ],
+          "added_ids": [
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002"
+          ],
+          "focus_ids": [
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002"
+          ],
+          "rows": [
+            {
+              "part_file": "3002.dat",
+              "color_code": "0x2EEE9DC",
+              "count": 4,
+              "color_name": "奶油白",
+              "color_hex": "#EEE9DC"
+            }
+          ],
+          "group_title": "高度 1 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-05",
+            "demo-12",
+            "demo-07",
+            "demo-14"
+          ],
+          "display_step": 3,
+          "display_rows": [
+            {
+              "part_file": "3002.dat",
+              "color_code": "0x2EEE9DC",
+              "count": 4,
+              "color_name": "奶油白",
+              "color_hex": "#EEE9DC"
+            }
+          ],
+          "callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-002.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-002.ldr",
+                "assembly_ids": [
+                  "root/0006",
+                  "root/0007"
+                ],
+                "quantity": 2,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0006",
+                    "part_ids": [
+                      "root/0006/0001",
+                      "root/0006/0002"
+                    ]
+                  },
+                  {
+                    "assembly_id": "root/0007",
+                    "part_ids": [
+                      "root/0007/0001",
+                      "root/0007/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0006/0001",
+                  "root/0006/0002",
+                  "root/0007/0001",
+                  "root/0007/0002"
+                ]
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-002.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-002.ldr",
+                "assembly_ids": [
+                  "root/0006",
+                  "root/0007"
+                ],
+                "quantity": 2,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0006",
+                    "part_ids": [
+                      "root/0006/0001",
+                      "root/0006/0002"
+                    ]
+                  },
+                  {
+                    "assembly_id": "root/0007",
+                    "part_ids": [
+                      "root/0007/0001",
+                      "root/0007/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0006/0001",
+                  "root/0006/0002",
+                  "root/0007/0001",
+                  "root/0007/0002"
+                ]
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [
+            {
+              "model_id": "model.mpd::bricklab-component-002.ldr",
+              "color_code": "16",
+              "assembly_label": "bricklab-component-002.ldr",
+              "assembly_ids": [
+                "root/0006",
+                "root/0007"
+              ],
+              "quantity": 2,
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0006",
+                  "part_ids": [
+                    "root/0006/0001",
+                    "root/0006/0002"
+                  ]
+                },
+                {
+                  "assembly_id": "root/0007",
+                  "part_ids": [
+                    "root/0007/0001",
+                    "root/0007/0002"
+                  ]
+                }
+              ],
+              "part_ids": [
+                "root/0006/0001",
+                "root/0006/0002",
+                "root/0007/0001",
+                "root/0007/0002"
+              ]
+            }
+          ],
+          "componentId": "component-002",
+          "componentQuantity": 2,
+          "component_id": "component-002",
+          "component_quantity": 2,
+          "component_callouts": [
+            {
+              "component_id": "component-002",
+              "quantity": 2,
+              "assembly_id": "root/0006",
+              "part_ids": [
+                "root/0006/0001",
+                "root/0006/0002"
+              ],
+              "local_steps": [
+                {
+                  "number": 1,
+                  "added_ids": [
+                    "root/0006/0001"
+                  ],
+                  "visible_ids": [
+                    "root/0006/0001"
+                  ],
+                  "placement_arrows": []
+                },
+                {
+                  "number": 2,
+                  "added_ids": [
+                    "root/0006/0002"
+                  ],
+                  "visible_ids": [
+                    "root/0006/0001",
+                    "root/0006/0002"
+                  ],
+                  "placement_arrows": [
+                    {
+                      "part_ids": [
+                        "root/0006/0002"
+                      ],
+                      "start": [
+                        -24.0,
+                        -12.0,
+                        24.1
+                      ],
+                      "end": [
+                        -24.0,
+                        -12.0,
+                        13.4
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0006",
+                  "part_ids": [
+                    "root/0006/0001",
+                    "root/0006/0002"
+                  ],
+                  "component_instance_id": "component-instance-002"
+                },
+                {
+                  "assembly_id": "root/0007",
+                  "part_ids": [
+                    "root/0007/0001",
+                    "root/0007/0002"
+                  ],
+                  "component_instance_id": "component-instance-005"
+                }
+              ],
+              "display_semantics": {
+                "recipe": "one_representative_instance",
+                "quantity": "complete_components",
+                "main_step": "installs_all_listed_occurrences"
+              },
+              "installation_leaders": [
+                {
+                  "part_ids": [
+                    "root/0006/0001",
+                    "root/0006/0002"
+                  ],
+                  "target_mm": [
+                    -24.0,
+                    -12.0,
+                    22.8
+                  ]
+                },
+                {
+                  "part_ids": [
+                    "root/0007/0001",
+                    "root/0007/0002"
+                  ],
+                  "target_mm": [
+                    24.0,
+                    -12.0,
+                    22.8
+                  ]
+                }
+              ]
+            }
+          ],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged",
+            "child_recipe": "embedded_representative_times_quantity"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 4
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 4,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0008"
+          ],
+          "added_ids": [
+            "root/0008/0001",
+            "root/0008/0002"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002"
+          ],
+          "focus_ids": [
+            "root/0008/0001",
+            "root/0008/0002"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002"
+          ],
+          "rows": [
+            {
+              "part_file": "3004.dat",
+              "color_code": "0x2528AC5",
+              "count": 1,
+              "color_name": "天空蓝",
+              "color_hex": "#528AC5"
+            },
+            {
+              "part_file": "3004.dat",
+              "color_code": "0x2DF5C45",
+              "count": 1,
+              "color_name": "珊瑚红",
+              "color_hex": "#DF5C45"
+            }
+          ],
+          "group_title": "高度 1 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-10",
+            "demo-17"
+          ],
+          "display_step": 4,
+          "display_rows": [
+            {
+              "part_file": "3004.dat",
+              "color_code": "0x2528AC5",
+              "count": 1,
+              "color_name": "天空蓝",
+              "color_hex": "#528AC5"
+            },
+            {
+              "part_file": "3004.dat",
+              "color_code": "0x2DF5C45",
+              "count": 1,
+              "color_name": "珊瑚红",
+              "color_hex": "#DF5C45"
+            }
+          ],
+          "callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-003.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-003.ldr",
+                "assembly_ids": [
+                  "root/0008"
+                ],
+                "quantity": 1,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0008",
+                    "part_ids": [
+                      "root/0008/0001",
+                      "root/0008/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0008/0001",
+                  "root/0008/0002"
+                ]
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-003.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-003.ldr",
+                "assembly_ids": [
+                  "root/0008"
+                ],
+                "quantity": 1,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0008",
+                    "part_ids": [
+                      "root/0008/0001",
+                      "root/0008/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0008/0001",
+                  "root/0008/0002"
+                ]
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [
+            {
+              "model_id": "model.mpd::bricklab-component-003.ldr",
+              "color_code": "16",
+              "assembly_label": "bricklab-component-003.ldr",
+              "assembly_ids": [
+                "root/0008"
+              ],
+              "quantity": 1,
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0008",
+                  "part_ids": [
+                    "root/0008/0001",
+                    "root/0008/0002"
+                  ]
+                }
+              ],
+              "part_ids": [
+                "root/0008/0001",
+                "root/0008/0002"
+              ]
+            }
+          ],
+          "componentId": "component-003",
+          "componentQuantity": 1,
+          "component_id": "component-003",
+          "component_quantity": 1,
+          "component_callouts": [
+            {
+              "component_id": "component-003",
+              "quantity": 1,
+              "assembly_id": "root/0008",
+              "part_ids": [
+                "root/0008/0001",
+                "root/0008/0002"
+              ],
+              "local_steps": [
+                {
+                  "number": 1,
+                  "added_ids": [
+                    "root/0008/0001"
+                  ],
+                  "visible_ids": [
+                    "root/0008/0001"
+                  ],
+                  "placement_arrows": []
+                },
+                {
+                  "number": 2,
+                  "added_ids": [
+                    "root/0008/0002"
+                  ],
+                  "visible_ids": [
+                    "root/0008/0001",
+                    "root/0008/0002"
+                  ],
+                  "placement_arrows": [
+                    {
+                      "part_ids": [
+                        "root/0008/0002"
+                      ],
+                      "start": [
+                        -8.0,
+                        -20.0,
+                        24.1
+                      ],
+                      "end": [
+                        -8.0,
+                        -20.0,
+                        13.4
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0008",
+                  "part_ids": [
+                    "root/0008/0001",
+                    "root/0008/0002"
+                  ],
+                  "component_instance_id": "component-instance-003"
+                }
+              ],
+              "display_semantics": {
+                "recipe": "one_representative_instance",
+                "quantity": "complete_components",
+                "main_step": "installs_all_listed_occurrences"
+              },
+              "installation_leaders": [
+                {
+                  "part_ids": [
+                    "root/0008/0001",
+                    "root/0008/0002"
+                  ],
+                  "target_mm": [
+                    -8.0,
+                    -20.0,
+                    22.8
+                  ]
+                }
+              ]
+            }
+          ],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged",
+            "child_recipe": "embedded_representative_times_quantity"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 5
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 5,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0009"
+          ],
+          "added_ids": [
+            "root/0009/0001",
+            "root/0009/0002"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002"
+          ],
+          "focus_ids": [
+            "root/0009/0001",
+            "root/0009/0002"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002"
+          ],
+          "rows": [
+            {
+              "part_file": "3004.dat",
+              "color_code": "0x2429B94",
+              "count": 2,
+              "color_name": "湖水绿",
+              "color_hex": "#429B94"
+            }
+          ],
+          "group_title": "高度 1 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-11",
+            "demo-18"
+          ],
+          "display_step": 5,
+          "display_rows": [
+            {
+              "part_file": "3004.dat",
+              "color_code": "0x2429B94",
+              "count": 2,
+              "color_name": "湖水绿",
+              "color_hex": "#429B94"
+            }
+          ],
+          "callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-004.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-004.ldr",
+                "assembly_ids": [
+                  "root/0009"
+                ],
+                "quantity": 1,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0009",
+                    "part_ids": [
+                      "root/0009/0001",
+                      "root/0009/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0009/0001",
+                  "root/0009/0002"
+                ]
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-004.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-004.ldr",
+                "assembly_ids": [
+                  "root/0009"
+                ],
+                "quantity": 1,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0009",
+                    "part_ids": [
+                      "root/0009/0001",
+                      "root/0009/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0009/0001",
+                  "root/0009/0002"
+                ]
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [
+            {
+              "model_id": "model.mpd::bricklab-component-004.ldr",
+              "color_code": "16",
+              "assembly_label": "bricklab-component-004.ldr",
+              "assembly_ids": [
+                "root/0009"
+              ],
+              "quantity": 1,
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0009",
+                  "part_ids": [
+                    "root/0009/0001",
+                    "root/0009/0002"
+                  ]
+                }
+              ],
+              "part_ids": [
+                "root/0009/0001",
+                "root/0009/0002"
+              ]
+            }
+          ],
+          "componentId": "component-004",
+          "componentQuantity": 1,
+          "component_id": "component-004",
+          "component_quantity": 1,
+          "component_callouts": [
+            {
+              "component_id": "component-004",
+              "quantity": 1,
+              "assembly_id": "root/0009",
+              "part_ids": [
+                "root/0009/0001",
+                "root/0009/0002"
+              ],
+              "local_steps": [
+                {
+                  "number": 1,
+                  "added_ids": [
+                    "root/0009/0001"
+                  ],
+                  "visible_ids": [
+                    "root/0009/0001"
+                  ],
+                  "placement_arrows": []
+                },
+                {
+                  "number": 2,
+                  "added_ids": [
+                    "root/0009/0002"
+                  ],
+                  "visible_ids": [
+                    "root/0009/0001",
+                    "root/0009/0002"
+                  ],
+                  "placement_arrows": [
+                    {
+                      "part_ids": [
+                        "root/0009/0002"
+                      ],
+                      "start": [
+                        8.0,
+                        -20.0,
+                        24.1
+                      ],
+                      "end": [
+                        8.0,
+                        -20.0,
+                        13.4
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0009",
+                  "part_ids": [
+                    "root/0009/0001",
+                    "root/0009/0002"
+                  ],
+                  "component_instance_id": "component-instance-004"
+                }
+              ],
+              "display_semantics": {
+                "recipe": "one_representative_instance",
+                "quantity": "complete_components",
+                "main_step": "installs_all_listed_occurrences"
+              },
+              "installation_leaders": [
+                {
+                  "part_ids": [
+                    "root/0009/0001",
+                    "root/0009/0002"
+                  ],
+                  "target_mm": [
+                    8.0,
+                    -20.0,
+                    22.8
+                  ]
+                }
+              ]
+            }
+          ],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged",
+            "child_recipe": "embedded_representative_times_quantity"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 6
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 6,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0010",
+            "root/0011"
+          ],
+          "added_ids": [
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002"
+          ],
+          "focus_ids": [
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002"
+          ],
+          "rows": [
+            {
+              "part_file": "3002.dat",
+              "color_code": "0x2528AC5",
+              "count": 2,
+              "color_name": "天空蓝",
+              "color_hex": "#528AC5"
+            },
+            {
+              "part_file": "3002.dat",
+              "color_code": "0x2EEE9DC",
+              "count": 2,
+              "color_name": "奶油白",
+              "color_hex": "#EEE9DC"
+            }
+          ],
+          "group_title": "高度 1 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-06",
+            "demo-13",
+            "demo-08",
+            "demo-15"
+          ],
+          "display_step": 6,
+          "display_rows": [
+            {
+              "part_file": "3002.dat",
+              "color_code": "0x2528AC5",
+              "count": 2,
+              "color_name": "天空蓝",
+              "color_hex": "#528AC5"
+            },
+            {
+              "part_file": "3002.dat",
+              "color_code": "0x2EEE9DC",
+              "count": 2,
+              "color_name": "奶油白",
+              "color_hex": "#EEE9DC"
+            }
+          ],
+          "callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-005.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-005.ldr",
+                "assembly_ids": [
+                  "root/0010",
+                  "root/0011"
+                ],
+                "quantity": 2,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0010",
+                    "part_ids": [
+                      "root/0010/0001",
+                      "root/0010/0002"
+                    ]
+                  },
+                  {
+                    "assembly_id": "root/0011",
+                    "part_ids": [
+                      "root/0011/0001",
+                      "root/0011/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0010/0001",
+                  "root/0010/0002",
+                  "root/0011/0001",
+                  "root/0011/0002"
+                ]
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-005.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-005.ldr",
+                "assembly_ids": [
+                  "root/0010",
+                  "root/0011"
+                ],
+                "quantity": 2,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0010",
+                    "part_ids": [
+                      "root/0010/0001",
+                      "root/0010/0002"
+                    ]
+                  },
+                  {
+                    "assembly_id": "root/0011",
+                    "part_ids": [
+                      "root/0011/0001",
+                      "root/0011/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0010/0001",
+                  "root/0010/0002",
+                  "root/0011/0001",
+                  "root/0011/0002"
+                ]
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [
+            {
+              "model_id": "model.mpd::bricklab-component-005.ldr",
+              "color_code": "16",
+              "assembly_label": "bricklab-component-005.ldr",
+              "assembly_ids": [
+                "root/0010",
+                "root/0011"
+              ],
+              "quantity": 2,
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0010",
+                  "part_ids": [
+                    "root/0010/0001",
+                    "root/0010/0002"
+                  ]
+                },
+                {
+                  "assembly_id": "root/0011",
+                  "part_ids": [
+                    "root/0011/0001",
+                    "root/0011/0002"
+                  ]
+                }
+              ],
+              "part_ids": [
+                "root/0010/0001",
+                "root/0010/0002",
+                "root/0011/0001",
+                "root/0011/0002"
+              ]
+            }
+          ],
+          "componentId": "component-005",
+          "componentQuantity": 2,
+          "component_id": "component-005",
+          "component_quantity": 2,
+          "component_callouts": [
+            {
+              "component_id": "component-005",
+              "quantity": 2,
+              "assembly_id": "root/0010",
+              "part_ids": [
+                "root/0010/0001",
+                "root/0010/0002"
+              ],
+              "local_steps": [
+                {
+                  "number": 1,
+                  "added_ids": [
+                    "root/0010/0001"
+                  ],
+                  "visible_ids": [
+                    "root/0010/0001"
+                  ],
+                  "placement_arrows": []
+                },
+                {
+                  "number": 2,
+                  "added_ids": [
+                    "root/0010/0002"
+                  ],
+                  "visible_ids": [
+                    "root/0010/0001",
+                    "root/0010/0002"
+                  ],
+                  "placement_arrows": [
+                    {
+                      "part_ids": [
+                        "root/0010/0002"
+                      ],
+                      "start": [
+                        -24.0,
+                        12.0,
+                        24.1
+                      ],
+                      "end": [
+                        -24.0,
+                        12.0,
+                        13.4
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0010",
+                  "part_ids": [
+                    "root/0010/0001",
+                    "root/0010/0002"
+                  ],
+                  "component_instance_id": "component-instance-006"
+                },
+                {
+                  "assembly_id": "root/0011",
+                  "part_ids": [
+                    "root/0011/0001",
+                    "root/0011/0002"
+                  ],
+                  "component_instance_id": "component-instance-007"
+                }
+              ],
+              "display_semantics": {
+                "recipe": "one_representative_instance",
+                "quantity": "complete_components",
+                "main_step": "installs_all_listed_occurrences"
+              },
+              "installation_leaders": [
+                {
+                  "part_ids": [
+                    "root/0010/0001",
+                    "root/0010/0002"
+                  ],
+                  "target_mm": [
+                    -24.0,
+                    12.0,
+                    22.8
+                  ]
+                },
+                {
+                  "part_ids": [
+                    "root/0011/0001",
+                    "root/0011/0002"
+                  ],
+                  "target_mm": [
+                    24.0,
+                    12.0,
+                    22.8
+                  ]
+                }
+              ]
+            }
+          ],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged",
+            "child_recipe": "embedded_representative_times_quantity"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 7
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 7,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0012"
+          ],
+          "added_ids": [
+            "root/0012/0001",
+            "root/0012/0002"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002"
+          ],
+          "focus_ids": [
+            "root/0012/0001",
+            "root/0012/0002"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002"
+          ],
+          "rows": [
+            {
+              "part_file": "3010.dat",
+              "color_code": "0x2DF5C45",
+              "count": 2,
+              "color_name": "珊瑚红",
+              "color_hex": "#DF5C45"
+            }
+          ],
+          "group_title": "高度 1 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-09",
+            "demo-16"
+          ],
+          "display_step": 7,
+          "display_rows": [
+            {
+              "part_file": "3010.dat",
+              "color_code": "0x2DF5C45",
+              "count": 2,
+              "color_name": "珊瑚红",
+              "color_hex": "#DF5C45"
+            }
+          ],
+          "callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-006.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-006.ldr",
+                "assembly_ids": [
+                  "root/0012"
+                ],
+                "quantity": 1,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0012",
+                    "part_ids": [
+                      "root/0012/0001",
+                      "root/0012/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0012/0001",
+                  "root/0012/0002"
+                ]
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "child": {
+                "model_id": "model.mpd::bricklab-component-006.ldr",
+                "color_code": "16",
+                "assembly_label": "bricklab-component-006.ldr",
+                "assembly_ids": [
+                  "root/0012"
+                ],
+                "quantity": 1,
+                "instance_groups": [
+                  {
+                    "assembly_id": "root/0012",
+                    "part_ids": [
+                      "root/0012/0001",
+                      "root/0012/0002"
+                    ]
+                  }
+                ],
+                "part_ids": [
+                  "root/0012/0001",
+                  "root/0012/0002"
+                ]
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [
+            {
+              "model_id": "model.mpd::bricklab-component-006.ldr",
+              "color_code": "16",
+              "assembly_label": "bricklab-component-006.ldr",
+              "assembly_ids": [
+                "root/0012"
+              ],
+              "quantity": 1,
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0012",
+                  "part_ids": [
+                    "root/0012/0001",
+                    "root/0012/0002"
+                  ]
+                }
+              ],
+              "part_ids": [
+                "root/0012/0001",
+                "root/0012/0002"
+              ]
+            }
+          ],
+          "componentId": "component-006",
+          "componentQuantity": 1,
+          "component_id": "component-006",
+          "component_quantity": 1,
+          "component_callouts": [
+            {
+              "component_id": "component-006",
+              "quantity": 1,
+              "assembly_id": "root/0012",
+              "part_ids": [
+                "root/0012/0001",
+                "root/0012/0002"
+              ],
+              "local_steps": [
+                {
+                  "number": 1,
+                  "added_ids": [
+                    "root/0012/0001"
+                  ],
+                  "visible_ids": [
+                    "root/0012/0001"
+                  ],
+                  "placement_arrows": []
+                },
+                {
+                  "number": 2,
+                  "added_ids": [
+                    "root/0012/0002"
+                  ],
+                  "visible_ids": [
+                    "root/0012/0001",
+                    "root/0012/0002"
+                  ],
+                  "placement_arrows": [
+                    {
+                      "part_ids": [
+                        "root/0012/0002"
+                      ],
+                      "start": [
+                        0.0,
+                        20.0,
+                        24.1
+                      ],
+                      "end": [
+                        0.0,
+                        20.0,
+                        13.4
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "instance_groups": [
+                {
+                  "assembly_id": "root/0012",
+                  "part_ids": [
+                    "root/0012/0001",
+                    "root/0012/0002"
+                  ],
+                  "component_instance_id": "component-instance-008"
+                }
+              ],
+              "display_semantics": {
+                "recipe": "one_representative_instance",
+                "quantity": "complete_components",
+                "main_step": "installs_all_listed_occurrences"
+              },
+              "installation_leaders": [
+                {
+                  "part_ids": [
+                    "root/0012/0001",
+                    "root/0012/0002"
+                  ],
+                  "target_mm": [
+                    0.0,
+                    20.0,
+                    22.8
+                  ]
+                }
+              ]
+            }
+          ],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged",
+            "child_recipe": "embedded_representative_times_quantity"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 8
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 8,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016"
+          ],
+          "added_ids": [
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016"
+          ],
+          "focus_ids": [
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016"
+          ],
+          "rows": [
+            {
+              "part_file": "3031.dat",
+              "color_code": "0x23B4350",
+              "count": 4,
+              "color_name": "石墨灰",
+              "color_hex": "#3B4350"
+            }
+          ],
+          "group_title": "高度 7 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-19",
+            "demo-21",
+            "demo-20",
+            "demo-22"
+          ],
+          "display_step": 8,
+          "display_rows": [
+            {
+              "part_file": "3031.dat",
+              "color_code": "0x23B4350",
+              "count": 4,
+              "color_name": "石墨灰",
+              "color_hex": "#3B4350"
+            }
+          ],
+          "callouts": [
+            {
+              "row": {
+                "part_file": "3031.dat",
+                "color_code": "0x23B4350",
+                "count": 4,
+                "color_name": "石墨灰",
+                "color_hex": "#3B4350"
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "row": {
+                "part_file": "3031.dat",
+                "color_code": "0x23B4350",
+                "count": 4,
+                "color_name": "石墨灰",
+                "color_hex": "#3B4350"
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [],
+          "componentId": null,
+          "componentQuantity": 0,
+          "component_id": null,
+          "component_quantity": 0,
+          "component_callouts": [],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        },
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 9,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024"
+          ],
+          "added_ids": [
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024"
+          ],
+          "focus_ids": [
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024"
+          ],
+          "rows": [
+            {
+              "part_file": "3001.dat",
+              "color_code": "0x2F4C542",
+              "count": 8,
+              "color_name": "日光黄",
+              "color_hex": "#F4C542"
+            }
+          ],
+          "group_title": "高度 8 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-23",
+            "demo-24",
+            "demo-25",
+            "demo-26",
+            "demo-27",
+            "demo-28",
+            "demo-29",
+            "demo-30"
+          ],
+          "display_step": 9,
+          "display_rows": [
+            {
+              "part_file": "3001.dat",
+              "color_code": "0x2F4C542",
+              "count": 8,
+              "color_name": "日光黄",
+              "color_hex": "#F4C542"
+            }
+          ],
+          "callouts": [
+            {
+              "row": {
+                "part_file": "3001.dat",
+                "color_code": "0x2F4C542",
+                "count": 8,
+                "color_name": "日光黄",
+                "color_hex": "#F4C542"
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "row": {
+                "part_file": "3001.dat",
+                "color_code": "0x2F4C542",
+                "count": 8,
+                "color_name": "日光黄",
+                "color_hex": "#F4C542"
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [],
+          "componentId": null,
+          "componentQuantity": 0,
+          "component_id": null,
+          "component_quantity": 0,
+          "component_callouts": [],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 9
+    },
+    {
+      "kind": "lego_page",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "panels": [
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 10,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028"
+          ],
+          "added_ids": [
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028"
+          ],
+          "focus_ids": [
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028"
+          ],
+          "rows": [
+            {
+              "part_file": "3001.dat",
+              "color_code": "0x2F4C542",
+              "count": 4,
+              "color_name": "日光黄",
+              "color_hex": "#F4C542"
+            }
+          ],
+          "group_title": "高度 11 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-31",
+            "demo-32",
+            "demo-33",
+            "demo-34"
+          ],
+          "display_step": 10,
+          "display_rows": [
+            {
+              "part_file": "3001.dat",
+              "color_code": "0x2F4C542",
+              "count": 4,
+              "color_name": "日光黄",
+              "color_hex": "#F4C542"
+            }
+          ],
+          "callouts": [
+            {
+              "row": {
+                "part_file": "3001.dat",
+                "color_code": "0x2F4C542",
+                "count": 4,
+                "color_name": "日光黄",
+                "color_hex": "#F4C542"
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "row": {
+                "part_file": "3001.dat",
+                "color_code": "0x2F4C542",
+                "count": 4,
+                "color_name": "日光黄",
+                "color_hex": "#F4C542"
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [],
+          "componentId": null,
+          "componentQuantity": 0,
+          "component_id": null,
+          "component_quantity": 0,
+          "component_callouts": [],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        },
+        {
+          "kind": "lego_step",
+          "assembly_id": "root",
+          "assembly_label": "bricklab-web.ldr",
+          "assembly_number": 0,
+          "source_step": 11,
+          "explicit_step_boundary": true,
+          "boundary_meta": {
+            "command": "STEP",
+            "raw": "0 STEP"
+          },
+          "added_child_ids": [
+            "root/0029",
+            "root/0030"
+          ],
+          "added_ids": [
+            "root/0029",
+            "root/0030"
+          ],
+          "visible_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "focus_ids": [
+            "root/0029",
+            "root/0030"
+          ],
+          "framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "rows": [
+            {
+              "part_file": "3010.dat",
+              "color_code": "0x2F4C542",
+              "count": 2,
+              "color_name": "日光黄",
+              "color_hex": "#F4C542"
+            }
+          ],
+          "group_title": "高度 14 的积木",
+          "group_reason": "同高度、支撑已就绪的相邻区域",
+          "source_added_ids": [
+            "demo-35",
+            "demo-36"
+          ],
+          "display_step": 11,
+          "display_rows": [
+            {
+              "part_file": "3010.dat",
+              "color_code": "0x2F4C542",
+              "count": 2,
+              "color_name": "日光黄",
+              "color_hex": "#F4C542"
+            }
+          ],
+          "callouts": [
+            {
+              "row": {
+                "part_file": "3010.dat",
+                "color_code": "0x2F4C542",
+                "count": 2,
+                "color_name": "日光黄",
+                "color_hex": "#F4C542"
+              }
+            }
+          ],
+          "display_callouts": [
+            {
+              "row": {
+                "part_file": "3010.dat",
+                "color_code": "0x2F4C542",
+                "count": 2,
+                "color_name": "日光黄",
+                "color_hex": "#F4C542"
+              }
+            }
+          ],
+          "source_framing_ids": [
+            "root/0001",
+            "root/0002",
+            "root/0003",
+            "root/0004",
+            "root/0005/0001",
+            "root/0005/0002",
+            "root/0006/0001",
+            "root/0006/0002",
+            "root/0007/0001",
+            "root/0007/0002",
+            "root/0008/0001",
+            "root/0008/0002",
+            "root/0009/0001",
+            "root/0009/0002",
+            "root/0010/0001",
+            "root/0010/0002",
+            "root/0011/0001",
+            "root/0011/0002",
+            "root/0012/0001",
+            "root/0012/0002",
+            "root/0013",
+            "root/0014",
+            "root/0015",
+            "root/0016",
+            "root/0017",
+            "root/0018",
+            "root/0019",
+            "root/0020",
+            "root/0021",
+            "root/0022",
+            "root/0023",
+            "root/0024",
+            "root/0025",
+            "root/0026",
+            "root/0027",
+            "root/0028",
+            "root/0029",
+            "root/0030"
+          ],
+          "overflow_row_count": 0,
+          "overflow_callout_count": 0,
+          "subassemblies": [],
+          "componentId": null,
+          "componentQuantity": 0,
+          "component_id": null,
+          "component_quantity": 0,
+          "component_callouts": [],
+          "display_semantics": {
+            "style": "creator_inspired",
+            "source_STEP_membership": "unchanged"
+          },
+          "view": "iso",
+          "placement_arrows": [],
+          "drawing_lift_mm": 0.0,
+          "placement_scope": "installed_state_with_component_recipe_insets"
+        }
+      ],
+      "display_semantics": "creator_inspired",
+      "page_number": 10
+    },
+    {
+      "kind": "completion",
+      "visible_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004",
+        "root/0005/0001",
+        "root/0005/0002",
+        "root/0006/0001",
+        "root/0006/0002",
+        "root/0007/0001",
+        "root/0007/0002",
+        "root/0008/0001",
+        "root/0008/0002",
+        "root/0009/0001",
+        "root/0009/0002",
+        "root/0010/0001",
+        "root/0010/0002",
+        "root/0011/0001",
+        "root/0011/0002",
+        "root/0012/0001",
+        "root/0012/0002",
+        "root/0013",
+        "root/0014",
+        "root/0015",
+        "root/0016",
+        "root/0017",
+        "root/0018",
+        "root/0019",
+        "root/0020",
+        "root/0021",
+        "root/0022",
+        "root/0023",
+        "root/0024",
+        "root/0025",
+        "root/0026",
+        "root/0027",
+        "root/0028",
+        "root/0029",
+        "root/0030"
+      ],
+      "focus_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004",
+        "root/0005/0001",
+        "root/0005/0002",
+        "root/0006/0001",
+        "root/0006/0002",
+        "root/0007/0001",
+        "root/0007/0002",
+        "root/0008/0001",
+        "root/0008/0002",
+        "root/0009/0001",
+        "root/0009/0002",
+        "root/0010/0001",
+        "root/0010/0002",
+        "root/0011/0001",
+        "root/0011/0002",
+        "root/0012/0001",
+        "root/0012/0002",
+        "root/0013",
+        "root/0014",
+        "root/0015",
+        "root/0016",
+        "root/0017",
+        "root/0018",
+        "root/0019",
+        "root/0020",
+        "root/0021",
+        "root/0022",
+        "root/0023",
+        "root/0024",
+        "root/0025",
+        "root/0026",
+        "root/0027",
+        "root/0028",
+        "root/0029",
+        "root/0030"
+      ],
+      "page_number": 11
+    },
+    {
+      "kind": "inventory",
+      "rows": [
+        {
+          "part_file": "3001.dat",
+          "color_code": "0x2F4C542",
+          "count": 12,
+          "color_name": "日光黄",
+          "color_hex": "#F4C542"
+        },
+        {
+          "part_file": "3002.dat",
+          "color_code": "0x2528AC5",
+          "count": 2,
+          "color_name": "天空蓝",
+          "color_hex": "#528AC5"
+        },
+        {
+          "part_file": "3002.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 6,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        },
+        {
+          "part_file": "3004.dat",
+          "color_code": "0x2429B94",
+          "count": 2,
+          "color_name": "湖水绿",
+          "color_hex": "#429B94"
+        },
+        {
+          "part_file": "3004.dat",
+          "color_code": "0x2528AC5",
+          "count": 1,
+          "color_name": "天空蓝",
+          "color_hex": "#528AC5"
+        },
+        {
+          "part_file": "3004.dat",
+          "color_code": "0x2DF5C45",
+          "count": 1,
+          "color_name": "珊瑚红",
+          "color_hex": "#DF5C45"
+        },
+        {
+          "part_file": "3010.dat",
+          "color_code": "0x2DF5C45",
+          "count": 2,
+          "color_name": "珊瑚红",
+          "color_hex": "#DF5C45"
+        },
+        {
+          "part_file": "3010.dat",
+          "color_code": "0x2F4C542",
+          "count": 2,
+          "color_name": "日光黄",
+          "color_hex": "#F4C542"
+        },
+        {
+          "part_file": "3031.dat",
+          "color_code": "0x23B4350",
+          "count": 4,
+          "color_name": "石墨灰",
+          "color_hex": "#3B4350"
+        },
+        {
+          "part_file": "3031.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 4,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        },
+        {
+          "part_file": "3062b.dat",
+          "color_code": "0x26B9560",
+          "count": 1,
+          "color_name": "叶子绿",
+          "color_hex": "#6B9560"
+        },
+        {
+          "part_file": "3062b.dat",
+          "color_code": "0x2DF5C45",
+          "count": 1,
+          "color_name": "珊瑚红",
+          "color_hex": "#DF5C45"
+        }
+      ],
+      "page_number": 12
+    }
+  ],
+  "instruction_step_source": "auto",
+  "step_provenance": "generated_web_unique_vertical_components_not_authored_not_robot_validated",
+  "geometry_scope": "catalog nominal bodies and studs; not third-party detailed meshes or robot actions",
+  "pdf_sha256": "fa209b1b9beeb5a0e02f1e6bdf375f9964994ff7d428fdfe9c4786b4d89a4d81"
+}

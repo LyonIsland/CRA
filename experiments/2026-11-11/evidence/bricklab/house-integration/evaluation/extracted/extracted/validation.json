@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "valid": true,
+  "validation_scope": "supported-format parsing, references, finite affine transforms, catalog metadata schema",
+  "robot_execution_validated": false,
+  "physical_connections_validated": false,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "model_definitions": 7,
+    "assembly_instances_including_root": 9,
+    "part_instances": 38,
+    "root_steps": 11,
+    "inventory_rows": 12,
+    "unknown_part_instances": 0
+  },
+  "limitations": [
+    "Assembly state and authored STEP boundaries only; not robot actions or an executable global subassembly schedule.",
+    "No physical connection, stability, grasp, collision, reachability, force, or calibration validation is performed.",
+    "Explicit STEP/ROTSTEP boundaries are interpreted. ROTSTEP view metadata is preserved without changing part poses; page layout/cameras/rendering are not reconstructed.",
+    "DAT references are atomic parts, not recursively expanded part-library geometry; unknown DAT parts are retained with warnings.",
+    "Catalog bounds/connectors are supplied metadata, not exact physical geometry or evidence of a valid mating connection.",
+    "1 LDU = 0.4 mm is the LDraw nominal approximation; poses are not calibrated robot targets."
+  ]
+}

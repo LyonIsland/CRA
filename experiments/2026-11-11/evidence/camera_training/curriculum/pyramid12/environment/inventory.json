@@ -1,0 +1,2001 @@
+{
+  "kind": "randomized_inventory_v1",
+  "parts": [
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    },
+    {
+      "shapes": [
+        {
+          "name": "Roof",
+          "kind": "box",
+          "size_m": [
+            0.032,
+            0.016,
+            0.0016
+          ],
+          "center_m": [
+            0,
+            0,
+            -0.0008
+          ]
+        },
+        {
+          "name": "WallXNeg",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            -0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallXPos",
+          "kind": "box",
+          "size_m": [
+            0.0016,
+            0.016,
+            0.008
+          ],
+          "center_m": [
+            0.0152,
+            0,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYNeg",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            -0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "WallYPos",
+          "kind": "box",
+          "size_m": [
+            0.0288,
+            0.0016,
+            0.008
+          ],
+          "center_m": [
+            0,
+            0.0072,
+            -0.005600000000000001
+          ]
+        },
+        {
+          "name": "Stud_0000",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0001",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.012,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0002",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0003",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            -0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0004",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0005",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.004,
+            0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0006",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            -0.004,
+            0.0008
+          ]
+        },
+        {
+          "name": "Stud_0007",
+          "kind": "cylinder",
+          "radius_m": 0.0024000000000000002,
+          "height_m": 0.0016,
+          "center_m": [
+            0.012,
+            0.004,
+            0.0008
+          ]
+        }
+      ],
+      "nominal_volume_m3": 2.1977033431638684e-06,
+      "nominal_mass_kg": 0.0023075885103220617,
+      "geometry_kind": "ordinary_studded_hollow_rectangular",
+      "hollow": true
+    }
+  ],
+  "baseplate_studs": [
+    20,
+    20
+  ]
+}

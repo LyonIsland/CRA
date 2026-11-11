@@ -75,6 +75,14 @@ def fit_piece(color,views):
     observations=sorted(observations,key=lambda o:o['pixels'],reverse=True)[:4]
     model=model_for(color);body=model[:8]
     init=np.median([unproject(o['center_uv'],o['pose'])[:2] for o in observations],axis=0)
+    k=intrinsics();view_cache={}
+    def prepared(selected):
+        key=tuple(id(o) for o in selected)
+        if key not in view_cache:
+            view_cache[key]=(np.array([o['pose'][:3,3] for o in selected]),
+                np.array([o['pose'][:3,:3] for o in selected]),np.array([o['bbox'] for o in selected]),
+                np.array([o['pixel_scale'] for o in selected]),np.array([o['principal_axis_uv'] for o in selected]))
+        return view_cache[key]
     solutions=[]
     for name,euler in FACES.items():
         face=Rotation.from_euler('xyz',euler,degrees=True).as_matrix()
@@ -87,16 +95,18 @@ def fit_piece(color,views):
             selected=observations if selected is None else selected
             r=Rotation.from_euler('z',v[3]).as_matrix()@face
             points=model@r.T+v[:3]
-            values=[]
-            for o in selected:
-                error=(projected_bbox(points,o['pose'])-o['bbox'])*o['pixel_scale']
-                if use_axis:
-                    a=project(v[:3]+r[:,0]*.012,o['pose'])[0];b=project(v[:3]-r[:,0]*.012,o['pose'])[0]
-                    direction=(a-b)/max(1e-8,np.linalg.norm(a-b))
-                    dot=float(direction@o['principal_axis_uv'])
-                    error=np.r_[error,3*np.sqrt(max(0.,1-dot*dot))]
-                values.append(error)
-            return np.concatenate(values)
+            centres,bases,boxes,scales,axes=prepared(selected)
+            samples=np.vstack([points,v[:3]+r[:,0]*.012,v[:3]-r[:,0]*.012]) if use_axis else points
+            cv=np.matmul(samples[None,:,:]-centres[:,None,:],bases)*np.array([1,-1,-1])
+            uv=cv@k.T;uv=uv[:,:,:2]/uv[:,:,2:3]
+            model_uv=uv[:,:len(points)]
+            predicted=np.column_stack([model_uv[:,:,0].min(1),model_uv[:,:,0].max(1),model_uv[:,:,1].min(1),model_uv[:,:,1].max(1)])
+            errors=(predicted-boxes)*scales[:,None]
+            if use_axis:
+                direction=uv[:,-2]-uv[:,-1];direction/=np.maximum(1e-8,np.linalg.norm(direction,axis=1))[:,None]
+                dot=np.sum(direction*axes,axis=1)
+                errors=np.column_stack([errors,3*np.sqrt(np.maximum(0.,1-dot*dot))])
+            return errors.ravel()
         best=None
         for yaw in [-np.pi/3,0,np.pi/3]:
             start=np.r_[np.clip(init,[.15,-.25],[.40,.02]),max(.015,minimum_z+.002),yaw]

@@ -1,0 +1,5 @@
+# Install into a separate training venv; do not modify the Isaac environment.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128
+numpy==2.2.6
+pillow==11.2.1

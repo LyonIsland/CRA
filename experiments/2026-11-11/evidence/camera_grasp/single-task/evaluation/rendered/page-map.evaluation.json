@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.1",
+  "kind": "bricklab_manual_page_map",
+  "mode": "steps",
+  "title": "Single brick grasp",
+  "source_label": "BRICKLAB / web_json",
+  "source_sha256": "eb8b37aa0a1a5253d61bb7e988c882f9e7479ae7b3821cd1fa17db18b625f2d1",
+  "color_count": 1,
+  "color_summary": [
+    {
+      "color_hex": "#EEE9DC",
+      "color_name": "奶油白",
+      "count": 1
+    }
+  ],
+  "instance_count": 1,
+  "inventory": [
+    {
+      "part_file": "3001.dat",
+      "color_code": "0x2EEE9DC",
+      "count": 1,
+      "color_name": "奶油白",
+      "color_hex": "#EEE9DC"
+    }
+  ],
+  "warnings": [],
+  "step_semantics": "Explicit STEP/ROTSTEP boundaries preserve parent-local order. ROTSTEP affects view metadata only. A referenced subassembly enters its parent at final state; no interleaved global child execution order is invented.",
+  "pages": [
+    {
+      "kind": "cover",
+      "visible_ids": [
+        "root/0001"
+      ],
+      "focus_ids": [
+        "root/0001"
+      ],
+      "page_number": 1
+    },
+    {
+      "kind": "inventory",
+      "rows": [
+        {
+          "part_file": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 1,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        }
+      ],
+      "page_number": 2
+    },
+    {
+      "kind": "step",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "source_step": 1,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0001"
+      ],
+      "added_ids": [
+        "root/0001"
+      ],
+      "visible_ids": [
+        "root/0001"
+      ],
+      "focus_ids": [
+        "root/0001"
+      ],
+      "framing_ids": [
+        "root/0001"
+      ],
+      "rows": [
+        {
+          "part_file": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 1,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        }
+      ],
+      "page_number": 3
+    }
+  ],
+  "instruction_step_source": null,
+  "step_provenance": "generated_web_height_sort_not_authored_not_robot_validated",
+  "geometry_scope": "catalog nominal bodies and studs; not third-party detailed meshes or robot actions",
+  "pdf_sha256": "58834c7cf66cfb02d5afbaa3ed668ef5fc05df31a2cc92d5031db3acfcb5bd70"
+}

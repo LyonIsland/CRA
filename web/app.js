@@ -1,8 +1,9 @@
 import * as THREE from 'three';
+import {createAgentBoard} from './agent-board.js?v=survey-2';
 
 const $=id=>document.getElementById(id);
 const renderer=new THREE.WebGLRenderer({antialias:true});
-renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));
 renderer.xr.enabled=true;renderer.setClearColor(0x101923);
 document.body.appendChild(renderer.domElement);
 const scene=new THREE.Scene();
@@ -30,17 +31,34 @@ function setBanner(message){ctx.fillStyle='#142131';ctx.fillRect(0,0,1024,256);c
 const bannerTexture=new THREE.CanvasTexture(banner);const sign=new THREE.Mesh(new THREE.PlaneGeometry(.64,.16),new THREE.MeshBasicMaterial({map:bannerTexture,side:THREE.DoubleSide}));sign.position.set(-.3,1.15,.05);scene.add(sign);setBanner('Connecting...');
 const observerMode=new URLSearchParams(location.search).get('observe')==='1';
 let state=null,seq=0,connected=false,socket=null,lastHand=0,desktopHolding=false,desktopYaw=0;
+let restartPending=null;
+$('restart').onclick=()=>{
+ if(observerMode||!connected||!state?.assembly_live||restartPending)return;
+ restartPending={seed:state.assembly.seed};desktopHolding=false;
+ $('restart').disabled=true;$('restart').textContent='正在重新开始…';
+ $('status').textContent='正在清空本轮进度并重新布置零件，随后自动开始。';
+ // WebSocket preserves order: backend finishes reset before processing start.
+ send('reset');send('start');
+};
+const agentBoard=createAgentBoard(op=>{
+ if(observerMode||!connected||socket?.readyState!==WebSocket.OPEN)return;
+ socket.send(JSON.stringify({seq:++seq,op,request_id:state?.assembly?.human_request?.id}));
+});
 const meshes=[];const previousButtons=new Map();const keyboard=new Set();let lastTime=performance.now();
 // Render between authoritative snapshots rather than jumping at network frequency.
 const snapshots=[];
+let sourcePeriod=60,interpolationDelay=120,lastSceneRender=0,lastWristRender=0;
 const blendPosition=new THREE.Vector3(),blendRotation=new THREE.Quaternion(),blendScale=new THREE.Vector3();
 function receiveTransforms(matrices){
+ const now=performance.now(),previous=snapshots.at(-1);
+ if(previous){const interval=now-previous.time;if(interval>0&&interval<1000)sourcePeriod=.9*sourcePeriod+.1*interval;}
+ interpolationDelay=.9*interpolationDelay+.1*Math.min(250,Math.max(100,sourcePeriod*1.5));
  const poses=matrices.map(values=>{const p=new THREE.Vector3(),q=new THREE.Quaternion(),s=new THREE.Vector3();new THREE.Matrix4().fromArray(values).decompose(p,q,s);return {p,q,s}});
  snapshots.push({time:performance.now(),poses});if(snapshots.length>12)snapshots.shift();
 }
 function animateTransforms(now){
  if(!snapshots.length)return;
- const time=now-80;
+ const time=now-interpolationDelay;
  while(snapshots.length>2&&snapshots[1].time<=time)snapshots.shift();
  const a=snapshots[0],b=snapshots[1]||a;
  const alpha=b.time>a.time?THREE.MathUtils.clamp((time-a.time)/(b.time-a.time),0,1):1;
@@ -66,8 +84,9 @@ function receiveWristPose(pose){
 }
 function drawWristPreview(now){
  if(!state?.wrist_camera||document.hidden||$('wrist-mode').value!=='local'||!snapshots[0]?.wrist)return;
+ if(now-lastWristRender<1000/20)return;lastWristRender=now;
  const a=snapshots[0],b=snapshots[1]||a;if(!b.wrist)return;
- const alpha=b.time>a.time?THREE.MathUtils.clamp((now-80-a.time)/(b.time-a.time),0,1):1;
+ const alpha=b.time>a.time?THREE.MathUtils.clamp((now-interpolationDelay-a.time)/(b.time-a.time),0,1):1;
  wristCamera.position.lerpVectors(a.wrist.position,b.wrist.position,alpha);wristCamera.position.y+=table.position.y;
  wristCamera.quaternion.slerpQuaternions(a.wrist.quaternion,b.wrist.quaternion,alpha);
  wristRenderer.render(scene,wristCamera);wristFrames++;
@@ -82,25 +101,30 @@ $('start').onclick=()=>{if(!connected||!state)return;if(state.mode==='paused_rob
 $('rotate').onclick=()=>desktopYaw+=Math.PI/2;
 document.addEventListener('keydown',e=>{if(e.repeat)return;keyboard.add(e.code);if(e.code==='Space'){$('start').click();e.preventDefault()}if(e.code==='KeyR')$('reset').click();if(e.code==='KeyG')desktopHolding?drop():grab()});document.addEventListener('keyup',e=>keyboard.delete(e.code));
 window.addEventListener('blur',()=>{keyboard.clear();if(window.parent===window){drop();send('pause')}});
-function applyState(data){state=data;window.workshopState=state;receiveTransforms(state.matrices);receiveWristPose(state.wrist_camera_pose);$('wrist-preview').hidden=!state.wrist_camera;syncCameraPreview();if($('wrist-mode').value==='rgb')$('wrist-rate').textContent=state.camera_preview?state.camera_preview.fps.toFixed(1)+' fps':'';$('tabletop-tools').hidden=!state.tabletop;if(state.tabletop)$('hint').textContent='\u6de1\u84dd\u533a\u57df\uff1a\u53ef\u64cd\u4f5c\u53f0\u9762 \u00b7 \u666e\u901a RGB \u89c6\u89c9\u641c\u7d22 \u00b7 \u5f00\u59cb\u4e0d\u91cd\u7f6e\u79ef\u6728'; $('status').textContent=state.message;$('detail').textContent=`${state.mode} · ${state.controller} · t=${state.sim_time.toFixed(2)}s · seq ${state.seq}`;$('hud').dataset.mode=state.mode;$('start').textContent=state.mode==='paused_robot'?'\u7ee7\u7eed\u9012\u6599':(['paused','human'].includes(state.mode)?'\u91cd\u7f6e\u5e76\u5f00\u59cb':'\u673a\u5668\u4eba\u9012\u6599');if(state.tabletop)$('start').textContent=state.mode==='paused_robot'?'\u7ee7\u7eed\u4efb\u52a1':'\u5f00\u59cb\u89c6\u89c9\u641c\u7d22';$('start').disabled=state.mode==='robot';for(const id of ['randomize','place','set-goal'])$(id).disabled=state.mode==='robot';updateAssemblyUI();setBanner(state.message);if(observerMode){for(const id of ['start','pause','reset','grab','lift','rotate','drop','vr','randomize','place','set-goal'])$(id).disabled=true;$('detail').textContent='\u53ea\u8bfb\u89c2\u5bdf \u00b7 '+$('detail').textContent}}
-function restrictControls(){if(!connected||observerMode){for(const id of ['start','pause','reset','grab','lift','rotate','drop','vr','randomize','place','set-goal'])$(id).disabled=true;}}
+function applyState(data){state=data;window.workshopState=state;receiveTransforms(state.matrices);receiveWristPose(state.wrist_camera_pose);$('wrist-preview').hidden=!state.wrist_camera;syncCameraPreview();if($('wrist-mode').value==='rgb')$('wrist-rate').textContent=state.camera_preview?state.camera_preview.fps.toFixed(1)+' fps':'';$('tabletop-tools').hidden=!state.tabletop;if(state.tabletop)$('hint').textContent='台面操作 \u00b7 \u666e\u901a RGB \u89c6\u89c9\u641c\u7d22 \u00b7 \u5f00\u59cb\u4e0d\u91cd\u7f6e\u79ef\u6728'; $('status').textContent=state.message;$('detail').textContent=`${state.mode} · ${state.controller} · t=${state.sim_time.toFixed(2)}s · seq ${state.seq}`;$('hud').dataset.mode=state.mode;$('start').textContent=state.mode==='paused_robot'?'\u7ee7\u7eed\u9012\u6599':(['paused','human'].includes(state.mode)?'\u91cd\u7f6e\u5e76\u5f00\u59cb':'\u673a\u5668\u4eba\u9012\u6599');if(state.tabletop)$('start').textContent=state.mode==='paused_robot'?'\u7ee7\u7eed\u4efb\u52a1':'\u5f00\u59cb\u89c6\u89c9\u641c\u7d22';$('start').disabled=state.mode==='robot';for(const id of ['randomize','place','set-goal'])$(id).disabled=state.mode==='robot';updateAssemblyUI();setBanner(state.message);if(observerMode){for(const id of ['restart','start','pause','reset','grab','lift','rotate','drop','vr','randomize','place','set-goal'])$(id).disabled=true;$('detail').textContent='\u53ea\u8bfb\u89c2\u5bdf \u00b7 '+$('detail').textContent}}
+function restrictControls(){if(!connected||observerMode){for(const id of ['restart','start','pause','reset','grab','lift','rotate','drop','vr','randomize','place','set-goal'])$(id).disabled=true;}}
 async function pollObserver(){
  if(observerMode||!connected){try{
   const response=await fetch('/health',{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
-  const health=await response.json();if(health.state?.matrices?.length)applyState(health.state);
+  const health=await response.json();if(health.state?.matrices?.length&&health.state.seq!==state?.seq)applyState(health.state);
   if(!connected||observerMode){restrictControls();$('error').textContent=observerMode?'只读观察模式':
    (health.controller_connected?'场景已加载；另一页面正在控制。关闭其他控制标签页后，本页会自动接入。':'场景已加载；正在重新连接控制通道…');}
  }catch(error){$('error').textContent='物理后端暂时无法访问，正在重连：'+String(error);restrictControls();}}
  setTimeout(pollObserver,observerMode?100:300);
 }
-function connect(){if(observerMode)return;socket=new WebSocket(`${location.protocol==='https:'?'wss':'ws'}://${location.host}/ws`);socket.onopen=()=>{connected=true;$('error').textContent='';};socket.onmessage=e=>applyState(JSON.parse(e.data));socket.onclose=()=>{connected=false;restrictControls();setTimeout(connect,1500)};socket.onerror=()=>{}}
+function connect(){if(observerMode)return;socket=new WebSocket(`${location.protocol==='https:'?'wss':'ws'}://${location.host}/ws`);socket.onopen=()=>{connected=true;$('error').textContent='';};socket.onmessage=e=>applyState(JSON.parse(e.data));socket.onclose=()=>{connected=false;restartPending=null;restrictControls();setTimeout(connect,1500)};socket.onerror=()=>{}}
 pollObserver();
-async function init(){const response=await fetch('/model');if(!response.ok)throw new Error('Model download failed');const model=await response.json();for(const item of model.objects){const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(item.vertices,3));geometry.setIndex(item.triangles);geometry.computeVertexNormals();const material=new THREE.MeshStandardMaterial({color:new THREE.Color(...item.color),roughness:.6});const mesh=new THREE.Mesh(geometry,material);mesh.name=item.name;mesh.matrixAutoUpdate=false;table.add(mesh);meshes.push(mesh)}if(model.workspace){const geometry=new THREE.PlaneGeometry(.027,.027);const material=new THREE.MeshBasicMaterial({color:0x56bce8,transparent:true,opacity:.18,side:THREE.DoubleSide,depthWrite:false});for(const p of model.workspace.points){const tile=new THREE.Mesh(geometry,material);tile.rotation.x=-Math.PI/2;tile.position.set(-p[1],.0012,p[0]);table.add(tile)}}if(model.assembly_targets){for(const goal of model.assembly_targets){const ghost=new THREE.Mesh(new THREE.BoxGeometry(.0158,.0096,.0318),new THREE.MeshBasicMaterial({color:0x65c8ff,wireframe:true,transparent:true,opacity:.35}));ghost.position.fromArray(goal.position);table.add(ghost)}}window.workshopModelCount=meshes.length;window.workshopRobotVisualCount=meshes.filter(m=>m.name.includes('/visuals/')).length;connect();const supported=!!navigator.xr&&await navigator.xr.isSessionSupported('immersive-vr');$('vr').textContent=supported?'进入 VR':'当前浏览器未连接 VR';$('vr').disabled=!supported;$('vr').onclick=async()=>{try{rig.position.set(0,0,.95);rig.rotation.set(0,Math.PI,0);camera.position.set(0,0,0);camera.rotation.set(0,0,0);const session=await navigator.xr.requestSession('immersive-vr',{optionalFeatures:['local-floor','bounded-floor']});renderer.xr.setReferenceSpaceType('local-floor');await renderer.xr.setSession(session);session.addEventListener('end',()=>{send('release');send('pause');desktopCamera()})}catch(error){$('error').textContent=String(error);desktopCamera()}}}
+async function init(){const response=await fetch('/model');if(!response.ok)throw new Error('Model download failed');const model=await response.json();for(const item of model.objects){const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(item.vertices,3));geometry.setIndex(item.triangles);geometry.computeVertexNormals();const material=new THREE.MeshStandardMaterial({color:new THREE.Color(...item.color),roughness:.6});const mesh=new THREE.Mesh(geometry,material);mesh.name=item.name;mesh.matrixAutoUpdate=false;table.add(mesh);meshes.push(mesh)}if(model.assembly_targets){for(const goal of model.assembly_targets){const ghost=new THREE.Mesh(new THREE.BoxGeometry(.0158,.0096,.0318),new THREE.MeshBasicMaterial({color:0x65c8ff,wireframe:true,transparent:true,opacity:.35}));ghost.position.fromArray(goal.position);table.add(ghost)}}window.workshopModelCount=meshes.length;window.workshopRobotVisualCount=meshes.filter(m=>m.name.includes('/visuals/')).length;connect();const supported=!!navigator.xr&&await navigator.xr.isSessionSupported('immersive-vr');$('vr').textContent=supported?'进入 VR':'当前浏览器未连接 VR';$('vr').disabled=!supported;$('vr').onclick=async()=>{try{rig.position.set(0,0,.95);rig.rotation.set(0,Math.PI,0);camera.position.set(0,0,0);camera.rotation.set(0,0,0);const session=await navigator.xr.requestSession('immersive-vr',{optionalFeatures:['local-floor','bounded-floor']});renderer.xr.setReferenceSpaceType('local-floor');await renderer.xr.setSession(session);session.addEventListener('end',()=>{send('release');send('pause');desktopCamera()})}catch(error){$('error').textContent=String(error);desktopCamera()}}}
 function edge(source,key,value,callback){const id=source.handedness+key;const old=previousButtons.get(id)||false;if(value&&!old)callback();previousButtons.set(id,value)}
-renderer.setAnimationLoop(now=>{const dt=Math.min((now-lastTime)/1000,.05);lastTime=now;
+const renderMeter={start:performance.now(),frames:0};
+renderer.setAnimationLoop(now=>{
+ if(!renderer.xr.isPresenting){if(now-lastSceneRender<1000/60)return;lastSceneRender=now-(now-lastSceneRender)%(1000/60);}
+ const dt=Math.min((now-lastTime)/1000,.05);lastTime=now;
  if(renderer.xr.isPresenting){rig.updateMatrixWorld(true);for(const controller of controllers){const source=controller.userData.source;if(!source?.gamepad)continue;controller.updateMatrixWorld(true);const buttons=source.gamepad.buttons;const grip=!!buttons[1]?.pressed;if(source.handedness==='right'){controller.getWorldPosition(tmpV);table.worldToLocal(tmpV);controller.getWorldQuaternion(tmpQ);if(now-lastHand>25){hand(tmpV.toArray(),tmpQ.toArray());lastHand=now}edge(source,'grip',grip,()=>{hand(tmpV.toArray(),tmpQ.toArray());send('grab')});if(!grip&&previousButtons.get('right_release'))send('release');previousButtons.set('right_release',grip);edge(source,'A',!!buttons[4]?.pressed,()=>$('start').click());edge(source,'B',!!buttons[5]?.pressed,()=>$('pause').click())}else edge(source,'X',!!buttons[4]?.pressed,()=>$('reset').click())}}
- else{const speed=.15*dt;pointer.position.x+=((keyboard.has('KeyL')?1:0)-(keyboard.has('KeyJ')?1:0))*speed;pointer.position.z+=((keyboard.has('KeyI')?1:0)-(keyboard.has('KeyK')?1:0))*speed;pointer.position.y+=((keyboard.has('KeyU')?1:0)-(keyboard.has('KeyO')?1:0))*speed;pointer.position.y=Math.max(.007,Math.min(.5,pointer.position.y));if(connected&&now-lastHand>30){hand(pointer.position.toArray());lastHand=now}}
- animateTransforms(now);renderer.render(scene,camera);drawWristPreview(now)});
+ else{const speed=.15*dt;pointer.position.x+=((keyboard.has('KeyL')?1:0)-(keyboard.has('KeyJ')?1:0))*speed;pointer.position.z+=((keyboard.has('KeyI')?1:0)-(keyboard.has('KeyK')?1:0))*speed;pointer.position.y+=((keyboard.has('KeyU')?1:0)-(keyboard.has('KeyO')?1:0))*speed;pointer.position.y=Math.max(.007,Math.min(.5,pointer.position.y));if(connected&&!state?.assembly_live&&now-lastHand>30){hand(pointer.position.toArray());lastHand=now}}
+ animateTransforms(now);renderer.render(scene,camera);drawWristPreview(now);
+ renderMeter.frames++;if(now-renderMeter.start>=1000){window.workshopPerformance={render_fps:renderMeter.frames*1000/(now-renderMeter.start),source_fps:1000/sourcePeriod,interpolation_ms:interpolationDelay,wrist_fps:wristFPS,draw_calls:renderer.info.render.calls};renderMeter.frames=0;renderMeter.start=now;}
+});
 window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
 init().catch(error=>{$('error').textContent=String(error);console.error(error)});
 
@@ -116,8 +140,8 @@ $('wrist-image').onerror=()=>{ $('wrist-image').removeAttribute('src');setTimeou
 
 let placementMode=null;
 $('randomize').onclick=()=>send('randomize');
-$('place').onclick=()=>{placementMode='place';$('placement-hint').textContent='\u8bf7\u70b9\u51fb\u6de1\u84dd\u6807\u793a\u533a\u57df\u6446\u653e\u79ef\u6728\u3002'};
-$('set-goal').onclick=()=>{placementMode='goal';$('placement-hint').textContent='\u8bf7\u70b9\u51fb\u6de1\u84dd\u6807\u793a\u533a\u57df\u8bbe\u7f6e\u653e\u7f6e\u76ee\u6807\u3002'};
+$('place').onclick=()=>{placementMode='place';$('placement-hint').textContent='请点击机械臂可达的台面位置摆放积木。'};
+$('set-goal').onclick=()=>{placementMode='goal';$('placement-hint').textContent='请点击机械臂可达的台面位置设置放置目标。'};
 renderer.domElement.addEventListener('pointerdown',event=>{
  if(!placementMode||!state?.tabletop||state.mode==='robot'||renderer.xr.isPresenting)return;
  const ray=new THREE.Raycaster();ray.setFromCamera(new THREE.Vector2(event.clientX/innerWidth*2-1,1-event.clientY/innerHeight*2),camera);
@@ -127,6 +151,12 @@ renderer.domElement.addEventListener('pointerdown',event=>{
 });
 
 function updateAssemblyUI(){
+ $('restart').hidden=!state?.assembly_live;
+ if(restartPending&&state.assembly?.seed!==restartPending.seed)restartPending=null;
+ $('restart').textContent=restartPending?'正在重新开始…':'重新开始';
+ $('restart').disabled=observerMode||!connected||!!restartPending;
+ document.body.classList.toggle('assembly-scene',!!state?.assembly_live);
+ agentBoard.update(state,connected&&!observerMode);
  const active=!!state?.assembly_live;$('assembly-progress').hidden=!active;$('assembly-view-tools').hidden=!active;pointer.visible=!active;
  if(!active)return;
  const a=state.assembly;
@@ -137,25 +167,24 @@ function updateAssemblyUI(){
   if(source){const p=source.position_m;humanSource.position.set(-p[1],p[2]+.008,p[0]);humanSource.visible=true;}}
  $('start').textContent=state.mode==='paused_robot'?'\u7ee7\u7eed\u6982\u5ff5\u642d\u5efa':'\u5f00\u59cb\u6309\u8bf4\u660e\u4e66\u642d\u5efa';
  $('start').disabled=state.mode==='robot'||['failed','complete'].includes(a.status);
- $('reset').textContent='\u91cd\u65b0\u968f\u673a\u6563\u843d';
+ $('reset').textContent='重置布局';
  for(const id of ['grab','lift','rotate','drop'])$(id).hidden=true;
  $('assembly-progress').textContent='\u6982\u5ff5\u642d\u5efa '+a.completed_steps.length+'/'+a.total_steps+' \u00b7 '+(a.current_step||a.status)+' \u00b7 '+a.phase+'\n\u8fde\u63a5\u91c7\u7528\u63a5\u89e6\u89e6\u53d1\u7684\u7ea6\u675f\u8fd1\u4f3c\uff0c\u771f\u5b9e LEGO \u5361\u63a5\u672a\u9a8c\u6536\u3002';
  $('hint').textContent='\u5b9e\u65f6 Isaac Sim \u00b7 \u8bf4\u660e\u4e66\u9a71\u52a8 \u00b7 RGB \u9009\u6599 \u00b7 \u8fde\u63a5\u7ea6\u675f\u6982\u5ff5\u6a21\u578b';
  if(a.random_yaw)$('hint').textContent='随机位置＋随机角度 · 腕部 RGB 选料 · 概念连接';
  if(a.scene_mode==='physical_heap'){
-  $('start').textContent=state.mode==='paused_robot'?'继续任务':'开始观察与整理';
-  $('start').disabled=!(a.status==='ready'||state.mode==='paused_robot');
-  $('pause').disabled=state.mode!=='robot';
+  $('start').textContent=['paused_robot','paused_human'].includes(state.mode)?'继续任务':'开始观察与整理';
+  $('start').disabled=!(a.status==='ready'||['paused_robot','paused_human'].includes(state.mode));
+  $('pause').disabled=!['robot','waiting_human'].includes(state.mode);
   $('assembly-progress').textContent='已整理 '+a.normalized_colors.length+'/6 · 说明书 '+a.completed_steps.length+'/6 · '+a.phase+'\n'+a.message;
   $('hint').textContent='真实零件堆 · RGB 多视角观察 · 机器人取件与人工协助 · 装配仍为概念连接';
  }
- window.parent.postMessage({type:'assembly-state',assembly:a,controller_connected:connected&&!observerMode},location.origin);
 }
 window.addEventListener('message',event=>{
  if(event.origin!==location.origin||event.source!==window.parent)return;
  if(event.data?.type==='assembly-command'){
   if(['start','pause','resume','reset'].includes(event.data.op))send(event.data.op);
-  else if(['human_done','simulate_human'].includes(event.data.op)&&!observerMode&&socket?.readyState===WebSocket.OPEN)
+  else if(['human_done','simulate_human','human_auto_on','human_auto_off'].includes(event.data.op)&&!observerMode&&socket?.readyState===WebSocket.OPEN)
    socket.send(JSON.stringify({seq:++seq,op:event.data.op,request_id:event.data.request_id}));
  }
 });

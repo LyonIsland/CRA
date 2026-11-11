@@ -11,6 +11,8 @@ web/node_modules/
 assets/piper/
 generated/
 *.log
+!experiments/**/logs/
+!experiments/**/*.log
 *.pid
 *.bin
 *.pyc

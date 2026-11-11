@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "kind": "piper_camera_manual_task",
+  "title": "pyramid12",
+  "source_sha256": "088282cd56099c03d69e4cefe9e047290bedfe0ba30e32a1aa4232fe39dae75b",
+  "manual_mode": "steps",
+  "policy_inputs": {
+    "manual": "policy/manual.pdf",
+    "page_images": [
+      "policy/pages/page-001.png",
+      "policy/pages/page-002.png",
+      "policy/pages/page-003.png",
+      "policy/pages/page-004.png",
+      "policy/pages/page-005.png",
+      "policy/pages/page-006.png",
+      "policy/pages/page-007.png",
+      "policy/pages/page-008.png",
+      "policy/pages/page-009.png",
+      "policy/pages/page-010.png",
+      "policy/pages/page-011.png",
+      "policy/pages/page-012.png",
+      "policy/pages/page-013.png",
+      "policy/pages/page-014.png"
+    ],
+    "sha256": {
+      "policy/manual.pdf": "9e12f8c031a15f63220bf4713e5d2e2c12c5f4957764a94fc706c9d890268e38",
+      "policy/pages/page-001.png": "6467fa15b7a0f6d10c3225fca982148c82101c65fc4e6a29217bc9a866ad9e01",
+      "policy/pages/page-002.png": "5a7a859d46439421bd7a53aefe1617ef05ffa856543f738693486bbbb7972b2c",
+      "policy/pages/page-003.png": "772b8d34d6f26cea55a5289575ec449f0df04eb9fe0c9546f576b835f69b9183",
+      "policy/pages/page-004.png": "e71dd28319ec85506538737980227f53b094e5938ff06390506ff0fa9fe15457",
+      "policy/pages/page-005.png": "e36d4a2a8342ee1e58ea6214007f98627558581b8922318569c56865db3fd9b1",
+      "policy/pages/page-006.png": "4ad7dce5ee864cfc13171144afae2da14ad85023eb27ea12072a70a6ca6d88e3",
+      "policy/pages/page-007.png": "66304c89b55a12b36fe31be8d55dd858c107890e695443a68b0e8eec0fc9b103",
+      "policy/pages/page-008.png": "14cf17e13fe04026aac8da86dbe124c9d5f8627e7890f1313181c28554832315",
+      "policy/pages/page-009.png": "b6c7bd0b455ed2d0c4b93a5cf114e3965a5d7d03ad1f6e04065f9aa2faf019b3",
+      "policy/pages/page-010.png": "0258d316074b66208f67ca70c13ec64dc43f8870a5ff899360632c38330fb981",
+      "policy/pages/page-011.png": "80244669fc24d90b536fa17b4c4a1b24d11f5a64228c73098e5af4ae84102e26",
+      "policy/pages/page-012.png": "d2037ef7e1a4269e000807479e2421368ef4579ad5fa3e2fa4f2aa55bf686de9",
+      "policy/pages/page-013.png": "df54d02ef5cdd6393656e84c329a7118796cc32a69c4f2592392154887e432e3",
+      "policy/pages/page-014.png": "5dfb9f804367ac73256e698aab1a5497a66f8c6e8f71478acfe1b0779587deab"
+    }
+  },
+  "environment": {
+    "spec": "environment/inventory.json",
+    "sha256": "7a6d006f956b1813584218ecd621b0bc8c1c86c2d5bb254f151a0cb852b502b0"
+  },
+  "evaluation_only": {
+    "page_map": "evaluation/manual-page-map.json",
+    "model": "evaluation/extracted/ground-truth.json"
+  },
+  "part_count": 12,
+  "robot_execution_validated": false,
+  "limitations": [
+    "all loose parts share material; color-specific assembly is not evaluated",
+    "nominal hollow geometry; no verified clutch/interference or real-world calibration",
+    "manual page encoding is not a trained instruction-reading capability"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "run": "D:\\PiperCameraTraining\\runs\\20261111-010148",
+  "checkpoint": "D:\\PiperCameraTraining\\runs\\20261111-010148\\models\\round-096\\best.pt",
+  "duration_seconds": 24649.844812,
+  "incremental_rounds": 96,
+  "total_compute_epochs_including_trials": 720,
+  "training_transitions": 101376,
+  "training_layouts": 198,
+  "test_transitions": 2048,
+  "test_layouts": 4,
+  "prediction_error_reduction_pct": 54.52199871942744,
+  "inverse_error_reduction_pct": 31.77762473589144,
+  "shuffled_vs_correct_prediction_error_ratio": 2.6523398992635374,
+  "test_metrics": {
+    "reconstruction_mse": 0.0016569949275435647,
+    "next_image_mse": 0.0001734001616569003,
+    "inverse_action_mse": 0.10488376370631158,
+    "persistence_image_mse": 0.00038128360256450833,
+    "zero_action_mse": 0.15397366951219738,
+    "mean_action_mse": 0.15373807097785175,
+    "shuffled_action_next_image_mse": 0.0004599161673013441,
+    "selection_score": 0.03134593908725947
+  },
+  "scenes": [
+    {
+      "scene": "6 块墙",
+      "group": "d4960dd558e9cf75990c6276ee159900592f5a37c7e65ae7d1a87d412d0049e3:310000",
+      "prediction_reduction_pct": 49.35629204844317,
+      "inverse_reduction_pct": 26.133651792696178
+    },
+    {
+      "scene": "4 块塔",
+      "group": "44d599041fd68676407653891a464b9c98df08179f93e2291e84d08e71e9cec9:310001",
+      "prediction_reduction_pct": 53.98069648301267,
+      "inverse_reduction_pct": 32.20323730351142
+    },
+    {
+      "scene": "12 块金字塔",
+      "group": "088282cd56099c03d69e4cefe9e047290bedfe0ba30e32a1aa4232fe39dae75b:310002",
+      "prediction_reduction_pct": 57.38020866462972,
+      "inverse_reduction_pct": 40.34622342468334
+    },
+    {
+      "scene": "38 块小屋",
+      "group": "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445:310003",
+      "prediction_reduction_pct": 53.85634733197844,
+      "inverse_reduction_pct": 27.40007017491528
+    }
+  ],
+  "fixed_examples": [
+    {
+      "scene": "6 块墙",
+      "transition_1_based": 256,
+      "prediction_mse": 0.00019017951854038984,
+      "persistence_mse": 0.00019746886391658336
+    },
+    {
+      "scene": "4 块塔",
+      "transition_1_based": 256,
+      "prediction_mse": 0.00017985554586630315,
+      "persistence_mse": 0.00015315122436732054
+    },
+    {
+      "scene": "12 块金字塔",
+      "transition_1_based": 256,
+      "prediction_mse": 0.0003601664211601019,
+      "persistence_mse": 0.0006943931221030653
+    },
+    {
+      "scene": "38 块小屋",
+      "transition_1_based": 256,
+      "prediction_mse": 0.00017770483100321144,
+      "persistence_mse": 0.00035381646011956036
+    }
+  ],
+  "physical_success_evaluated": false,
+  "deployable_policy": false
+}

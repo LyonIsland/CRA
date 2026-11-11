@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "boardSize": 20,
+  "title": "六块同色砖 · 三层交错小墙",
+  "bricks": [
+    {"id":"b1","type":"brick-2x4","color":"cream","x":4,"z":9,"y":0,"rotation":90},
+    {"id":"b2","type":"brick-2x4","color":"cream","x":8,"z":9,"y":0,"rotation":90},
+    {"id":"b3","type":"brick-2x4","color":"cream","x":12,"z":9,"y":0,"rotation":90},
+    {"id":"b4","type":"brick-2x4","color":"cream","x":6,"z":9,"y":3,"rotation":90},
+    {"id":"b5","type":"brick-2x4","color":"cream","x":10,"z":9,"y":3,"rotation":90},
+    {"id":"b6","type":"brick-2x4","color":"cream","x":8,"z":9,"y":6,"rotation":90}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "bricklab_studio_scene_preparation",
+  "ok": false,
+  "simulator_started": false,
+  "robot_execution_validated": false,
+  "status": "FAILED",
+  "error": "PlanError: Supply bounds are outside the table bounds",
+  "details": {}
+}

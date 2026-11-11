@@ -1,0 +1,638 @@
+[Info] [carb] Logging to file: e:/piperisaac/.venv/lib/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim Python/5.1/kit_20261111_092150.log
+2026-11-11T01:21:50Z [14ms] [Warning] [carb.crashreporter-breakpad.plugin] [previous crash] preventing upload of minidump due to user opt-out: 'e:/piperisaac/.venv/lib/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1\890f7029-33de-441b-b0ab-04cb6ff8b133.dmp'
+[0.103s] [ext: omni.kit.async_engine-0.0.3] startup
+[0.190s] [ext: omni.metrics.core-0.0.3] startup
+[0.191s] [ext: omni.client.lib-1.1.0] startup
+[0.207s] [ext: omni.blobkey-1.1.2] startup
+[0.208s] [ext: omni.stats-1.0.1] startup
+[0.210s] [ext: omni.datastore-0.0.0] startup
+[0.212s] [ext: omni.client-1.3.0] startup
+[0.217s] [ext: omni.ujitso.default-1.0.0] startup
+[0.220s] [ext: omni.hsscclient-1.1.2] startup
+[0.232s] [ext: omni.gpu_foundation.shadercache.d3d12-1.0.0] startup
+[0.238s] [ext: omni.assets.plugins-0.0.0] startup
+[0.241s] [ext: omni.gpu_foundation-0.0.0] startup
+[0.260s] [ext: carb.windowing.plugins-1.0.0] startup
+[0.365s] [ext: omni.kit.renderer.init-0.0.0] startup
+[0.366s] [ext: omni.materialx.libs-1.0.7] startup
+[0.379s] [ext: omni.usd.config-1.0.6] startup
+[0.388s] [ext: omni.gpucompute.plugins-0.0.0] startup
+[0.389s] [ext: omni.usd.libs-1.0.1] startup
+[0.492s] [ext: omni.mdl-56.0.3] startup
+[0.510s] [ext: omni.iray.libs-0.0.0] startup
+[0.534s] [ext: omni.mdl.neuraylib-0.2.12] startup
+[0.544s] [ext: omni.kit.usd.mdl-1.1.5] startup
+[0.640s] [ext: omni.kit.pipapi-0.0.0] startup
+[0.642s] [ext: omni.kit.loop-isaac-1.3.7] startup
+[0.644s] [ext: omni.kit.test-2.0.1] startup
+2026-11-11T01:21:51Z [620ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: AMD Radeon(TM) Graphics
+2026-11-11T01:21:51Z [620ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: AMD Radeon(TM) Graphics
+[0.741s] [ext: omni.kit.telemetry-0.5.2] startup
+[0.752s] [ext: omni.appwindow-1.1.10] startup
+[0.755s] [ext: omni.kit.renderer.core-1.1.0] startup
+[0.761s] [ext: omni.kit.renderer.capture-0.0.0] startup
+[0.766s] [ext: omni.kit.renderer.imgui-2.0.5] startup
+[0.776s] [ext: omni.ui-2.27.1] startup
+[0.789s] [ext: omni.kit.mainwindow-1.0.3] startup
+[0.791s] [ext: carb.audio-0.1.0] startup
+[0.792s] [ext: omni.uiaudio-1.0.0] startup
+[0.794s] [ext: omni.kit.uiapp-0.0.0] startup
+[0.794s] [ext: omni.usd.schema.metrics.assembler-107.3.1] startup
+[0.801s] [ext: omni.anim.navigation.schema-107.3.3] startup
+[0.807s] [ext: omni.usd.schema.anim-0.0.0] startup
+[0.831s] [ext: omni.usd.schema.audio-0.0.0] startup
+[0.836s] [ext: omni.usd.schema.omniscripting-1.0.0] startup
+[0.843s] [ext: omni.usd.schema.physx-107.3.26] startup
+[0.868s] [ext: omni.usd_resolver-1.0.0] startup
+[0.875s] [ext: omni.usd.core-1.5.3] startup
+[0.876s] [ext: omni.usd.schema.omni_sensors-0.0.0] startup
+[0.899s] [ext: omni.usd.schema.omnigraph-1.0.0] startup
+[0.908s] [ext: omni.usd.schema.semantics-0.0.0] startup
+[0.913s] [ext: omni.usd.schema.geospatial-0.0.0] startup
+[0.918s] [ext: omni.kit.window.popup_dialog-2.0.24] startup
+[0.929s] [ext: omni.activity.core-1.0.3] startup
+[0.931s] [ext: omni.kit.widget.nucleus_connector-2.0.1] startup
+[0.936s] [ext: omni.kit.usd_undo-0.1.8] startup
+[0.937s] [ext: omni.graph.exec-0.9.6] startup
+[0.938s] [ext: omni.kit.actions.core-1.0.0] startup
+[0.943s] [ext: usdrt.scenegraph-7.6.1] startup
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 610.88        | Graphics API: D3D12
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 5080          | Yes: 0 |     | 15977   MB | 10de      | 9c570100.. |
+|     |                                  |        |     |            | 2c02      | 0          |
+|     |                                  |        |     |            | 1         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | AMD Radeon(TM) Graphics          |        |     | 459     MB | 1002      | 286c0100.. |
+|     |                                  |        |     |            | 13c0      | 0          |
+|     |                                  |        |     |            | N/A       |            |
+|=============================================================================================|
+| OS: Windows 11 Pro, Version: 10.0 (25H2), Build: 26200, Kernel: 10.0.26100.9711
+| Processor: AMD Ryzen 7 9800X3D 8-Core Processor           
+| Cores: 8 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31859 | Free Memory: 17401
+| Total Page/Swap (MB): 40563 | Free Page/Swap: 20088
+|---------------------------------------------------------------------------------------------|
+[0.994s] [ext: omni.resourcemonitor-107.0.1] startup
+[0.999s] [ext: omni.kit.exec.core-0.13.4] startup
+[1.003s] [ext: omni.timeline-1.0.14] startup
+[1.006s] [ext: omni.kit.commands-1.4.10] startup
+[1.014s] [ext: omni.kit.audiodeviceenum-1.0.2] startup
+[1.017s] [ext: omni.hydra.usdrt_delegate-7.5.1] startup
+[1.024s] [ext: omni.hydra.scene_delegate-0.3.4] startup
+[1.026s] [ext: omni.usd-1.13.10] startup
+[1.058s] [ext: omni.inspect-1.0.2] startup
+[1.062s] [ext: omni.kit.notification_manager-1.0.10] startup
+[1.066s] [ext: omni.graph.core-2.184.5] startup
+[1.068s] [ext: isaacsim.core.deprecation_manager-0.2.7] startup
+[1.070s] [ext: omni.anim.graph.schema-107.3.3] startup
+[1.077s] [ext: omni.usd.schema.flow-107.1.1] startup
+[1.079s] [ext: omni.usd.schema.isaac-3.0.5] startup
+[1.079s] [ext: omni.usd.schema.omni_lens_distortion-0.0.0] startup
+[1.080s] [ext: isaacsim.robot.schema-3.6.0] startup
+[1.090s] [ext: omni.kit.asset_converter-5.0.17] startup
+[1.099s] [ext: omni.usd.schema.render_settings.rtx-0.0.0] startup
+[1.101s] [ext: omni.kit.helper.file_utils-0.1.9] startup
+[1.103s] [ext: omni.kit.menu.core-1.1.2] startup
+[1.105s] [ext: omni.kit.widget.path_field-2.0.11] startup
+[1.107s] [ext: omni.kit.widget.filebrowser-2.12.3] startup
+[1.121s] [ext: omni.kit.widget.context_menu-1.2.5] startup
+[1.123s] [ext: omni.kit.widget.browser_bar-2.0.10] startup
+[1.125s] [ext: omni.kit.clipboard-1.0.5] startup
+[1.127s] [ext: omni.kit.widget.options_menu-1.1.6] startup
+[1.134s] [ext: omni.ui.scene-1.11.5] startup
+[1.139s] [ext: omni.kit.widget.options_button-1.0.3] startup
+[1.141s] [ext: omni.kit.usd.layers-2.2.11] startup
+[1.153s] [ext: omni.kit.window.filepicker-2.13.4] startup
+[1.184s] [ext: omni.kit.widget.filter-1.1.4] startup
+[1.186s] [ext: omni.kit.hotkeys.core-1.3.10] startup
+[1.193s] [ext: omni.kit.context_menu-1.8.6] startup
+[1.198s] [ext: omni.kit.property.adapter.core-1.0.2] startup
+[1.202s] [ext: omni.kit.window.file_exporter-1.0.33] startup
+[1.205s] [ext: omni.kit.widget.searchfield-1.1.8] startup
+[1.208s] [ext: omni.kit.numpy.common-0.1.3] startup
+[1.210s] [ext: omni.kit.widget.stage-3.1.4] startup
+[1.236s] [ext: omni.kit.property.adapter.usd-1.0.2] startup
+[1.238s] [ext: omni.kit.property.adapter.fabric-1.0.3] startup
+[1.242s] [ext: isaacsim.core.version-2.0.6] startup
+[1.244s] [ext: omni.kit.window.file_importer-1.1.18] startup
+[1.245s] [ext: omni.kit.stage_template.core-1.1.22] startup
+[1.247s] [ext: omni.kit.menu.utils-2.0.5] startup
+[1.254s] [ext: omni.kit.window.file-2.0.5] startup
+[1.259s] [ext: omni.kit.window.drop_support-1.0.5] startup
+[1.261s] [ext: omni.kit.widget.highlight_label-1.0.3] startup
+[1.262s] [ext: omni.kit.window.content_browser_registry-0.0.6] startup
+[1.264s] [ext: omni.kit.widget.graph-2.0.0] startup
+[1.275s] [ext: omni.kit.window.property-1.12.1] startup
+[1.333s] [ext: omni.kit.window.content_browser-3.1.3] startup
+[1.347s] [ext: omni.kit.graph.delegate.default-1.2.3] startup
+[1.349s] [ext: omni.kit.property.usd-4.5.12] startup
+[1.366s] [ext: omni.convexdecomposition-107.3.26] startup
+[1.370s] [ext: omni.kit.graph.editor.core-1.5.3] startup
+[1.376s] [ext: omni.kit.material.library-2.0.7] startup
+[1.385s] [ext: omni.kvdb-107.3.26] startup
+[1.388s] [ext: omni.usdphysics-107.3.26] startup
+[1.390s] [ext: omni.physx.foundation-107.3.26] startup
+[1.403s] [ext: omni.localcache-107.3.26] startup
+[1.406s] [ext: omni.kit.graph.usd.commands-1.3.1] startup
+[1.407s] [ext: omni.physx.cooking-107.3.26] startup
+[1.410s] [ext: omni.physics-107.3.26] startup
+[1.415s] [ext: omni.physx-107.3.26] startup
+[1.428s] [ext: omni.physics.stageupdate-107.3.26] startup
+[1.433s] [ext: omni.physics.physx-107.3.26] startup
+2026-11-11T01:21:52Z [1,382ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+[1.435s] [ext: omni.index.libs-380600.8087.0] startup
+[1.435s] [ext: omni.index-1.0.1] startup
+[1.436s] [ext: omni.volume-0.5.2] startup
+[1.440s] [ext: omni.ujitso.client-0.0.0] startup
+[1.441s] [ext: omni.hydra.rtx.shadercache.d3d12-1.0.0] startup
+[1.443s] [ext: omni.kit.widget.searchable_combobox-1.0.6] startup
+[1.445s] [ext: omni.hydra.rtx-1.0.0] startup
+[1.475s] [ext: omni.kit.widget.settings-1.2.6] startup
+[1.479s] [ext: omni.kit.hydra_texture-1.4.6] startup
+[1.482s] [ext: omni.graph.tools-1.79.2] startup
+[1.533s] [ext: omni.kit.window.preferences-1.8.0] startup
+[1.547s] [ext: omni.kit.widget.material_preview-1.0.16] startup
+[1.551s] [ext: omni.graph-1.141.2] startup
+[1.610s] [ext: omni.kit.window.material_graph-1.9.1] startup
+[1.627s] [ext: omni.isaac.dynamic_control-2.0.7] startup
+2026-11-11T01:21:52Z [1,581ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+[1.633s] [ext: isaacsim.storage.native-1.5.1] startup
+[1.638s] [ext: omni.graph.scriptnode-1.50.0] startup
+[1.640s] [ext: omni.hydra.engine.stats-1.0.3] startup
+[1.644s] [ext: omni.kit.viewport.legacy_gizmos-1.0.19] startup
+[1.646s] [ext: omni.kit.raycast.query-1.1.0] startup
+[1.650s] [ext: omni.graph.action_core-1.1.7] startup
+[1.655s] [ext: omni.kit.viewport.scene_camera_model-1.0.6] startup
+[1.660s] [ext: omni.graph.image.core-0.6.1] startup
+[1.661s] [ext: omni.kit.widget.viewport-107.1.3] startup
+[1.671s] [ext: omni.kit.viewport.registry-104.0.6] startup
+[1.673s] [ext: omni.usd.metrics.assembler-107.3.1] startup
+[1.677s] [ext: omni.kit.viewport.window-107.2.0] startup
+[1.704s] [ext: omni.kit.viewport.menubar.core-107.2.1] startup
+[1.733s] [ext: omni.graph.image.nodes-1.3.1] startup
+[1.735s] [ext: omni.usd.metrics.assembler.physics-107.3.26] startup
+[1.739s] [ext: omni.warp.core-1.8.2] startup
+[1.878s] [ext: omni.kit.viewport.utility-1.1.2] startup
+[1.880s] [ext: omni.physics.tensors-107.3.26] startup
+[1.887s] [ext: omni.syntheticdata-0.6.13] startup
+[1.904s] [ext: isaacsim.test.docstring-1.1.0] startup
+[1.915s] [ext: isaacsim.core.utils-3.5.1] startup
+[1.923s] [ext: omni.physx.tensors-107.3.26] startup
+[1.925s] [ext: omni.graph.nodes-1.170.10] startup
+[1.935s] [ext: omni.graph.action_nodes-1.50.4] startup
+[1.939s] [ext: omni.kit.primitive.mesh-1.0.17] startup
+[1.952s] [ext: isaacsim.core.simulation_manager-1.4.4] startup
+[3.445s] [ext: omni.graph.ui_nodes-1.50.5] startup
+[3.450s] [ext: omni.graph.action-1.130.0] startup
+[3.451s] [ext: omni.kit.stage_templates-2.0.0] startup
+[3.458s] [ext: isaacsim.core.prims-0.6.1] startup
+[3.492s] [ext: omni.warp-1.8.2] startup
+[3.503s] [ext: omni.videoencoding-0.1.2] startup
+[3.509s] [ext: isaacsim.core.api-4.8.0] startup
+[3.562s] [ext: isaacsim.core.experimental.utils-0.3.0] startup
+[3.574s] [ext: omni.replicator.core-1.12.27] startup
+2026-11-11T01:21:54Z [3,538ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-11-11T01:21:54Z [3,641ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-11-11T01:21:54Z [3,641ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-11-11T01:21:54Z [3,642ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+[3.697s] [ext: isaacsim.core.experimental.prims-0.8.1] startup
+[3.741s] [ext: omni.kit.window.extensions-1.4.27] startup
+[3.759s] [ext: isaacsim.core.experimental.objects-0.4.0] startup
+[3.782s] [ext: omni.ui_query-1.1.8] startup
+[3.787s] [ext: omni.kit.manipulator.viewport-107.0.1] startup
+[3.790s] [ext: isaacsim.robot.surface_gripper-3.3.1] startup
+[3.797s] [ext: omni.kit.ui_test-1.3.7] startup
+[3.804s] [ext: omni.graph.visualization.nodes-2.1.3] startup
+[3.824s] [ext: isaacsim.robot_motion.lula-4.0.8] startup
+[3.846s] [ext: isaacsim.core.nodes-3.4.3] startup
+[3.858s] [ext: isaacsim.gui.components-1.2.1] startup
+[3.872s] [ext: isaacsim.robot_motion.motion_generation-8.0.26] startup
+[3.896s] [ext: isaacsim.robot.manipulators-3.3.6] startup
+[3.907s] [ext: isaacsim.core.experimental.materials-0.4.0] startup
+[3.926s] [ext: isaacsim.robot.manipulators.examples-1.1.2] startup
+[3.928s] [ext: isaacsim.cortex.framework-1.0.12] startup
+[3.933s] [ext: isaacsim.cortex.behaviors-2.0.14] startup
+[3.935s] [ext: omni.isaac.cortex.sample_behaviors-2.0.5] startup
+2026-11-11T01:21:54Z [3,886ms] [Warning] [omni.isaac.cortex] omni.isaac.cortex has been deprecated in favor of isaacsim.cortex.framework. Please update your code accordingly.
+2026-11-11T01:21:54Z [3,887ms] [Warning] [omni.isaac.cortex.sample_behaviors] omni.isaac.cortex.sample_behaviors has been deprecated in favor of isaacsim.cortex.behaviors. Please update your code accordingly.
+[3.940s] [ext: omni.kit.widget.zoombar-1.0.6] startup
+[3.951s] [ext: isaacsim.gui.content_browser-0.1.11] startup
+[3.959s] [ext: omni.kit.browser.core-2.3.13] startup
+[3.990s] [ext: omni.kit.widget.stage_icons-1.0.8] startup
+[3.995s] [ext: omni.kit.widget.prompt-1.0.7] startup
+[4.000s] [ext: omni.kit.usd.collect-2.4.5] startup
+[4.009s] [ext: omni.kit.browser.folder.core-1.10.9] startup
+[4.059s] [ext: omni.kit.window.stage-2.6.1] startup
+[4.071s] [ext: omni.kit.usdz_export-1.0.9] startup
+[4.078s] [ext: omni.kit.tool.collect-2.2.18] startup
+[4.098s] [ext: omni.kit.menu.stage-1.2.7] startup
+[4.117s] [ext: omni.kit.tool.asset_importer-4.3.2] startup
+[4.151s] [ext: isaacsim.robot.wheeled_robots-4.0.24] startup
+[4.197s] [ext: isaacsim.examples.browser-0.2.1] startup
+[4.221s] [ext: isaacsim.asset.importer.urdf-2.4.30] startup
+[4.421s] [ext: omni.isaac.wheeled_robots-3.0.7] startup
+2026-11-11T01:21:55Z [4,371ms] [Warning] [omni.isaac.wheeled_robots] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,372ms] [Warning] [omni.isaac.wheeled_robots.controllers] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,375ms] [Warning] [omni.isaac.wheeled_robots.controllers.ackermann_controller] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,377ms] [Warning] [omni.isaac.wheeled_robots.controllers.differential_controller] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,377ms] [Warning] [omni.isaac.wheeled_robots.controllers.holonomic_controller] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,378ms] [Warning] [omni.isaac.wheeled_robots.controllers.quintic_path_planner] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,378ms] [Warning] [omni.isaac.wheeled_robots.controllers.stanley_control] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,379ms] [Warning] [omni.isaac.wheeled_robots.controllers.wheel_base_pose_controller] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,380ms] [Warning] [omni.isaac.wheeled_robots.impl] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,380ms] [Warning] [omni.isaac.wheeled_robots.robots] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,381ms] [Warning] [omni.isaac.wheeled_robots.robots.holonomic_robot_usd_setup] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,381ms] [Warning] [omni.isaac.wheeled_robots.robots.wheeled_robot] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+[4.434s] [ext: isaacsim.simulation_app-2.12.2] startup
+[4.435s] [ext: omni.isaac.franka-1.0.7] startup
+2026-11-11T01:21:55Z [4,384ms] [Warning] [omni.isaac.franka] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.franka. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,386ms] [Warning] [omni.isaac.franka.franka] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.franka. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,402ms] [Warning] [omni.isaac.franka.kinematics_solver] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.franka. Please update your code accordingly.
+[4.454s] [ext: omni.isaac.kit-2.0.6] startup
+2026-11-11T01:21:55Z [4,405ms] [Warning] [omni.isaac.kit] omni.isaac.kit has been deprecated in favor of isaacsim.simulation_app. Please update your code accordingly.
+[4.457s] [ext: omni.kit.selection-0.1.6] startup
+[4.459s] [ext: omni.isaac.lula-4.0.6] startup
+2026-11-11T01:21:55Z [4,408ms] [Warning] [omni.isaac.lula] omni.isaac.lula has been deprecated in favor of isaacsim.robot_motion.lula. Please update your code accordingly.
+[4.460s] [ext: isaacsim.robot_motion.lula_test_widget-1.0.12] startup
+[4.464s] [ext: isaacsim.asset.browser-1.3.23] startup
+[4.547s] [ext: omni.kit.viewport.actions-107.0.2] startup
+[4.553s] [ext: isaacsim.gui.menu-2.4.4] startup
+[4.566s] [ext: omni.isaac.manipulators-3.0.7] startup
+2026-11-11T01:21:55Z [4,516ms] [Warning] [omni.isaac.manipulators] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,517ms] [Warning] [omni.isaac.manipulators.controllers] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,518ms] [Warning] [omni.isaac.manipulators.controllers.pick_place_controller] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,520ms] [Warning] [omni.isaac.manipulators.controllers.stacking_controller] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,521ms] [Warning] [omni.isaac.manipulators.grippers] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,521ms] [Warning] [omni.isaac.manipulators.grippers.gripper] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,522ms] [Warning] [omni.isaac.manipulators.grippers.parallel_gripper] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,522ms] [Warning] [omni.isaac.manipulators.grippers.surface_gripper] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,523ms] [Warning] [omni.isaac.manipulators.manipulators] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,523ms] [Warning] [omni.isaac.manipulators.manipulators.single_manipulator] omni.isaac.manipulators has been deprecated in favor of isaacsim.robot.manipulators. Please update your code accordingly.
+[4.576s] [ext: omni.isaac.lula_test_widget-1.0.6] startup
+2026-11-11T01:21:55Z [4,526ms] [Warning] [omni.isaac.lula_test_widget] omni.isaac.lula_test_widget has been deprecated in favor of isaacsim.robot_motion.lula_test_widget. Please update your code accordingly.
+[4.578s] [ext: omni.isaac.asset_browser-1.0.6] startup
+2026-11-11T01:21:55Z [4,529ms] [Warning] [omni.isaac.asset_browser] omni.isaac.asset_browser has been deprecated in favor of isaacsim.asset.browser. Please update your code accordingly.
+[4.582s] [ext: omni.kit.viewport.menubar.display-107.0.3] startup
+[4.586s] [ext: omni.isaac.menu-1.0.6] startup
+2026-11-11T01:21:55Z [4,535ms] [Warning] [omni.isaac.menu] omni.isaac.menu has been deprecated in favor of isaacsim.gui.menu. Please update your code accordingly.
+[4.587s] [ext: omni.isaac.motion_generation-8.0.7] startup
+2026-11-11T01:21:55Z [4,538ms] [Warning] [omni.isaac.motion_generation] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,539ms] [Warning] [omni.isaac.motion_generation.articulation_kinematics_solver] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,539ms] [Warning] [omni.isaac.motion_generation.articulation_motion_policy] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,540ms] [Warning] [omni.isaac.motion_generation.articulation_trajectory] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,540ms] [Warning] [omni.isaac.motion_generation.kinematics_interface] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,541ms] [Warning] [omni.isaac.motion_generation.lula] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,541ms] [Warning] [omni.isaac.motion_generation.lula.kinematics] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,542ms] [Warning] [omni.isaac.motion_generation.lula.motion_policies] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,542ms] [Warning] [omni.isaac.motion_generation.lula.path_planners] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,543ms] [Warning] [omni.isaac.motion_generation.lula.trajectory_generator] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,543ms] [Warning] [omni.isaac.motion_generation.motion_policy_controller] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,544ms] [Warning] [omni.isaac.motion_generation.motion_policy_interface] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,544ms] [Warning] [omni.isaac.motion_generation.path_planner_visualizer] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,545ms] [Warning] [omni.isaac.motion_generation.path_planning_interface] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,545ms] [Warning] [omni.isaac.motion_generation.trajectory] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,546ms] [Warning] [omni.isaac.motion_generation.world_interface] omni.isaac.motion_generation has been deprecated in favor of isaacsim.robot_motion.motion_generation. Please update your code accordingly.
+[4.598s] [ext: omni.isaac.assets_check-0.3.13] startup
+2026-11-11T01:21:55Z [4,548ms] [Warning] [omni.isaac.assets_check] omni.isaac.assets_check has been deprecated in favor of isaacsim.asset.browser. Please update your code accordingly.
+[4.600s] [ext: isaacsim.gui.sensors.icon-2.0.3] startup
+[4.631s] [ext: isaacsim.asset.importer.mjcf-2.5.13] startup
+[4.639s] [ext: omni.sensors.nv.common-3.0.0] startup
+[4.656s] [ext: isaacsim.sensors.physics-0.4.3] startup
+[4.663s] [ext: omni.sensors.net-1.0.0] startup
+[4.673s] [ext: omni.isaac.nucleus-1.0.6] startup
+2026-11-11T01:21:55Z [4,622ms] [Warning] [omni.isaac.nucleus] omni.isaac.nucleus has been deprecated in favor of isaacsim.storage.native. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,623ms] [Warning] [omni.isaac.nucleus.nucleus] omni.isaac.nucleus.nucleus has been deprecated in favor of isaacsim.storage.native. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,623ms] [Warning] [omni.ext._impl._internal] Found class `Extension` derived from `omni.ext.IExt` in module: 'omni.isaac.nucleus', but it was imported from other extension: 'e:/piperisaac/.venv/lib/site-packages/isaacsim/exts/isaacsim.storage.native/isaacsim/storage/native/impl/extension.py', which is not a subpath to: 'e:\piperisaac\.venv\lib\site-packages\isaacsim\extsdeprecated\omni.isaac.nucleus'. Do not import `IExt` derived class from other extension in your public namespace.
+[4.675s] [ext: omni.sensors.nv.materials-2.0.0] startup
+[4.688s] [ext: isaacsim.robot.policy.examples-4.1.11] startup
+[4.690s] [ext: omni.sensors.nv.wpm-3.0.0] startup
+[4.694s] [ext: omni.sensors.nv.lidar-3.0.0] startup
+[4.702s] [ext: isaacsim.util.debug_draw-3.1.0] startup
+[4.707s] [ext: omni.sensors.nv.radar-3.0.0] startup
+[4.715s] [ext: omni.sensors.nv.ids-2.0.0] startup
+[4.718s] [ext: isaacsim.core.cloner-1.4.10] startup
+[4.721s] [ext: isaacsim.sensors.physx-2.3.2] startup
+[4.728s] [ext: isaacsim.sensors.rtx-15.8.4] startup
+[4.738s] [ext: isaacsim.sensors.camera-1.3.6] startup
+[4.749s] [ext: omni.isaac.quadruped-3.0.7] startup
+2026-11-11T01:21:55Z [4,699ms] [Warning] [omni.isaac.quadruped] omni.isaac.quadruped has been deprecated in favor of isaacsim.robot.policy.examples. Please update your code accordingly.
+[4.752s] [ext: omni.isaac.cloner-1.0.7] startup
+2026-11-11T01:21:55Z [4,704ms] [Warning] [omni.isaac.cloner] omni.isaac.cloner has been deprecated in favor of isaacsim.core.cloner. Please update your code accordingly.
+[4.756s] [ext: omni.isaac.range_sensor-4.0.6] startup
+2026-11-11T01:21:55Z [4,706ms] [Warning] [omni.isaac.range_sensor] omni.isaac.range_sensor has been deprecated in favor of isaacsim.sensors.physx. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,707ms] [Warning] [omni.isaac.range_sensor.commands] omni.isaac.range_sensor.commands has been deprecated in favor of isaacsim.sensors.physx.commands. Please update your code accordingly.
+[4.759s] [ext: omni.isaac.sensor-13.0.7] startup
+2026-11-11T01:21:55Z [4,710ms] [Warning] [omni.isaac.sensor] omni.isaac.sensor has been deprecated in favor of isaacsim.sensors.camera, isaacsim.sensors.physics, isaacsim.sensors.physx, and isaacsim.sensors.rtx. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,711ms] [Warning] [omni.isaac.sensor.camera] omni.isaac.sensor.camera has been deprecated in favor of isaacsim.sensors.camera.camera. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,711ms] [Warning] [omni.isaac.sensor.camera_view] omni.isaac.sensor.camera_view has been deprecated in favor of isaacsim.sensors.camera.camera_view. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,712ms] [Warning] [omni.isaac.sensor.commands] omni.isaac.sensor.commands has been deprecated in favor of isaacsim.sensors.physics.commands, isaacsim.sensors.physx.commands, and isaacsim.sensors.rtx.commands. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,712ms] [Warning] [omni.isaac.sensor.contact_sensor] omni.isaac.sensor.contact_sensor has been deprecated in favor of isaacsim.sensors.physics.contact_sensor. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,712ms] [Warning] [omni.isaac.sensor.imu_sensor] omni.isaac.sensor.imu_sensor has been deprecated in favor of isaacsim.sensors.physics.imu_sensor. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,713ms] [Warning] [omni.isaac.sensor.lidar_rtx] omni.isaac.sensor.lidar_rtx has been deprecated in favor of isaacsim.sensors.rtx.lidar_rtx. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,713ms] [Warning] [omni.isaac.sensor.rotating_lidar_physX] omni.isaac.sensor.imu_sensor has been deprecated in favor of isaacsim.sensors.physix.rotating_lidar_physX. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,715ms] [Warning] [omni.isaac.sensor.scripts.samples.contact_sensor] omni.isaac.sensor.scripts.samples.contact_sensor has been deprecated in favor of isaacsim.sensors.physics.scripts.samples.contact_sensor. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,715ms] [Warning] [omni.isaac.sensor.scripts.samples.imu_sensor] omni.isaac.sensor.scripts.samples.imu_sensor has been deprecated in favor of isaacsim.sensors.physics.scripts.samples.imu_sensor. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,716ms] [Warning] [omni.isaac.sensor.scripts.samples.lightbeam_sensor] omni.isaac.sensor.scripts.samples.lightbeam_sensor has been deprecated in favor of isaacsim.sensors.physx.scripts.samples.lightbeam_sensor. Please update your code accordingly.
+[4.768s] [ext: omni.kit.menu.create-2.0.1] startup
+[4.776s] [ext: omni.kit.widget.toolbar-2.0.1] startup
+[4.791s] [ext: omni.kit.manipulator.transform-107.0.0] startup
+[4.799s] [ext: omni.isaac.core-4.0.7] startup
+2026-11-11T01:21:55Z [4,750ms] [Warning] [omni.isaac.core.physics_context.physics_context] omni.isaac.core.physics_context.physics_context has been deprecated in favor of isaacsim.core.api.physics_context.physics_context. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,750ms] [Warning] [omni.isaac.core.simulation_context.simulation_context] omni.isaac.core.simulation_context.simulation_context has been deprecated in favor of isaacsim.core.api.simulation_context.simulation_context. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,751ms] [Warning] [omni.isaac.core.world.world] omni.isaac.core.world.world has been deprecated in favor of isaacsim.core.api.world.world. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,751ms] [Warning] [omni.isaac.core] omni.isaac.core has been deprecated in favor of isaacsim.core.api. Please update your code accordingly.
+[4.804s] [ext: omni.kit.scripting-107.3.2] startup
+[4.813s] [ext: omni.kit.manipulator.tool.snap-1.5.13] startup
+[4.822s] [ext: omni.kit.manipulator.selector-1.1.3] startup
+[4.826s] [ext: isaacsim.app.about-2.0.11] startup
+[4.833s] [ext: isaacsim.replicator.behavior-1.1.16] startup
+[4.834s] [ext: omni.kit.viewport.manipulator.transform-107.0.4] startup
+[4.838s] [ext: omni.isaac.window.about-2.0.7] startup
+2026-11-11T01:21:55Z [4,789ms] [Warning] [omni.isaac.window.about] omni.isaac.window.about has been deprecated in favor of isaacsim.app.about. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,790ms] [Warning] [omni.isaac.window.about.about] omni.isaac.window.about.about has been deprecated in favor of isaacsim.app.about.about. Please update your code accordingly.
+[4.842s] [ext: omni.fabric.commands-1.1.6] startup
+[4.847s] [ext: omni.kit.manipulator.prim.core-107.0.8] startup
+[4.858s] [ext: omni.kit.property.audio-1.0.16] startup
+[4.862s] [ext: omni.kit.property.camera-1.0.10] startup
+[4.864s] [ext: omni.kit.property.geometry-2.0.4] startup
+[4.869s] [ext: omni.hydra.scene_api-0.1.2] startup
+[4.872s] [ext: omni.kit.property.light-1.0.12] startup
+[4.883s] [ext: omni.kit.manipulator.prim.fabric-107.0.4] startup
+[4.887s] [ext: omni.kit.manipulator.prim.usd-107.0.3] startup
+[4.889s] [ext: omni.kit.property.material-1.11.9] startup
+[4.905s] [ext: omni.kit.property.render-1.2.1] startup
+[4.907s] [ext: omni.kit.property.transform-1.5.13] startup
+[4.913s] [ext: isaacsim.gui.property-1.1.3] startup
+[4.918s] [ext: omni.kit.manipulator.camera-106.0.4] startup
+[4.926s] [ext: omni.kit.manipulator.prim-107.0.0] startup
+[4.926s] [ext: omni.isaac.surface_gripper-2.0.6] startup
+2026-11-11T01:21:55Z [4,875ms] [Warning] [omni.isaac.surface_gripper] omni.isaac.surface_gripper has been deprecated in favor of isaacsim.robot.surface_gripper. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,875ms] [Warning] [omni.ext._impl._internal] Found class `Extension` derived from `omni.ext.IExt` in module: 'omni.isaac.surface_gripper', but it was imported from other extension: 'e:/piperisaac/.venv/lib/site-packages/isaacsim/exts/isaacsim.robot.surface_gripper/isaacsim/robot/surface_gripper/impl/extension.py', which is not a subpath to: 'e:\piperisaac\.venv\lib\site-packages\isaacsim\extsdeprecated\omni.isaac.surface_gripper'. Do not import `IExt` derived class from other extension in your public namespace.
+[4.927s] [ext: omni.kit.manipulator.selection-106.0.1] startup
+[4.932s] [ext: omni.kit.property.bundle-1.4.1] startup
+[4.935s] [ext: omni.kit.property.isaac-1.0.6] startup
+2026-11-11T01:21:55Z [4,884ms] [Warning] [omni.kit.property.isaac] omni.kit.property.isaac has been deprecated in favor of isaacsim.gui.property. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,884ms] [Warning] [omni.kit.property.isaac.widgets] omni.kit.property.isaac.widgets has been deprecated in favor of isaacsim.gui.property.widgets. Please update your code accordingly.
+[4.936s] [ext: omni.isaac.universal_robots-1.0.6] startup
+2026-11-11T01:21:55Z [4,885ms] [Warning] [omni.isaac.universal_robots] omni.isaac.universal_robots has been deprecated in favor of isaacsim.robot.manipulators.examples.universal_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,886ms] [Warning] [omni.isaac.universal_robots.kinematics_solver] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.universal_robots. Please update your code accordingly.
+2026-11-11T01:21:55Z [4,889ms] [Warning] [omni.isaac.universal_robots.ur10] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.universal_robots. Please update your code accordingly.
+[4.941s] [ext: omni.isaac.core_nodes-2.0.6] startup
+2026-11-11T01:21:55Z [4,892ms] [Warning] [omni.isaac.core_nodes] omni.isaac.core_nodes has been deprecated in favor of isaacsim.core.nodes. Please update your code accordingly.
+[4.945s] [ext: omni.kit.viewport.menubar.camera-107.0.6] startup
+[4.959s] [ext: omni.kit.viewport.menubar.lighting-107.3.1] startup
+[4.964s] [ext: isaacsim.replicator.writers-1.0.17] startup
+[4.995s] [ext: omni.kit.viewport.menubar.render-107.0.10] startup
+[5.003s] [ext: omni.kit.viewport.menubar.settings-107.0.3] startup
+[5.014s] [ext: omni.kit.window.console-1.1.4] startup
+[5.022s] [ext: isaacsim.replicator.domain_randomization-1.0.16] startup
+[5.028s] [ext: isaacsim.replicator.examples-1.3.6] startup
+[5.032s] [ext: omni.ocio-0.1.1] startup
+[5.035s] [ext: omni.rtx.window.settings-0.6.19] startup
+[5.045s] [ext: omni.kit.window.status_bar-0.1.9] startup
+[5.049s] [ext: omni.kit.window.toolbar-2.0.0] startup
+[5.058s] [ext: omni.replicator.isaac-2.0.8] startup
+2026-11-11T01:21:55Z [5,008ms] [Warning] [omni.replicator.isaac] omni.replicator.isaac has been deprecated in favor of isaacsim.replicator.domain_randomization, isaacsim.replicator.examples, isaacsim.replicator.writers. Please update your code accordingly.
+[5.060s] [ext: omni.replicator.replicator_yaml-2.0.11] startup
+[5.086s] [ext: omni.rtx.settings.core-0.6.5] startup
+[5.095s] [ext: omni.usd.metrics.assembler.ui-107.3.1] startup
+[5.107s] [ext: omni.isaac.utils-2.0.6] startup
+[5.110s] [ext: semantics.schema.editor-2.0.2] startup
+[5.115s] [ext: omni.kit.ui.actions-1.0.5] startup
+[5.118s] [ext: semantics.schema.property-2.0.1] startup
+[5.121s] [ext: omni.isaac.version-2.0.7] startup
+2026-11-11T01:21:56Z [5,070ms] [Warning] [omni.isaac.version] omni.isaac.version has been deprecated in favor of isaacsim.core.version. Please update your code accordingly.
+[5.123s] [ext: omni.isaac.cortex-1.0.5] startup
+[5.123s] [ext: omni.anim.curve.core-1.3.1] startup
+[5.137s] [ext: isaacsim.core.throttling-2.2.2] startup
+[5.141s] [ext: omni.kit.menu.common-2.0.1] startup
+[5.144s] [ext: isaacsim.exp.base-5.1.0] startup
+[5.144s] [ext: isaacsim.exp.base.python-5.1.0] startup
+[5.146s] Simulation App Starting
+2026-11-11T01:21:56Z [5,257ms] [Warning] [omni.fabric.plugin] Warning: attribute overrideClipRange not found for bucket id 9
+
+[5.326s] app ready
+Starting kit application with the following args:  ['E:\\PiperIsaac\\.venv\\Lib\\site-packages\\isaacsim\\exts\\isaacsim.simulation_app\\isaacsim\\simulation_app\\simulation_app.py', 'E:\\PiperIsaac\\.venv\\Lib\\site-packages\\isaacsim\\apps/isaacsim.exp.base.python.kit', '--/app/tokens/exe-path=E:\\PiperIsaac\\.venv\\Lib\\site-packages\\isaacsim\\kit', '--/persistent/app/viewport/displayOptions=3094', '--/rtx/materialDb/syncLoads=True', '--/rtx/hydra/materialSyncLoads=True', '--/omni.kit.plugin/syncUsdLoads=True', '--/app/renderer/resolution/width=1280', '--/app/renderer/resolution/height=720', '--/app/window/width=1440', '--/app/window/height=900', '--/renderer/multiGpu/enabled=True', '--/app/fastShutdown=True', '--/app/installSignalHandlers=0', '--ext-folder', 'E:\\PiperIsaac\\.venv\\Lib\\site-packages\\isaacsim/exts', '--ext-folder', 'E:\\PiperIsaac\\.venv\\Lib\\site-packages\\isaacsim/apps', '--/app/userConfigPath=E:/PiperIsaac/cache/config/user.config.json', '--/app/vulkan=false', '--/app/d3d12=true', '--/app/cachePath=E:/PiperIsaac/cache/kit', '--/app/logPath=E:/PiperIsaac/logs', '--/physics/cudaDevice=0', '--/plugins/carb.tasking.plugin/threadCount=8', '--/plugins/omni.tbb.globalcontrol/maxThreadCount=8', '--portable', '--no-window', '--/app/window/hideUi=1']
+Passing the following args to the base kit application:  ['--task', 'camera-only', '--camera-mode', 'grasp', '--grasp-flat', '--headless', '--camera-task', 'E:\\PiperIsaac\\outputs\\camera_grasp\\single-task\\task.json', '--camera-output', 'E:\\PiperIsaac\\outputs\\camera_grasp\\frozen-eval-v1\\52004', '--seed', '52004', '--frames', '6500']
+Warp 1.8.2 initialized:
+   CUDA Toolkit 12.8, Driver 13.3
+   Devices:
+     "cpu"      : "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD"
+     "cuda:0"   : "NVIDIA GeForce RTX 5080" (16 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     C:\Users\Administrator\AppData\Local\NVIDIA\warp\Cache\1.8.2
+Warp DeprecationWarning: The `warp.sim` module is deprecated and will be removed in v1.10. Please transition to using the forthcoming Newton library instead.
+{"event": "articulation_ready", "dof_names": ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7", "joint8"]}
+{"step": 0, "phase": "calibrate_tool", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0], "visual": {"target_pixels": [222.5, 326.5, 57.0, 0.0]}}
+{"step": 10, "phase": "calibrate_tool", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0], "visual": {"target_pixels": [225.6382991639708, 326.66172605934474, 57.09381131754712, 2.0193471203012763]}}
+{"step": 20, "phase": "calibrate_tool", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0], "visual": {"target_pixels": [225.79764774799924, 326.57744666222, 56.7841096116325, 2.0400132275948977]}}
+{"step": 30, "phase": "calibrate_tool", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"target_pixels": [225.57268851511802, 326.6109913461641, 57.21279206308761, 2.102066993466167]}}
+{"step": 40, "phase": "calibrate_tool", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0], "visual": {"target_pixels": [225.70448939753118, 326.5998410636096, 57.11508880865683, 2.106813941639615]}}
+{"step": 50, "phase": "calibrate_tool", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0], "visual": {"target_pixels": [225.70114421914414, 326.52014047068815, 57.082397059509894, 2.2239681315347894]}}
+{"step": 60, "phase": "calibrate_tool", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0], "visual": {"target_pixels": [225.56334238499224, 326.57210921060033, 57.442791908922146, 1.934847448987739]}}
+{"step": 70, "phase": "calibrate_tool", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"target_pixels": [225.5925106383519, 326.60340088110235, 57.326030455958914, 1.8896779403945771]}}
+{"step": 80, "phase": "align_angle", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"target_pixels": [225.8250684880952, 326.2451304746933, 63.35026981630014, -0.8022961074221087]}}
+{"step": 90, "phase": "align_angle", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"target_pixels": [226.61029007171868, 326.09475269608384, 64.64399720098677, -1.1717929810315155]}}
+{"step": 100, "phase": "align_angle", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"target_pixels": [224.87726084571477, 326.40789434262916, 61.61818137646788, -0.2232117382656469]}}
+{"step": 110, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"target_pixels": [224.78472192791045, 326.4290353237106, 61.392102506479226, -0.14517174082023132]}}
+{"step": 120, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"target_pixels": [229.44383017448786, 325.54721854614326, 65.94460744532198, -1.957719764327038]}}
+{"step": 130, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"target_pixels": [234.16097676266102, 324.7331885110477, 65.6245033526665, -3.2681756943632507]}}
+{"step": 140, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"target_pixels": [232.59503725933985, 324.8032838839737, 65.63916145172288, -2.5616448099036404]}}
+{"step": 150, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"target_pixels": [225.86652128556042, 325.9114250187097, 63.593378475406304, -0.17225514846485623]}}
+{"step": 160, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"target_pixels": [221.40161273626288, 326.6221592120805, 55.806615931554106, 2.0044219581256186]}}
+{"step": 170, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"target_pixels": [217.77758392415492, 327.094402614106, 50.23222954112726, 2.8601018484786067]}}
+{"step": 180, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"target_pixels": [217.8747181144002, 327.0701873245535, 50.33309190446588, 2.943980718815098]}}
+{"step": 190, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"target_pixels": [222.04987571214943, 326.59731351770637, 56.44982650182556, 1.8595056230248872]}}
+{"step": 200, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"target_pixels": [224.30068692024955, 326.239997896924, 60.36605794831289, 0.8530203908821363]}}
+{"step": 210, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [230.38031379606684, 310.9868006141133, 60.855897449541644, 0.8845709468462957]}}
+{"step": 220, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [233.96072478107746, 302.2398043074544, 60.642720665811346, 0.27422853556475957]}}
+{"step": 230, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [237.8337623221978, 300.6264296555763, 60.49610603336908, -1.8534360087244437]}}
+{"step": 240, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [242.616954827317, 299.34415823573175, 60.18188013239387, -4.47035273276596]}}
+{"step": 250, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [242.99296815710838, 299.1730844421242, 60.00947633223474, -4.68882781668988]}}
+{"step": 260, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [237.98017730875023, 300.73892955059637, 60.695725275765945, -2.005989347804501]}}
+{"step": 270, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [232.02212863646002, 301.70379716444154, 60.617425475171444, 1.5938420455964462]}}
+{"step": 280, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [226.24608167636376, 302.3120989091806, 60.46105441582368, 5.009908085593452]}}
+{"step": 290, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [225.104904579947, 302.5683288447831, 60.18549013173315, 5.382347468192222]}}
+{"step": 300, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [229.14582403624445, 302.2350264057583, 60.404340075569976, 3.1674900355127704]}}
+{"step": 310, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [233.66519018404122, 301.478896782884, 60.507669353323614, 0.8020622987710908]}}
+{"step": 320, "phase": "visual_servo", "action": [-1.0, -0.0, -0.0, -0.0, -0.0, -1.0, -0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [231.92192981784865, 307.1169923861489, 60.82150748828712, 0.23299019800980147]}}
+{"step": 330, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [224.64297994442728, 324.57546071048273, 61.64291141464945, 0.8409292331965759]}}
+{"step": 340, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [226.987779319073, 334.21437922900304, 65.69720284203979, 0.9629151760544943]}}
+{"step": 350, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [228.64332393029486, 339.41053048034115, 68.17702875529729, 1.181258461761871]}}
+{"step": 360, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [234.51289134834448, 338.5776324889598, 68.59974170091772, -0.8008048674544028]}}
+{"step": 370, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [242.13998343330883, 336.8267499183684, 68.55355978119626, -3.8107934669784953]}}
+{"step": 380, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [242.6213571157204, 336.6553496827581, 68.860863650946, -4.0941001301521425]}}
+{"step": 390, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [234.93824740508293, 338.742093673527, 68.56046928783881, -1.3036114734799185]}}
+{"step": 400, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [225.08130669273268, 340.20221343375766, 68.76885909842497, 2.4531686582562315]}}
+{"step": 410, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [215.88573538340185, 340.64199044599275, 68.33950091831954, 6.238908560432009]}}
+{"step": 420, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [214.05419161671136, 340.7867075658784, 67.91297677406251, 6.973747512801182]}}
+{"step": 430, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [220.6996553219944, 340.8050415333297, 68.09863161235417, 4.139076468549575]}}
+{"step": 440, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [227.68296630104444, 339.9213547212608, 68.72479210550622, 1.5872391063293065]}}
+{"step": 450, "phase": "visual_servo", "action": [-0.0, -1.0, -0.0, -0.0, 1.0, -0.0, -0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [227.30765585353285, 336.4945787106663, 67.6172913257833, 1.0725253340250447]}}
+{"step": 460, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [224.51501079665496, 327.09628329825387, 61.64238020532729, 0.7196528003426579]}}
+{"step": 470, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [214.7379984292537, 326.86961423662837, 63.189716904532986, 0.9166118029686743]}}
+{"step": 480, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [208.00138482110987, 327.0200760065941, 65.2285539067124, 1.2361558595997337]}}
+{"step": 490, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [212.24212414863842, 327.48874262069126, 65.89296160911385, -1.0754490526890947]}}
+{"step": 500, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [219.3015484748531, 327.4262236730658, 65.26639961131204, -3.4163428687210597]}}
+{"step": 510, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [219.72787608534742, 327.4037002792278, 65.20614938367726, -3.7585297127621686]}}
+{"step": 520, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [212.7580218488792, 327.4523400485236, 65.51310882253865, -0.9182581653481066]}}
+{"step": 530, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [204.50423965243476, 326.788513517386, 64.93794553441596, 2.4135706154211363]}}
+{"step": 540, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [196.6404733293591, 325.29307818618497, 64.70329177598532, 5.92229843209914]}}
+{"step": 550, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [194.79346318624383, 324.8116690952774, 64.89459051501268, 6.694499071512581]}}
+{"step": 560, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [200.25804184960234, 326.17512884710317, 65.40058913006573, 4.207918867786162]}}
+{"step": 570, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [206.69021042131857, 327.2558860593483, 65.07816375274953, 1.281385871874022]}}
+{"step": 580, "phase": "visual_servo", "action": [-0.0, -0.0, -1.0, -0.0, 1.0, -0.0, -0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [211.12985111799924, 327.0765049875365, 64.62491140005538, 1.0826607169212963]}}
+{"step": 590, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [223.27107568596017, 326.39210295203054, 61.158349417603105, 0.6919430676337726]}}
+{"step": 600, "phase": "visual_servo", "action": [-0.15099262604759223, -0.7999999999999999, -0.10786607604806837, 0.0, 0.9078660760480683, -0.15099262604759223, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [221.29350986002092, 322.1195727053918, 57.827476315918574, 0.40416973270882295]}}
+{"step": 610, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [218.41206018498312, 317.9591372573676, 54.504992573883115, 0.13066079839926203]}}
+{"step": 620, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [221.50219898904743, 317.9642172212361, 54.0462880567744, -1.3150862661887004]}}
+{"step": 630, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [227.98992227674785, 318.64567079919607, 54.63603757124104, -4.333339023163688]}}
+{"step": 640, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [229.43133292343958, 318.5630374740601, 54.52732985391712, -4.753921266445971]}}
+{"step": 650, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [224.35155148837492, 318.3144416712162, 54.57268585370599, -2.6037744132637926]}}
+{"step": 660, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [216.99141396489162, 317.2880253071618, 54.32040586224218, 0.6235489198029853]}}
+{"step": 670, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [209.56945653006818, 315.5732217216455, 53.94650564734765, 3.7446197698368877]}}
+{"step": 680, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [207.0696669239999, 314.7532695368914, 54.03214816341018, 4.927988596577933]}}
+{"step": 690, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [210.57808766914263, 315.7293024527927, 54.08045039428299, 3.3956957218997132]}}
+{"step": 700, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-56.780686920249536, -86.1777304587145, 8.427227813281775], "iteration": 0, "target_pixels": [216.92700561070043, 317.24442247880575, 54.259431304006156, 0.7089303665443936]}}
+{"step": 710, "phase": "visual_servo", "action": [0.41557490903482996, 0.4219754385534546, 0.509090909090909, 0.0, -0.9310663476443637, 0.41557490903482996, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [218.017481489975, 317.0801027619432, 54.642437364161445, 0.574591959837889]}}
+{"step": 720, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [216.49640459836883, 310.77608300999674, 59.908091622914625, 0.5154275976893814]}}
+{"step": 730, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [215.30018283357578, 307.32574563218793, 62.24373790541588, 0.6344978638083631]}}
+{"step": 740, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [218.30748727512827, 306.9829428136179, 62.89946059226106, -0.8111588825664597]}}
+{"step": 750, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [223.7102785415562, 306.7405118505831, 62.988317861089136, -3.755153205206369]}}
+{"step": 760, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [224.303027170538, 306.6681402754397, 63.20045295132871, -4.289856709989522]}}
+{"step": 770, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [219.7203692421046, 306.9245532410471, 62.77300336809983, -1.7112540453056369]}}
+{"step": 780, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [213.24679383361558, 306.9508858430622, 62.503661695870754, 1.570718856389405]}}
+{"step": 790, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [206.79909978146435, 306.1601239267684, 62.622476704999535, 5.0542189945560665]}}
+{"step": 800, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [205.255741669075, 305.76879543418613, 62.233008849903825, 5.993735364676553]}}
+{"step": 810, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [208.9042975150614, 306.3132348502052, 62.61899072324907, 4.114813114730211]}}
+{"step": 820, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-50.35808819220637, -77.25197158336249, -12.74413186270787], "iteration": 1, "target_pixels": [214.10631403399879, 306.8646632513968, 62.722726681025655, 1.1524793839331124]}}
+{"step": 830, "phase": "visual_servo", "action": [0.4357830795204835, 0.33770915087247116, 0.6222222222222222, 0.0, -0.9599313730946933, 0.4357830795204835, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [214.3068557754818, 306.0048551082935, 63.3613815499585, 1.187496978203697]}}
+{"step": 840, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [205.6744313449061, 293.7784235920861, 69.3501670885213, 1.4111491667161573]}}
+{"step": 850, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [203.341710909965, 290.907438540925, 71.20418345473512, 1.5609205505681416]}}
+{"step": 860, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [207.23188075052246, 290.7081205606555, 70.90296824499825, -1.2655293513777934]}}
+{"step": 870, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [210.46110481498172, 290.4701162209458, 70.52826228919368, -3.856421186808035]}}
+{"step": 880, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [209.98194110908813, 290.50582755074214, 70.636096686447, -3.4969809481127214]}}
+{"step": 890, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [205.56885152053627, 290.8045094549976, 70.77924092061426, -0.14649624206180079]}}
+{"step": 900, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [200.47531102268206, 290.51153724053324, 70.8539662749071, 3.5745864153582687]}}
+{"step": 910, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [196.30121873127632, 290.1363504923228, 70.84064122617626, 6.453516478424163]}}
+{"step": 920, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [196.02593175371635, 290.07536557052435, 70.7996470140915, 6.723169202232938]}}
+{"step": 930, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [199.9137848545913, 290.58013422796387, 70.94672246290212, 3.715956839362704]}}
+{"step": 940, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-47.292644619493444, -66.91735168522735, -3.4983050949968706], "iteration": 2, "target_pixels": [202.86363768601709, 290.74202231674457, 71.11801215439957, 1.808981210799118]}}
+{"step": 950, "phase": "visual_servo", "action": [0.4388590254706829, 0.29220912677089333, 0.6222222222222222, 0.0, -0.9144313489931155, 0.4388590254706829, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [198.7748826318349, 285.2183669176964, 73.37630677602209, 1.4859409294148946]}}
+{"step": 960, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [186.1519361939635, 270.0301933918837, 78.89583396972321, 1.3541821161127956]}}
+{"step": 970, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [185.25155606155562, 268.36399038393904, 79.51592388015231, 0.5843336487368731]}}
+{"step": 980, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [187.94366807250705, 268.7199904932663, 78.9152804698121, -3.424627923211901]}}
+{"step": 990, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [188.8855090752477, 268.568305074915, 79.09817976366, -4.852894129709881]}}
+{"step": 1000, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [187.94934343592928, 268.502020757692, 78.85840473197666, -3.348251482488962]}}
+{"step": 1010, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [185.0848721233957, 267.96386230056476, 79.13342017454876, 0.8472868405177252]}}
+{"step": 1020, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [181.8104877936497, 267.33257296231153, 80.21744617706376, 5.012737817317898]}}
+{"step": 1030, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [180.3308546535785, 266.7200055998818, 79.92005392812707, 7.3699961014799555]}}
+{"step": 1040, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [180.70843126620088, 267.015509095998, 80.0633718447411, 6.413292880960526]}}
+{"step": 1050, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [183.28556775718266, 267.69469888516915, 80.04960675916898, 2.8567334322945186]}}
+{"step": 1060, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-35.6227003354721, -50.801501956570746, -1.3877770999744143], "iteration": 3, "target_pixels": [184.31317450089824, 268.0473820209021, 79.80122820654071, 1.5686067339168943]}}
+{"step": 1070, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [192.04152515757113, 242.93759710022377, 78.28666195134042, 0.5795741528728229]}}
+{"step": 1080, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [194.11789032280095, 236.11823343493057, 78.32961208350241, -0.20900816885617246]}}
+{"step": 1090, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [194.12246920070822, 235.71713436085562, 78.44639759267814, -4.064547161016819]}}
+{"step": 1100, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [194.2859911109126, 236.31400727458535, 78.33389212972084, -7.985551544331898]}}
+{"step": 1110, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [193.97977146574402, 236.0911120214575, 78.6882815691743, -7.221322716811045]}}
+{"step": 1120, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [193.97623996488326, 235.48461209341357, 78.62749470342702, -2.4355002781873196]}}
+{"step": 1130, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [194.07327449965086, 235.24590117130307, 78.42731856653576, 2.6576829821780876]}}
+{"step": 1140, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [194.244427804121, 235.09872298023757, 78.1580865612113, 6.914584970836145]}}
+{"step": 1150, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [194.11090654022362, 234.967956491698, 78.18183458385735, 7.288217448212791]}}
+{"step": 1160, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [193.8104874219267, 234.99345709377613, 78.53854303781164, 3.703274846011368]}}
+{"step": 1170, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [193.94154222738177, 235.1250934484375, 78.38461070329015, 0.7402882111458524]}}
+{"step": 1180, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [189.1966416494542, 250.9143744736366, 78.76888333235385, 1.8125897915439424]}}
+{"step": 1190, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [184.40526537035961, 265.8555347177915, 79.70831200826224, 2.580957330585946]}}
+{"step": 1200, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [182.42109921188703, 272.47666137163134, 88.02615348866274, 3.1111169993773444]}}
+{"step": 1210, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [181.77940933635108, 274.37123307459393, 90.85061141870858, 3.008780670673147]}}
+{"step": 1220, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [184.81896488500178, 273.8937820150612, 89.96085915862747, -0.14448400788832316]}}
+{"step": 1230, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [187.17687984090696, 273.4628629614397, 89.7442192208089, -3.463258277267059]}}
+{"step": 1240, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [186.79937763540153, 273.5754531989147, 89.78674842464987, -3.0472778266190943]}}
+{"step": 1250, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [183.33521150150045, 273.81069513015245, 90.42475436039884, 1.908389528898482]}}
+{"step": 1260, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [179.43759992205455, 274.42023113161645, 91.4616143855644, 5.798621468227594]}}
+{"step": 1270, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [176.3193448684645, 274.51246125812924, 91.75288769755578, 9.332540278449429]}}
+{"step": 1280, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [176.13911551471372, 274.5569029437708, 91.68322965213606, 9.512740726554995]}}
+{"step": 1290, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [179.05251106352918, 274.4660079120861, 91.62621399208619, 6.15756139547706]}}
+{"step": 1300, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [181.15880571005852, 274.1620378057185, 91.35262286107465, 3.82663969160555]}}
+{"step": 1310, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [182.69134251845082, 270.3589559715123, 85.6361562638338, 3.6055381031503373]}}
+{"step": 1320, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [183.69959292756926, 266.9216654165501, 80.29634637269358, 3.5648406670173642]}}
+{"step": 1330, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [161.112367995597, 263.4138163967029, 84.20731925443077, 3.636816615450357]}}
+{"step": 1340, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [154.30759398027982, 262.37803795019596, 85.39241515256715, 3.735434159288687]}}
+{"step": 1350, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [155.7581354206944, 264.40610409005427, 85.29971644698031, 0.23790968906720877]}}
+{"step": 1360, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [157.44326381068024, 266.44270280080553, 85.37374003429663, -3.078059479732218]}}
+{"step": 1370, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [157.12199945068627, 266.0742246301174, 85.48165838936491, -2.6514355364875826]}}
+{"step": 1380, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [154.75158477897125, 263.3686362969929, 85.1806694321722, 2.038695015404471]}}
+{"step": 1390, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [152.15413046545976, 260.5867665866638, 86.06128610621401, 6.354160110688596]}}
+{"step": 1400, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [149.9751019524404, 258.08911972512914, 86.99072945204153, 9.848939916419582]}}
+{"step": 1410, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [149.87823422097188, 257.9128528243337, 86.99900241827989, 10.0385895298014]}}
+{"step": 1420, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [151.65866975168578, 260.3351905830642, 86.4694308232366, 6.73965937866609]}}
+{"step": 1430, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [153.24416544991752, 261.8937308530119, 85.77172268852296, 4.410862001540821]}}
+{"step": 1440, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [168.84474635522628, 264.3789356205763, 82.8573166869289, 3.814920450484834]}}
+{"step": 1450, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [182.40600956552396, 266.2932433922985, 80.25420884702143, 3.9784141145454726]}}
+{"step": 1460, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [179.08539315950918, 256.0269306952755, 87.70496344336959, 3.723943343547063]}}
+{"step": 1470, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [175.38100953319355, 249.0791058171276, 93.19431891419411, 3.1866982342351804]}}
+{"step": 1480, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [175.47796848214222, 248.17848307941176, 93.72142762041457, 1.0148270983889063]}}
+{"step": 1490, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [176.74813395825552, 248.4128271670313, 93.59153978895706, -3.880909699568818]}}
+{"step": 1500, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [176.99829396939944, 248.43232959071113, 93.25134030877071, -4.64699000009044]}}
+{"step": 1510, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [176.2634734596481, 248.57476815681514, 93.16880807085383, -0.910245163092398]}}
+{"step": 1520, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [174.61805344373934, 248.10230114115816, 93.64784689846428, 4.956968156706239]}}
+{"step": 1530, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [173.40218571634733, 248.53933525241703, 93.97486104410406, 9.442050101181664]}}
+{"step": 1540, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [172.89145009449453, 248.6038398306432, 94.46019527118133, 10.622024118609417]}}
+{"step": 1550, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [173.55124390078524, 248.3044036713182, 94.30271622864313, 8.239869035244539]}}
+{"step": 1560, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-16.798143285594136, -28.034331514888947, -6.0450317299984135], "iteration": 4, "target_pixels": [174.6021501464753, 247.91610274325683, 93.89603927234323, 4.607938200659149]}}
+{"step": 1570, "phase": "visual_servo", "action": [0.28446181721514635, 0.4821802527016014, 0.3163519965488296, 0.0, -0.7985322492504311, 0.28446181721514635, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [173.50339070721677, 246.61945035254485, 94.75465645729741, 4.028376234116195]}}
+{"step": 1580, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [168.88046697701765, 241.73450738869747, 98.41602470608217, 3.572100684278766]}}
+{"step": 1590, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [168.7455439739466, 241.4901927668692, 98.65156414928626, 1.18922836252041]}}
+{"step": 1600, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [169.97955745802258, 242.19119343290313, 98.13045037253926, -4.5644054316631895]}}
+{"step": 1610, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [169.8084975638935, 241.90295894642182, 98.36131650417359, -5.171316209428056]}}
+{"step": 1620, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [169.18338880062922, 241.53690153649598, 98.35818263951694, -1.187249812917102]}}
+{"step": 1630, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [168.1053941091315, 241.10891516600947, 98.90342109110489, 4.645967353600668]}}
+{"step": 1640, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [167.18885329825574, 241.05716827913264, 99.65915714201846, 10.026119034163287]}}
+{"step": 1650, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [167.10368371432614, 241.15903909821688, 99.4355792299965, 11.713943716475427]}}
+{"step": 1660, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [167.23984646022785, 240.78678794308567, 99.57856422897501, 9.63173562798086]}}
+{"step": 1670, "phase": "visual_servo", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-7.332510480228848, -7.955746407373169, 0.6051430170559987], "iteration": 5, "target_pixels": [167.84040235608975, 240.72350871004627, 99.17618138866354, 5.2252960900848535]}}
+{"step": 1680, "phase": "close", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.94991870130156, 240.5739249121944, 99.08045089279068, 4.588854710185743]}}
+{"step": 1690, "phase": "close", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [168.11345119338608, 240.58550038656128, 98.6816276640879, 4.487198474074361]}}
+{"step": 1700, "phase": "close", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.99135972776762, 237.20784514268502, 98.214261041386, 3.8842735590507544]}}
+{"step": 1710, "phase": "close", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.91988915408936, 237.22803843663087, 98.2393696074281, 3.906841986574591]}}
+{"step": 1720, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [168.06092093249484, 237.30975928406002, 98.61661494037322, 3.808598336112226]}}
+{"step": 1730, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [168.12194834633567, 237.2970987651155, 98.8518421320446, 3.9213137745673237]}}
+{"step": 1740, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [168.01762358269497, 237.632260520766, 99.28265313784433, 4.266909221870108]}}
+{"step": 1750, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.86922169797683, 237.61957630817264, 99.14447798731021, 4.522691371129923]}}
+{"step": 1760, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.37834543302532, 237.62203353664592, 98.63234893199044, 5.216555075649737]}}
+{"step": 1770, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.34920228207335, 237.5366862856141, 98.74994086516593, 5.210379427425551]}}
+{"step": 1780, "phase": "lift", "action": [-0.4357830795204835, -0.33770915087247116, -0.6222222222222222, -0.0, 0.9599313730946933, -0.4357830795204835, -0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.36668279635276, 237.566038682197, 98.7284678864987, 5.061476493595848]}}
+{"step": 1790, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.4376925045714, 237.56218905673245, 99.01111712320623, 5.055277739231329]}}
+{"step": 1800, "phase": "lift", "action": [-0.41557490903482996, -0.4219754385534546, -0.509090909090909, -0.0, 0.9310663476443637, -0.41557490903482996, -0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.33153082351248, 237.57597164983156, 98.95641978886432, 5.158197589470859]}}
+{"step": 1810, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.40499541076142, 237.52559166426673, 98.82550002475567, 5.115097564666229]}}
+{"step": 1820, "phase": "lift", "action": [0.15099262604759223, 0.7999999999999999, 0.10786607604806837, -0.0, -0.9078660760480683, 0.15099262604759223, -0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.44917045630794, 237.50675873265334, 98.94040709280614, 5.085913049514474]}}
+{"step": 1830, "phase": "lift", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.40175634241658, 237.54376721313665, 98.75940088292114, 5.117272183389062]}}
+{"step": 1840, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.1930692362759, 237.55284181181864, 98.69100093760402, 5.301158878587017]}}
+{"step": 1850, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.2334031983459, 237.58262112285954, 98.88064844406377, 5.274313034765271]}}
+{"step": 1860, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.18090395433913, 237.5207302505441, 98.70557097213035, 5.3414443507302565]}}
+{"step": 1870, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.29921963861804, 237.5099222944676, 98.88555956760457, 5.2651579179489545]}}
+{"step": 1880, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.40649015452115, 237.54370743881833, 98.67195340025748, 5.299117870320657]}}
+{"step": 1890, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.25274218116164, 237.52806184737227, 98.83032856361635, 5.31144926341986]}}
+{"step": 1900, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.27090270423642, 237.5574078381076, 98.76360486500613, 5.312539962327492]}}
+{"step": 1910, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.29182054652264, 237.4817931822566, 98.63124168618263, 5.288249369363967]}}
+{"step": 1920, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.27701767828142, 237.5340892402726, 98.71892440926094, 5.175256188863841]}}
+{"step": 1930, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.25234329082127, 237.52461545465826, 98.54936601677841, 5.286318820478101]}}
+{"step": 1940, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.18717204169707, 237.57377069713579, 98.53881349133046, 5.283416356395506]}}
+{"step": 1950, "phase": "hold", "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "visual": {"goal_pixels": [167.52, 240.0, 0.0], "servo_error": [-0.39190079925981536, -0.7174228918342749, -2.3292832451221557], "iteration": 6, "target_pixels": [167.32832785120584, 237.60536841826163, 98.72454472856137, 5.235706968627284]}}
+{"success": true, "criterion": "same part lifted >= 30 mm with bilateral physical finger contact continuously >= 2 s", "peak_lift_m": [0.08821466565132141], "longest_bilateral_hold_seconds": [4.0], "steps": 1956, "elapsed_seconds": 246.51599999999598, "seed": 52004, "policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb", "negative_open": false, "curriculum": "upright randomized XY/yaw", "control_inputs": ["single wrist RGB", "own command memory"], "scene_truth_to_controller": false, "encoder_feedback_to_controller": false, "attachments": false, "pose_writes_after_setup": 0, "simulation_only": true, "controller_result": "finished_unverified"}
+[7.297s] Simulation App Startup Complete
+2026-11-11T01:22:00Z [9,410ms] [Warning] [omni.physx.plugin] Detected an articulation at /World/Piper/root_joint with more than 4 velocity iterations being added to a TGS scene.The related behavior changed recently, please consult the changelog. This warning will only print once.
+2026-11-11T01:22:00Z [9,758ms] [Warning] [omni.fabric.plugin] getAttributeCount called on non-existent path /World/Piper/link8/visuals/link8/node_STL_BINARY_
+2026-11-11T01:22:00Z [9,758ms] [Warning] [omni.fabric.plugin] getTypes called on non-existent path /World/Piper/link8/visuals/link8/node_STL_BINARY_
+2026-11-11T01:22:01Z [10,132ms] [Warning] [omni.fabric.plugin] Warning: attribute primvars:displayColor:indices not found for path /World/Brick/Shape_000
+
+2026-11-11T01:22:04Z [13,044ms] [Warning] [rtx.postprocessing.plugin] DLSS increasing input dimensions: Render resolution of (320, 240) is below minimal input resolution of 300.
+2026-11-11T01:22:04Z [13,119ms] [Warning] [omni.syntheticdata.plugin] SdRenderVarPtr missing valid input renderVar LdrColorSDbuff
+[259.866s] Simulation App Shutting Down

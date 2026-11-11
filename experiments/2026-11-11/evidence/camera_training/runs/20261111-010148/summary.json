@@ -1,0 +1,26 @@
+{
+  "started_at": "2026-11-10T17:01:49.009942+00:00",
+  "deadline_utc": "2026-11-11T00:01:49.009942+00:00",
+  "pid": 33664,
+  "stage": "completed",
+  "round": 96,
+  "training_transitions": 101376,
+  "deployable_policy": false,
+  "physical_success_evaluated": false,
+  "updated_at": "2026-11-10T23:52:38.854754+00:00",
+  "collection_seed": 110197,
+  "child_log": "D:\\PiperCameraTraining\\runs\\20261111-010148\\logs\\final-test.log",
+  "child_elapsed_seconds": 210,
+  "candidate": "round-096",
+  "best_metrics": {
+    "reconstruction_mse": 0.001511125310571515,
+    "next_image_mse": 0.0001339367626087551,
+    "inverse_action_mse": 0.09671580942813307,
+    "persistence_image_mse": 0.00029350473619160766,
+    "zero_action_mse": 0.14026564336381853,
+    "mean_action_mse": 0.14019128493964672,
+    "shuffled_action_next_image_mse": 0.00037511305004045425,
+    "selection_score": 0.028368812919779884
+  },
+  "checkpoint": "D:\\PiperCameraTraining\\runs\\20261111-010148\\models\\round-096\\best.pt"
+}

@@ -1,0 +1,13 @@
+{
+  "contract": "camera_only_exploration_v1",
+  "transitions": 512,
+  "action_seed": 2563228502,
+  "layout_seed": 210003,
+  "source_sha256": "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445",
+  "mean_pixel_change": 2.4942209720611572,
+  "elapsed_seconds": 63.48400000000038,
+  "scene_state_to_model": false,
+  "demonstration": false,
+  "physical_success_evaluated": false,
+  "purpose": "self-supervised visual/motor pretraining only"
+}

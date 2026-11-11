@@ -1,0 +1,5 @@
+{
+  "checkpoint": "D:\\PiperCameraTraining\\runs\\20261111-010148\\models\\round-096\\best.pt",
+  "encoder": "D:\\PiperCameraTraining\\runs\\20261111-010148\\models\\round-096\\encoder.pt",
+  "report": "D:\\PiperCameraTraining\\runs\\20261111-010148\\models\\round-096\\report.json"
+}

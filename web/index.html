@@ -8,17 +8,18 @@
 h1{margin:0 0 8px;font-size:22px}small{color:#a7bad0}#status{margin:14px 0;min-height:40px;line-height:1.5}button{background:#263d56;border:1px solid #4c6a8b;border-radius:7px;color:white;padding:9px 12px;margin:3px;cursor:pointer}button:disabled{opacity:.45;cursor:default}#start{background:#166b59}#vr{background:#395fc0}#detail{margin-top:12px;font:12px monospace;color:#a7bad0}details{margin-top:14px;line-height:1.7;font-size:13px}#error{color:#ffad95}#hint{position:absolute;right:20px;bottom:20px;background:#142131dd;padding:10px;border-radius:8px;color:#b9cbe0}
 </style>
 <script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script>
+<link rel="stylesheet" href="/static/scene.css?v=behavior-1">
 </head><body>
 <div id="hud"><h1>Piper 协作工作台</h1><small>Isaac Sim / PhysX · 本机物理状态</small><div id="status">正在连接…</div>
-<div><button id="start">机器人递料</button><button id="pause">暂停</button><button id="reset">重置</button><button id="vr" disabled>检测 WebXR…</button></div>
+<div><button id="restart" hidden disabled title="清空本轮进度、重新散落零件并立即开始">重新开始</button><button id="start">机器人递料</button><button id="pause">暂停</button><button id="reset">重置布局</button><button id="vr" disabled>检测 WebXR…</button></div>
 <div><button id="grab">桌面抓取</button><button id="lift">抬高 6 cm</button><button id="rotate">旋转 90°</button><button id="drop">放下</button></div>
-<div id="tabletop-tools" hidden><button id="randomize">随机摆放积木</button><button id="place">点击台面摆放</button><button id="set-goal">点击指定放置位置</button><small id="placement-hint">淡蓝网格为当前可操作区域；积木方向保持不变。</small></div>
+<div id="tabletop-tools" hidden><button id="randomize">随机摆放积木</button><button id="place">点击台面摆放</button><button id="set-goal">点击指定放置位置</button><small id="placement-hint">请在机械臂可达的台面位置操作；积木方向保持不变。</small></div>
 <div id="assembly-progress" hidden style="margin-top:12px;padding:10px;background:#263b50;border-radius:6px"></div>
 <div id="assembly-view-tools" hidden><button id="view-assembly">搭建近景</button><button id="view-heap" hidden>零件堆近景</button><button id="view-fixture" hidden>翻面夹具近景</button><button id="view-overview">工作台总览</button></div>
 <div id="detail"></div><div id="error"></div>
-<p><a href="/assembly" target="_blank" rel="noopener" style="color:#add8ff">搭建说明书与 Agent 规划</a></p>
+<p><a href="/assembly" target="_blank" rel="noopener" style="color:#add8ff">搭建说明书与 Agent 规划</a> · <a href="http://127.0.0.1:18110/" target="_blank" rel="noopener" style="color:#add8ff">BRICKLAB 说明书与训练任务</a></p>
 <details><summary>操作与当前范围</summary>右手柄握持键：抓取／释放；右 A：开始／继续；右 B：暂停；左 X：重置。<br>桌面 I/K、J/L、U/O 移动虚拟手；空格递料，G 抓放，R 重置。<br>机器人递料结束后开放人工抓取。头显客户端负责立体显示，所有刚体运动由 PC 上的 Isaac Sim 计算。<br>本版使用简化夹爪接触，暂不模拟真实 LEGO 卡接。USB 头显接入方法见项目说明。</details></div>
 <div id="hint">起点／目标位置在小范围内随机 · 单人、单机械臂</div>
 <figure id="wrist-preview" hidden style="position:absolute;right:20px;bottom:65px;z-index:10;margin:0;background:#142131;padding:8px;border-radius:8px"><figcaption><select id="wrist-mode" aria-label="腕部画面模式"><option value="local">流畅 3D 腕部视角</option><option value="rgb">Isaac 原始 RGB</option></select> <small id="wrist-rate"></small></figcaption><canvas id="wrist-canvas" width="320" height="240" style="width:320px;height:240px;transform:scaleX(-1)"></canvas><img id="wrist-image" hidden width="320" height="240" alt="Isaac 原始腕部相机图像"><small id="wrist-note">浏览器渲染预览；定位使用 Isaac 原始 RGB。</small></figure>
-<script type="module" src="/static/app.js?v=collaboration-connection-2"></script>
+<script type="module" src="/static/app.js?v=survey-2"></script>
 </body></html>

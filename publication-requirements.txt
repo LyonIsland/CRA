@@ -1,0 +1,3 @@
+# Optional archive/publication tooling; install outside the Isaac environment.
+zstandard==0.25.0
+requests==2.34.2

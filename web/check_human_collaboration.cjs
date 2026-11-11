@@ -10,26 +10,28 @@ const fs=require('fs'),path=require('path');
  let last='';async function waitFor(predicate,ms=600000){const end=Date.now()+ms;while(Date.now()<end){const d=await state();const key=JSON.stringify([d.robot_mode,d.state.phase,d.state.human_request?.id]);if(key!==last){last=key;console.log(key)}if(d.state.status==='failed')throw Error(d.state.message);if(predicate(d))return d;await page.waitForTimeout(500)}throw Error('Human workflow timeout')}
  try{
   await page.goto(base+'/assembly',{waitUntil:'domcontentloaded'});
-  await page.waitForFunction(()=>!document.querySelector('#live-start').disabled);
   const frame=page.frameLocator('#live-view');
+  await frame.locator('#start:enabled').waitFor();
+  await frame.locator('[data-tab="human"]').click();
+  if((await state()).state.simulated_human?.enabled){await frame.locator('[data-op="human_auto_off"]').click();await waitFor(d=>!d.state.simulated_human.enabled)}
   if(await frame.locator('#view-fixture').isVisible())throw Error('Turning fixture control still visible');
   const model=await(await page.request.get(base+'/model')).json();
   if(model.objects.some(o=>/regripper/i.test(o.name)))throw Error('Turning fixture still in scene');
-  await page.locator('#live-start').click();
+  await frame.locator('#start').click();
   const waiting=await waitFor(d=>d.robot_mode==='waiting_human');
   const before=waiting.state.human_request;
-  await page.waitForFunction(()=>!document.querySelector('#human-done').disabled);
+  await frame.locator('[data-op="human_done"]:enabled').waitFor();
   await page.screenshot({path:path.join(out,'human-request.png'),fullPage:true});
-  await page.locator('#human-done').click();
+  await frame.locator('[data-op="human_done"]').click();
   const rejected=await waitFor(d=>d.robot_mode==='waiting_human'&&d.state.human_request.id>before.id);
   console.log(JSON.stringify({false_confirmation_rejected:true,request:rejected.state.human_request}));
-  await page.waitForFunction(()=>!document.querySelector('#human-simulate').disabled);
-  await page.locator('#human-simulate').click();
+  await frame.locator('[data-op="simulate_human"]:enabled').waitFor();
+  await frame.locator('[data-op="simulate_human"]').click();
   const verified=await waitFor(()=>{
    const files=fs.readdirSync(out).filter(f=>/^run_.*\.json$/.test(f));
    return files.some(f=>{const r=JSON.parse(fs.readFileSync(path.join(out,f),'utf8'));return r.human_assistance?.some(h=>h.completion_source==='simulated_human'&&h.RGB_verification_passed)})
   });
-  if(verified.robot_mode==='robot')await page.locator('#live-pause').click();
+  if(verified.robot_mode==='robot')await frame.locator('#pause').click();
   const report={no_turning_fixture:true,real_robot_retreat_and_wait:true,false_completion_rejected:true,
    explicit_simulated_human_action_RGB_reobserved:true,full_assembly_tested:false,errors};
   if(errors.length)throw Error(errors.join('\n'));

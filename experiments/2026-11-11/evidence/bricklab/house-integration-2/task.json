@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "kind": "piper_camera_manual_task",
+  "title": "BRICKLAB 小屋",
+  "source_sha256": "2590c30993d82a797716d8698a4a668d24525bf7c292d5cbc0655a79d7eb7445",
+  "manual_mode": "lego",
+  "policy_inputs": {
+    "manual": "policy/manual.pdf",
+    "page_images": [
+      "policy/pages/page-001.png",
+      "policy/pages/page-002.png",
+      "policy/pages/page-003.png",
+      "policy/pages/page-004.png",
+      "policy/pages/page-005.png",
+      "policy/pages/page-006.png",
+      "policy/pages/page-007.png",
+      "policy/pages/page-008.png",
+      "policy/pages/page-009.png",
+      "policy/pages/page-010.png",
+      "policy/pages/page-011.png",
+      "policy/pages/page-012.png"
+    ],
+    "sha256": {
+      "policy/manual.pdf": "fa209b1b9beeb5a0e02f1e6bdf375f9964994ff7d428fdfe9c4786b4d89a4d81",
+      "policy/pages/page-001.png": "a670ccf513a9ede0192f616f116e146fd7e262e0b02616980f9db7fd2b3121cf",
+      "policy/pages/page-002.png": "22f8b458250fce654af6480442a53be1897d332963d18029b483ae89bc56204d",
+      "policy/pages/page-003.png": "0baaaf5be4400c215863aafa21b80caf01158c5f2c5e14e94ee2283915f6706a",
+      "policy/pages/page-004.png": "7e821d7483ca529329389713678068b0838c65391b62e79e2765e1005d2eda09",
+      "policy/pages/page-005.png": "30e1beb80f7e98c49e4336ed362d83c0efb5211d5f7c1ff445e6ed6245aa6905",
+      "policy/pages/page-006.png": "70402ba59e693791b151c54c9e40e5a7a97a6e982623c3d80d3d2706b55ced13",
+      "policy/pages/page-007.png": "c10eb55d75c89a79e05c83af38a395d3088926c3551ee4f592453306a5d7e7a8",
+      "policy/pages/page-008.png": "5daf1affe3ff9f5dbcdd7d43bc88ddbee2807498c9d822570eb773c0fb304c69",
+      "policy/pages/page-009.png": "e4b7997c6abf1d6ff8b68db20f769f093aaa98e076d981bf558126a067b5135f",
+      "policy/pages/page-010.png": "588e0882ddc2f474b9c81420a9941cfa4ad942077785703db457a4e6cd803b29",
+      "policy/pages/page-011.png": "4890478cbcf7404c529f5fa2c86ca77215462ccb8f7b8348c7046447eb056594",
+      "policy/pages/page-012.png": "6254194caa9e62eeb4cf61b8b400de326745cefedad1477c80bd4b851848213b"
+    }
+  },
+  "environment": {
+    "spec": "environment/inventory.json",
+    "sha256": "2f0df1139bbd0a0a38b31abe0b8b9e160fba8aa2c894f5d6d86aea299e9d72aa"
+  },
+  "evaluation_only": {
+    "page_map": "evaluation/manual-page-map.json",
+    "model": "evaluation/extracted/ground-truth.json"
+  },
+  "part_count": 38,
+  "robot_execution_validated": false,
+  "limitations": [
+    "all loose parts share material; color-specific assembly is not evaluated",
+    "nominal hollow geometry; no verified clutch/interference or real-world calibration",
+    "manual page encoding is not a trained instruction-reading capability"
+  ]
+}

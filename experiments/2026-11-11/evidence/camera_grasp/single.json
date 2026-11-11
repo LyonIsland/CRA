@@ -1,0 +1,1 @@
+{"version": 1, "boardSize": 20, "title": "Single brick grasp", "bricks": [{"id": "b1", "type": "brick-2x4", "color": "cream", "x": 8, "z": 9, "y": 0, "rotation": 90}]}

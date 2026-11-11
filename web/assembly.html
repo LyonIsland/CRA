@@ -1,79 +1,11 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Piper · LEGO 说明书工作台</title>
-<style>body{margin:0;background:#eef3f7;color:#18324a;font:15px system-ui,"Microsoft YaHei",sans-serif}header{background:#172d43;color:white;padding:24px 32px}h1{margin:0 0 8px;font-size:25px}a{color:#1267ac}header a{color:#bcddff}main{display:grid;grid-template-columns:minmax(480px,1fr) minmax(340px,.8fr);gap:20px;padding:24px;max-width:1500px;margin:auto}section{background:white;padding:22px;border-radius:12px;border:1px solid #dce4ed}h2{margin:0 0 14px;font-size:20px}iframe{width:100%;height:780px;border:1px solid #d6e0e8}.notice{padding:12px;background:#fff3d3;border-left:4px solid #d49725;line-height:1.7}button,select{font:inherit;padding:8px 12px;margin:8px 4px 8px 0;border:1px solid #8fa8bf;border-radius:6px;background:#edf5fc;color:#18324a}button{cursor:pointer}table{border-collapse:collapse;width:100%;font-size:13px}td,th{text-align:left;padding:8px;border-bottom:1px solid #e1e8ef}.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px}pre{white-space:pre-wrap;word-break:break-word;background:#f3f7fa;padding:12px;font-size:12px}.views{display:grid;grid-template-columns:1fr 1fr;gap:8px}.views img{width:100%;border:1px solid #d6e1eb}small{color:#627b90}.wide{grid-column:1/-1}#error{color:#ad3828}@media(max-width:900px){main{display:block;padding:12px}section{margin:12px 0}iframe{height:620px}}</style></head>
-<body><header><h1 id="page-title">说明书与规划检查 · 自动搭建执行器未接通</h1><div>目标：六块 2×4 积木搭三层交错小墙 · <a href="/manual" target="_blank">打开说明书</a> · <a href="/manual.pdf" target="_blank">下载 8 页 PDF</a> · <a href="/">机械臂视图</a></div></header>
-<main><section class="wide" id="live-console" hidden><h2>实时说明书执行 · 概念搭建模式</h2><p class="notice">机器人实际抓取、搬运并就位零件。凸点仅作外观，碰撞代理两端各留 1.5 mm 间隙；连接采用接触和格位对齐触发的 PhysX 约束近似，不代表真实 LEGO 塑料卡接已验证。</p><button id="live-start" disabled>开始按说明书搭建</button><button id="live-pause" disabled>暂停</button><button id="live-reset" disabled>重新随机散落</button><strong id="live-progress">连接实时视图中…</strong><p id="live-message"></p><div id="human-help" class="notice" hidden><strong>机器人请求你的协助</strong><p id="human-instruction"></p><button id="human-done" disabled>我已完成并撤手 · 重新观察</button><button id="human-simulate" disabled>模拟人完成 · 流程测试</button><p><small>模拟操作代替人的摆放，仅验证协作流程，不计为机器人翻面能力。</small></p></div><iframe id="live-view" title="Isaac Sim 实时机器人" style="height:650px"></iframe></section>
-<section><h2>人读说明书</h2><iframe src="/manual" title="图解搭建说明书"></iframe></section>
-<section><h2>Agent 规划检查</h2><div class="notice" id="execution-status"><strong>当前页面不能启动机械臂完成整套搭建。</strong><p>“规划下一步”只读取扫描快照并计算计划，不会发送机器人运动指令。完整搭建执行链尚未实现，并非等待用户解锁或连接 VR。</p><button id="execute-assembly" disabled title="完整执行器未实现，不是可通过配置解锁的功能">完整自动搭建 · 尚未实现</button><p id="execution-progress">说明书完成：0 / 6 步；第一步抓起的测试不等于第一步连接完成。</p><ul id="execution-missing"></ul></div>
-<div id="snapshot-tools"><p>固定的是说明书的目标结构；散落积木位置来自独立 Isaac 扫描样例。切换样例可比较不同布局下的选料结果。</p>
-<p>本页的多积木照片来自独立扫描实验；单块抓放工作台不执行整套搭建。运行 open-assembly.ps1 后，可进入 <a href="http://127.0.0.1:8877/assembly">实时概念搭建工作台（8877）</a>。</p>
-<label>扫描快照 <select id="seed"></select></label><button id="plan">查看下一步计划（不驱动机械臂）</button></div><div id="error"></div>
-<h3>视觉库存</h3><table><thead><tr><th>积木</th><th>观察位置（m）</th><th>置信分</th></tr></thead><tbody id="inventory"></tbody></table>
-<p><small>颜色＋已知几何的感知基线；置信分是启发式评分，不是校准概率。所有源位置均来自图像，规划测试不能替代物理拼接验收。</small></p>
-<h3>六步条件规划</h3><p><small>这是未来步骤的选料计划，不会把前面的连接假定为已完成；每一步执行前仍须重新观察和验收支撑。</small></p><ol id="overview"></ol>
-<h3 id="step">待扫描</h3><div id="summary"></div><pre id="detail"></pre></section>
-<section class="wide" id="snapshot-gallery"><h2>Isaac 腕部 RGB 扫描快照</h2><p>以下是所选布局的最近一次实际仿真相机扫描，不是机器人正在执行拼接的实时画面。</p><div id="views" class="views"></div><div id="prefix"></div></section></main>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Piper · Isaac Sim 场景控制台</title>
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#101923}#live-view{width:100%;height:100dvh;border:0;display:block}</style>
+</head>
+<body><iframe id="live-view" title="Isaac Sim 实时场景与 Agent 看板" allow="xr-spatial-tracking; fullscreen"></iframe>
 <script>
-const $=id=>document.getElementById(id);const colors={red:'#db3d36',blue:'#347cda',green:'#2aa76c',yellow:'#edca31',orange:'#ee852b',purple:'#9557c8'};
-const zh={red:'红色',blue:'蓝色',green:'绿色',yellow:'黄色',orange:'橙色',purple:'紫色'};
-const skillNames={visual_pick:'完整多积木抓取适配（仅验证过 S1 红砖抓起前缀）',oriented_transport:'按说明书转向并搬运',force_limited_insertion:'限力压入／卡接',connection_verification:'实际连接状态验收',fixture_registration:'底板配准与固定'};
-function cell(row,text){const td=document.createElement('td');td.textContent=text;row.appendChild(td);return td}
-async function plan(){try{
- const seed=Number($('seed').value);const response=await fetch('/assembly/api/plan',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({seed})});if(!response.ok)throw new Error(await response.text());const data=await response.json();
- $('execution-missing').replaceChildren();for(const name of data.execution?.missing_capabilities||data.plan.missing_capabilities||[]){const item=document.createElement('li');item.textContent='未就绪：'+(skillNames[name]||name);$('execution-missing').appendChild(item)}
- if(data.execution)$('execution-progress').textContent='说明书完成：'+data.execution.completed_instruction_steps+' / '+data.execution.total_instruction_steps+' 步。完整执行器未接通，当前页面只做规划检查。';
- $('inventory').replaceChildren();for(const p of data.observation.pieces){const row=document.createElement('tr');const name=cell(row,(zh[p.color]||p.color)+' 2×4');const swatch=document.createElement('span');swatch.className='swatch';swatch.style.background=colors[p.color];name.prepend(swatch);cell(row,p.pose.position_m.map(v=>v.toFixed(3)).join(', '));cell(row,p.confidence.toFixed(2));$('inventory').appendChild(row)}
- $('overview').replaceChildren();for(const step of data.overview.steps){const li=document.createElement('li');li.textContent=step.step_id+' '+zh[step.part.color]+' 2×4：'+(step.selected_track_id?'已找到 '+step.selected_track_id:'待寻找')+'；需验收 '+step.requires_verified_supports.join('、');$('overview').appendChild(li)}
- const next=data.plan;$('step').textContent='下一步：'+(next.step_id||'需要继续观察');$('summary').textContent=next.status==='need_piece'?'所需积木未可靠识别，需要继续扫描。':('选择'+(zh[next.selected_part?.color]||'')+' 2×4；执行状态：'+(next.status==='blocked_execution'?'能力未就绪，禁止推进':'可规划'));
- $('detail').textContent=JSON.stringify(next,null,2);$('views').replaceChildren();for(let view=0;view<7;view++){const image=document.createElement('img');image.src='/assembly/api/image?seed='+seed+'&view='+view;image.alt='扫描视角 '+view;image.loading='lazy';$('views').appendChild(image)}
- $('prefix').replaceChildren();if(data.pick_prefix_test){const title=document.createElement('h3');title.textContent='S1 抓取技能前缀：'+(data.pick_prefix_test.success?'已抓起并抬高':'未通过')+'（不含压合，步骤仍未完成）';const image=document.createElement('img');image.src='/assembly/api/prefix-image?seed='+seed;image.width=320;image.height=240;image.alt='按说明书选择红砖并抬起的实际腕部相机快照';$('prefix').append(title,image)}$('error').textContent='';window.assemblyPlanningResult=data;
-}catch(e){$('error').textContent=String(e)}}
-let liveMode=false,viewerConnected=false,lastLivePoll=0,livePollPending=false;
-function renderLive(data){
- if(!data.state)return;const a=data.state;
- const heap=a.scene_mode==='physical_heap';
- if(heap)$('page-title').textContent='真实零件堆 · 观察、取件与整理';
- $('live-progress').textContent='概念进度 '+a.completed_steps.length+'/'+a.total_steps+' · '+(a.current_step||a.status)+' · '+(a.random_yaw?'随机位置＋随机角度':'仅随机位置，方向固定')+' · '+a.seed;
- if(heap){
-  $('live-console').querySelector('h2').textContent='零件堆 → 整理 → 说明书搭建';
-  $('live-console').querySelector('.notice').textContent='零件自然落定形成重叠、倒扣和侧躺。机器人自主取件；遇到朝向不明或重复失败，撤离并请求人翻正、分开零件，重新观察后继续。无机械翻面夹具；装配仍是连接近似，真实塑料卡接未验证。';
-  $('live-progress').textContent='已整理 '+a.normalized_colors.length+'/6 · 说明书 '+a.completed_steps.length+'/6 · '+a.phase;
- }
- const request=a.human_request;const waiting=data.robot_mode==='waiting_human';
- $('human-help').hidden=!request;$('human-instruction').textContent=request?request.reason+'。'+request.instruction:'';
- $('human-help').querySelector('strong').textContent='机器人请求你的协助';
- $('human-done').textContent='我已完成并撤手 · 重新观察';$('human-simulate').textContent='模拟人完成 · 流程测试';
- $('human-help').querySelector('small').textContent='模拟操作代替人的摆放，仅验证协作流程，不计为机器人翻面能力。';
- for(const id of ['human-done','human-simulate'])$(id).disabled=!viewerConnected||!waiting||new URLSearchParams(location.search).get('observe')==='1';
- const phaseNames={orient_pick:'按积木角度转动夹爪',align_transport:'抬起后转到搭建方向',preseat:'移动到结构上方',register_carry:'近距离视觉配准',verify_carry:'确认夹持与方向',orient:'调整方向',verify_placement:'松爪后视觉验收'};
- $('live-message').textContent=a.status==='running'&&phaseNames[a.phase]?((a.current_step?a.current_step+' · ':'')+phaseNames[a.phase]):a.message;
- $('live-start').textContent=data.robot_mode==='paused_robot'?'继续任务':(heap?'开始观察与取件':'开始按说明书搭建');
- $('live-start').disabled=!viewerConnected||!(a.status==='ready'||data.robot_mode==='paused_robot');
- $('live-pause').disabled=!viewerConnected||data.robot_mode!=='robot';$('live-reset').disabled=!viewerConnected;
- const observation=data.agent?.observation;$('inventory').replaceChildren();
- $('inventory').closest('table').querySelectorAll('th')[2].textContent=heap?'重投影误差':'置信分';
- if(heap){for(const p of a.heap_observation?.pieces||[]){const row=document.createElement('tr');cell(row,(zh[p.color]||p.color)+' · '+p.face_hypothesis);cell(row,p.position_m.map(v=>v.toFixed(3)).join(', '));cell(row,p.score_px.toFixed(2)+' px');$('inventory').appendChild(row)}}
- else{for(const p of observation?.pieces||[]){const row=document.createElement('tr');cell(row,(zh[p.color]||p.color)+' 2×4');cell(row,p.pose.position_m.map(v=>v.toFixed(3)).join(', '));cell(row,p.confidence.toFixed(2));$('inventory').appendChild(row)}}
- $('overview').replaceChildren();for(const step of data.overview?.steps||[]){const li=document.createElement('li');li.textContent=step.step_id+' '+zh[step.part.color]+'：'+(step.selected_track_id?'已观察到所需积木':'待视觉搜索');$('overview').appendChild(li)}
- $('step').textContent='当前执行：'+(a.current_step||a.status);$('summary').textContent='已完成 '+a.completed_steps.join('、')+'；真实卡接未验收。';
- const list=colors=>colors.length?colors.map(c=>zh[c]||c).join('、'):'暂无';
- $('detail').textContent=heap?[
-  '当前：'+a.message,
-  '已整理并放稳：'+list(a.normalized_colors),
-  '已移除干扰块：'+list(a.removed_distractors),
-  '流程：观察 → 自主取件／请求人协助 → 重新观察 → 放稳 → 按说明书搭建',
-  '视觉输入：腕部 RGB；朝向模型：'+(a.trained_face_model_used?'已用于本次检查':'尚未进入检查阶段'),
-  '整堆到搭建：'+(a.heap_to_assembly_completed?'本次概念任务已完成':'尚未完成'),
-  '真实 LEGO 塑料卡接仍未验证。'
- ].join('\n'):JSON.stringify(data.agent?.last_plan||a,null,2);
- window.liveAssemblyStatus=data;if(new URLSearchParams(location.search).get('observe')==='1'){for(const id of ['live-start','live-pause','live-reset'])$(id).disabled=true;}
-}
-async function pollLive(){if(livePollPending)return;livePollPending=true;lastLivePoll=Date.now();try{const data=await(await fetch('/assembly/api/live')).json();renderLive(data)}catch(e){$('error').textContent=String(e)}finally{livePollPending=false}}
-function liveCommand(op){$('live-view').contentWindow.postMessage({type:'assembly-command',op,request_id:window.liveAssemblyStatus?.state?.human_request?.id},location.origin)}
-$('human-done').onclick=()=>liveCommand('human_done');$('human-simulate').onclick=()=>liveCommand('simulate_human');
-window.addEventListener('message',event=>{if(event.origin!==location.origin||event.source!==$('live-view').contentWindow)return;if(event.data?.type==='assembly-state'){viewerConnected=event.data.controller_connected===true;if(Date.now()-lastLivePoll>400)pollLive()}});
-$('live-start').onclick=()=>liveCommand(window.liveAssemblyStatus?.robot_mode==='paused_robot'?'resume':'start');$('live-pause').onclick=()=>liveCommand('pause');$('live-reset').onclick=()=>liveCommand('reset');
-async function init(){const live=await(await fetch('/assembly/api/live')).json();if(live.available){liveMode=true;$('page-title').textContent='说明书驱动的实时概念搭建';$('live-console').hidden=false;$('execution-status').hidden=true;$('snapshot-tools').hidden=true;$('snapshot-gallery').hidden=true;$('live-view').src='/?embedded=1'+(new URLSearchParams(location.search).get('observe')==='1'?'&observe=1':'');renderLive(live);setInterval(pollLive,500);return}
-const response=await fetch('/assembly/api/observations');const seeds=await response.json();for(const seed of seeds){const option=document.createElement('option');option.value=seed;option.textContent='布局 '+seed;$('seed').appendChild(option)}if(seeds.length)await plan();else $('error').textContent='尚无扫描样例，请先运行 scan-assembly.ps1。'}
-$('plan').onclick=plan;$('seed').onchange=plan;init().catch(e=>$('error').textContent=String(e));
+const query=new URLSearchParams(location.search);query.set('embedded','1');
+document.getElementById('live-view').src='/?'+query.toString();
 </script></body></html>

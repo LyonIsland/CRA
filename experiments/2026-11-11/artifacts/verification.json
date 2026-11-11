@@ -1,0 +1,30 @@
+{
+  "method": "SHA-256 of every compressed part and every decompressed original file; no extraction to disk",
+  "groups": [
+    {
+      "group": "project-outputs",
+      "verified_files": 4246,
+      "verified_raw_bytes": 680068477
+    },
+    {
+      "group": "xr-history",
+      "verified_files": 75,
+      "verified_raw_bytes": 91989853339
+    },
+    {
+      "group": "camera-training",
+      "verified_files": 1405,
+      "verified_raw_bytes": 6804741200
+    },
+    {
+      "group": "simulation-assets",
+      "verified_files": 176,
+      "verified_raw_bytes": 141990840
+    }
+  ],
+  "summary": {
+    "complete": true,
+    "verified_files": 5902,
+    "verified_raw_bytes": 99616653856
+  }
+}

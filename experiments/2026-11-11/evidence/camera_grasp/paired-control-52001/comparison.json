@@ -1,0 +1,65 @@
+{
+  "kind": "paired_mechanical_replay_not_online_evaluation",
+  "source_seed": 52001,
+  "source_policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+  "source_trace_sha256": "b1aabf5443b8b4cc43ff1252f441ca4371b6d0fe4e079b82038dbee8d808f686",
+  "intervention": "same arm commands; force gripper open in close/lift/hold",
+  "runs": {
+    "original": {
+      "success": true,
+      "criterion": "same part lifted >= 30 mm with bilateral physical finger contact continuously >= 2 s",
+      "peak_lift_m": [
+        0.07097294181585312
+      ],
+      "longest_bilateral_hold_seconds": [
+        3.42
+      ],
+      "steps": 1982,
+      "elapsed_seconds": 63.23399999999674,
+      "seed": 52001,
+      "policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+      "negative_open": false,
+      "curriculum": "upright randomized XY/yaw",
+      "control_inputs": [
+        "recorded_command_sequence"
+      ],
+      "scene_truth_to_controller": false,
+      "encoder_feedback_to_controller": false,
+      "attachments": false,
+      "pose_writes_after_setup": 0,
+      "simulation_only": true,
+      "controller_result": "commissioning_plan",
+      "online_policy_executed": false,
+      "intervention_gripper_open": false
+    },
+    "open": {
+      "success": false,
+      "criterion": "same part lifted >= 30 mm with bilateral physical finger contact continuously >= 2 s",
+      "peak_lift_m": [
+        1.862645149230957e-09
+      ],
+      "longest_bilateral_hold_seconds": [
+        0.0
+      ],
+      "steps": 1982,
+      "elapsed_seconds": 62.56199999999808,
+      "seed": 52001,
+      "policy_sha256": "53219fb32cce1d64c59b823d19e4f7b3b80d1b9f577df8ac282b1d1ef1bee0fb",
+      "negative_open": false,
+      "curriculum": "upright randomized XY/yaw",
+      "control_inputs": [
+        "recorded_command_sequence"
+      ],
+      "scene_truth_to_controller": false,
+      "encoder_feedback_to_controller": false,
+      "attachments": false,
+      "pose_writes_after_setup": 0,
+      "simulation_only": true,
+      "controller_result": "commissioning_plan",
+      "online_policy_executed": false,
+      "intervention_gripper_open": true
+    }
+  },
+  "complete": true,
+  "supports_physical_closure": true
+}

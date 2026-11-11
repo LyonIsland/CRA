@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "kind": "bricklab_input_adaptation",
+  "ok": true,
+  "format": "web_json",
+  "title": "Single brick grasp",
+  "input_file": "source.json",
+  "input_sha256": "eb8b37aa0a1a5253d61bb7e988c882f9e7479ae7b3821cd1fa17db18b625f2d1",
+  "input_size_bytes": 167,
+  "prepare_input": "E:\\PiperIsaac\\outputs\\camera_grasp\\single-task\\evaluation\\adapted\\model.mpd",
+  "prepare_input_sha256": "5276a5d466a995a5abb434a2d54b2b7ffb0e19c732f85be8dd2918cddc1efc28",
+  "manifest_path": "E:\\PiperIsaac\\outputs\\camera_grasp\\single-task\\evaluation\\adapted\\input-adapter.json",
+  "catalog_sha256": "b9c0dca53edccd9c1ef204c3afcee1f5b24d06049236bb1685c12b2a3ab6b948",
+  "instance_mapping": [
+    {
+      "source_id": "b1",
+      "instance_id": "root/0001",
+      "part_file": "3001.dat",
+      "color_code": "0x2eee9dc",
+      "web_type": "brick-2x4",
+      "web_color": "cream",
+      "web_pose": {
+        "x": 8,
+        "z": 9,
+        "y": 0,
+        "rotation": 90
+      },
+      "generated_step": 1
+    }
+  ],
+  "step_provenance": "generated_web_height_sort_not_authored_not_robot_validated",
+  "physical_board_added": false,
+  "coordinates": {
+    "stud_pitch_mm": 8,
+    "plate_height_mm": 3.2,
+    "ldu_to_mm": 0.4,
+    "web_bottom_to_part_top": "part top height = (web.y + part.h) * 3.2 mm",
+    "web_xy_to_ldraw_xz": "centered on the 20 x 20 board; origin at board surface",
+    "web_display_scale": "app.js UNIT=.32 is stylized; metric export uses real LEGO nominal dimensions"
+  },
+  "robot_execution_validated": false,
+  "assembly_sequence_ground_truth": false
+}

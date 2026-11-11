@@ -1,0 +1,165 @@
+{
+  "schema": "cra-evidence-archive-v1",
+  "created_utc": "2026-11-11T05:57:45Z",
+  "source_roots": {
+    "project": "E:\\PiperIsaac",
+    "camera-training": "D:\\PiperCameraTraining"
+  },
+  "excluded": [
+    "installed Python/Node environments",
+    "download caches and installers",
+    "Git internal metadata",
+    "credentials and key files",
+    "runtime PID/STOP control files"
+  ],
+  "groups": [
+    {
+      "group": "project-outputs",
+      "format": "concatenated tar.zst parts",
+      "raw_bytes": 680068477,
+      "parts": [
+        {
+          "name": "project-outputs.tar.zst.part001",
+          "bytes": 536870912,
+          "sha256": "2462c60f5e7f5b2bf1542ba1649be2a24618851b8763c2e6a897c7d05ae68bc8"
+        },
+        {
+          "name": "project-outputs.tar.zst.part002",
+          "bytes": 50137270,
+          "sha256": "8a7eb6ee6663fe16999ce9654c4547e681ce562856e4c5c77ad98a4f96d42831"
+        }
+      ]
+    },
+    {
+      "group": "xr-history",
+      "format": "concatenated tar.zst parts",
+      "raw_bytes": 91989853339,
+      "parts": [
+        {
+          "name": "xr-history.tar.zst.part001",
+          "bytes": 536870912,
+          "sha256": "03fe401ac3bb70e4716799dff1f316fcc6dc5c9086018ae4edfc00ac2bd83d95"
+        },
+        {
+          "name": "xr-history.tar.zst.part002",
+          "bytes": 536870912,
+          "sha256": "51c427dfce0ba6adb6f85bd88f040e6000412e0534ef273684bf3377eb88fe0a"
+        },
+        {
+          "name": "xr-history.tar.zst.part003",
+          "bytes": 536870912,
+          "sha256": "9fa7337a62aed8fef904ea508f328a0700aa9566ba7c3bd13c784a5015b617f7"
+        },
+        {
+          "name": "xr-history.tar.zst.part004",
+          "bytes": 536870912,
+          "sha256": "b3421580b951add9309c92acd0a29b882566828f8253fd8064ca781c3f122cf5"
+        },
+        {
+          "name": "xr-history.tar.zst.part005",
+          "bytes": 536870912,
+          "sha256": "7c28b6685d960d55c56a77e0cd9a47fad12d7739675aa9742080cc6074602485"
+        },
+        {
+          "name": "xr-history.tar.zst.part006",
+          "bytes": 536870912,
+          "sha256": "a6067ceff39fe78c0e3d13b3433a684a8537c5ad839b7f1c218be60ecbc6a6bc"
+        },
+        {
+          "name": "xr-history.tar.zst.part007",
+          "bytes": 536870912,
+          "sha256": "2b17bc921c32033bac1ab03290d108386b7d77a507f59b7649ea54a158260772"
+        },
+        {
+          "name": "xr-history.tar.zst.part008",
+          "bytes": 51017850,
+          "sha256": "58f11701ba0eadcea62ba16160e92b6b2298d13b262ccbea2c69a76151f862d0"
+        }
+      ]
+    },
+    {
+      "group": "camera-training",
+      "format": "concatenated tar.zst parts",
+      "raw_bytes": 6804741200,
+      "parts": [
+        {
+          "name": "camera-training.tar.zst.part001",
+          "bytes": 536870912,
+          "sha256": "0b6fbaaafb650b3ccc7325f85fd63c9da83ad36599c79b93f7640bd71e71c505"
+        },
+        {
+          "name": "camera-training.tar.zst.part002",
+          "bytes": 536870912,
+          "sha256": "d399c9dec1aaa42757153f5586584786b202781fd6a46979c2054a857df1be7e"
+        },
+        {
+          "name": "camera-training.tar.zst.part003",
+          "bytes": 536870912,
+          "sha256": "352bd2d3821fecf6c7a547a624c6d3a3199fe3fdb3335fb458b975cbadabeb8b"
+        },
+        {
+          "name": "camera-training.tar.zst.part004",
+          "bytes": 536870912,
+          "sha256": "25c9dbd11141be7fa7f01cc8f351894182bc73d623fb74d1c42a85b81f3b582d"
+        },
+        {
+          "name": "camera-training.tar.zst.part005",
+          "bytes": 536870912,
+          "sha256": "57039a9e382915ae924bfab5b560f88b17b9fc2e45a80082b9a9ccd0969ddbe4"
+        },
+        {
+          "name": "camera-training.tar.zst.part006",
+          "bytes": 536870912,
+          "sha256": "6cf259b3fe7ed8c712f5ff97a1f641b9afea8aadda77d8ab609a59d768c622f4"
+        },
+        {
+          "name": "camera-training.tar.zst.part007",
+          "bytes": 536870912,
+          "sha256": "db55a6443fe6e764a9684b351a88e4d3ab7c41dcbbab7379eb56b2e3905ec6ad"
+        },
+        {
+          "name": "camera-training.tar.zst.part008",
+          "bytes": 536870912,
+          "sha256": "6b5c8de0d2844ba43053c23d813be8707ad599360567e2a4bf83ff60c9f22c09"
+        },
+        {
+          "name": "camera-training.tar.zst.part009",
+          "bytes": 536870912,
+          "sha256": "7d6e53518b966d1df5441418fe088699904655a34dabacb4758e81ef640c2ab3"
+        },
+        {
+          "name": "camera-training.tar.zst.part010",
+          "bytes": 536870912,
+          "sha256": "9341d17f903976d7a083cb528e872823f813d24175240cdcf97820a796129d68"
+        },
+        {
+          "name": "camera-training.tar.zst.part011",
+          "bytes": 536870912,
+          "sha256": "645f7fe27ad7d9402651edc3f87a741c7fb50e7484bf69bf5743e139f3cd9e32"
+        },
+        {
+          "name": "camera-training.tar.zst.part012",
+          "bytes": 536870912,
+          "sha256": "d8f37001ec73769e506b4b680382d0d494fe617f6fed1fee36b18acc9e6b4984"
+        },
+        {
+          "name": "camera-training.tar.zst.part013",
+          "bytes": 763588,
+          "sha256": "b6bc69b862b2422ba5916d0db7abbd91a746858fc64ffdb7dbdc93ca8c4e6b11"
+        }
+      ]
+    },
+    {
+      "group": "simulation-assets",
+      "format": "concatenated tar.zst parts",
+      "raw_bytes": 141990840,
+      "parts": [
+        {
+          "name": "simulation-assets.tar.zst.part001",
+          "bytes": 32113442,
+          "sha256": "133ce99d35053c1106e563fb8088d02752d063ba8eff6c70e6e1eab4c3544dd4"
+        }
+      ]
+    }
+  ]
+}

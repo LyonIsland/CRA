@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.1",
+  "kind": "bricklab_manual_page_map",
+  "mode": "steps",
+  "title": "tower4",
+  "source_label": "BRICKLAB / web_json",
+  "source_sha256": "44d599041fd68676407653891a464b9c98df08179f93e2291e84d08e71e9cec9",
+  "color_count": 1,
+  "color_summary": [
+    {
+      "color_hex": "#EEE9DC",
+      "color_name": "奶油白",
+      "count": 4
+    }
+  ],
+  "instance_count": 4,
+  "inventory": [
+    {
+      "part_file": "3001.dat",
+      "color_code": "0x2EEE9DC",
+      "count": 4,
+      "color_name": "奶油白",
+      "color_hex": "#EEE9DC"
+    }
+  ],
+  "warnings": [],
+  "step_semantics": "Explicit STEP/ROTSTEP boundaries preserve parent-local order. ROTSTEP affects view metadata only. A referenced subassembly enters its parent at final state; no interleaved global child execution order is invented.",
+  "pages": [
+    {
+      "kind": "cover",
+      "visible_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004"
+      ],
+      "focus_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004"
+      ],
+      "page_number": 1
+    },
+    {
+      "kind": "inventory",
+      "rows": [
+        {
+          "part_file": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 4,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        }
+      ],
+      "page_number": 2
+    },
+    {
+      "kind": "step",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "source_step": 1,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0001"
+      ],
+      "added_ids": [
+        "root/0001"
+      ],
+      "visible_ids": [
+        "root/0001"
+      ],
+      "focus_ids": [
+        "root/0001"
+      ],
+      "framing_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004"
+      ],
+      "rows": [
+        {
+          "part_file": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 1,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        }
+      ],
+      "page_number": 3
+    },
+    {
+      "kind": "step",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "source_step": 2,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0002"
+      ],
+      "added_ids": [
+        "root/0002"
+      ],
+      "visible_ids": [
+        "root/0001",
+        "root/0002"
+      ],
+      "focus_ids": [
+        "root/0002"
+      ],
+      "framing_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004"
+      ],
+      "rows": [
+        {
+          "part_file": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 1,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        }
+      ],
+      "page_number": 4
+    },
+    {
+      "kind": "step",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "source_step": 3,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0003"
+      ],
+      "added_ids": [
+        "root/0003"
+      ],
+      "visible_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003"
+      ],
+      "focus_ids": [
+        "root/0003"
+      ],
+      "framing_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004"
+      ],
+      "rows": [
+        {
+          "part_file": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 1,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        }
+      ],
+      "page_number": 5
+    },
+    {
+      "kind": "step",
+      "assembly_id": "root",
+      "assembly_label": "bricklab-web.ldr",
+      "assembly_number": 0,
+      "source_step": 4,
+      "explicit_step_boundary": true,
+      "boundary_meta": {
+        "command": "STEP",
+        "raw": "0 STEP"
+      },
+      "added_child_ids": [
+        "root/0004"
+      ],
+      "added_ids": [
+        "root/0004"
+      ],
+      "visible_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004"
+      ],
+      "focus_ids": [
+        "root/0004"
+      ],
+      "framing_ids": [
+        "root/0001",
+        "root/0002",
+        "root/0003",
+        "root/0004"
+      ],
+      "rows": [
+        {
+          "part_file": "3001.dat",
+          "color_code": "0x2EEE9DC",
+          "count": 1,
+          "color_name": "奶油白",
+          "color_hex": "#EEE9DC"
+        }
+      ],
+      "page_number": 6
+    }
+  ],
+  "instruction_step_source": null,
+  "step_provenance": "generated_web_height_sort_not_authored_not_robot_validated",
+  "geometry_scope": "catalog nominal bodies and studs; not third-party detailed meshes or robot actions",
+  "pdf_sha256": "c3a8839c176bc7c6a92b50a112fd23bccbf7dda5caf3f60d8cdf177c4c965def"
+}

@@ -1,0 +1,12 @@
+{
+  "job_id": "20261111-091455-bc6bb9e0",
+  "workspace": "http://127.0.0.1:18110/workspace/20261111-091455-bc6bb9e0",
+  "browser_errors": [],
+  "part_count": 6,
+  "pages": 8,
+  "executed_steps": 1,
+  "physical_transforms_changed": true,
+  "demonstration": "E:\\PiperIsaac\\outputs\\bricklab\\jobs\\20261111-091455-bc6bb9e0\\live\\d688f0c92757\\demonstrations\\episode-001.npz",
+  "unavailable_policy_rejected": true,
+  "physical_assembly_completed": false
+}

@@ -1,0 +1,6 @@
+# Separate .tools/bricklab-venv; do not install into the Isaac environment.
+charset-normalizer==3.5.2
+numpy==2.4.6
+pillow==13.0.0
+pypdfium2==5.15.2
+reportlab==5.1.0
